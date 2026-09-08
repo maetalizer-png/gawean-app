@@ -4,17 +4,24 @@ const SYSTEM_PROMPT =
 const LOG = "[RATEGOAN-LLM]";
 const STORE_KEY = "gawean-model-id";
 
-const MOBILE_PRIORITY = [
+const F16_MOBILE = [
   "gemma-3n-e4b-it-q4f16_1-MLC",
   "gemma-3n-e2b-it-q4f16_1-MLC",
   "gemma-3-4b-it-q4f16_1-MLC",
   "gemma-2-2b-it-q4f16_1-MLC",
 ];
 
-const DESKTOP_PRIORITY = [
+const F16_DESKTOP = [
   "gemma-3-4b-it-q4f16_1-MLC",
   "gemma-3n-e4b-it-q4f16_1-MLC",
   "gemma-2-2b-it-q4f16_1-MLC",
+];
+
+const F32_PRIORITY = [
+  "gemma-2-2b-it-q4f32_1-MLC",
+  "gemma-3n-e2b-it-q4f32_1-MLC",
+  "Llama-3.2-1B-Instruct-q4f32_1-MLC",
+  "Qwen2.5-0.5B-Instruct-q4f32_1-MLC",
 ];
 
 let webllm = null;
@@ -23,6 +30,7 @@ let status = "idle";
 let lastError = "";
 let activeModelId = "";
 let catalog = [];
+let hasF16 = null;
 let messages = [{ role: "system", content: SYSTEM_PROMPT }];
 
 function log(...args) {
@@ -47,8 +55,15 @@ export function hasWebGPU() {
   return typeof navigator !== "undefined" && !!navigator.gpu;
 }
 
+export function quantOf(id) {
+  if (/q4f32/i.test(id || "")) return "f32";
+  if (/q4f16/i.test(id || "")) return "f16";
+  return "";
+}
+
 export function formatBadge(modelId) {
   if (!modelId) return "GEMMA • OFFLINE";
+  const q = quantOf(modelId);
   const core = modelId
     .replace(/-MLC$/i, "")
     .replace(/-q4f\d+_\d+(-1k)?$/i, "")
@@ -57,7 +72,7 @@ export function formatBadge(modelId) {
     .toUpperCase()
     .replace(/\s+/g, " ")
     .trim();
-  return core + " • OFFLINE";
+  return core + (q ? " (" + q + ")" : "") + " • OFFLINE";
 }
 
 function sizeHint(rec) {
@@ -71,22 +86,75 @@ function sizeHint(rec) {
   return 99999;
 }
 
-export function listGemmaModels() {
+export async function detectF16() {
+  if (hasF16 !== null) return hasF16;
+  if (!hasWebGPU()) {
+    hasF16 = false;
+    log("shader-f16: tidak (tidak ada WebGPU)");
+    return hasF16;
+  }
+  try {
+    const adapter = await navigator.gpu.requestAdapter();
+    hasF16 = !!adapter && adapter.features.has("shader-f16");
+    log("shader-f16:", hasF16 ? "ada" : "tidak");
+  } catch (err) {
+    hasF16 = false;
+    errorLog("adapter check failed", err);
+    log("shader-f16: tidak");
+  }
+  return hasF16;
+}
+
+export function listCompatibleModels() {
+  const f16 = hasF16 === true;
   return catalog
-    .filter((m) => /gemma/i.test(m.model_id || ""))
+    .filter((m) => {
+      const id = m.model_id || "";
+      if (!f16) return /q4f32_1-MLC$/i.test(id);
+      return /gemma/i.test(id);
+    })
     .slice()
     .sort((a, b) => sizeHint(a) - sizeHint(b));
 }
 
-export function pickDefaultModel(list) {
-  const ids = new Set((list || []).map((m) => m.model_id));
-  const order = isMobile() ? MOBILE_PRIORITY : DESKTOP_PRIORITY;
-  for (const id of order) {
-    if (ids.has(id)) return id;
+export function listGemmaModels() {
+  return listCompatibleModels();
+}
+
+function firstExisting(ids, pool) {
+  const set = new Set(pool.map((m) => m.model_id));
+  for (const id of ids) {
+    if (set.has(id)) return id;
   }
-  const gemma = listGemmaModels();
-  if (gemma.length) return gemma[0].model_id;
   return "";
+}
+
+function smallest(pool, regex) {
+  const hit = pool.filter((m) => regex.test(m.model_id || "")).sort((a, b) => sizeHint(a) - sizeHint(b));
+  return hit[0]?.model_id || "";
+}
+
+export function pickDefaultModel() {
+  const all = catalog;
+  if (hasF16 === false) {
+    const f32 = all.filter((m) => /q4f32_1-MLC$/i.test(m.model_id || ""));
+    let id = firstExisting(F32_PRIORITY, f32);
+    if (!id) id = smallest(f32, /gemma.*q4f32/i);
+    if (!id) id = smallest(f32, /q4f32/i);
+    return id;
+  }
+  const gemma = all.filter((m) => /gemma/i.test(m.model_id || ""));
+  const order = isMobile() ? F16_MOBILE : F16_DESKTOP;
+  let id = firstExisting(order, gemma);
+  if (!id) id = smallest(gemma, /gemma/i);
+  return id;
+}
+
+export function availableIdsMessage() {
+  const ids = catalog.map((m) => m.model_id).filter(Boolean);
+  const f32 = ids.filter((id) => /q4f32_1-MLC$/i.test(id));
+  const head = f32.length ? f32.slice(0, 12).join(", ") : ids.slice(0, 12).join(", ");
+  return "Model f32 tidak tersedia di katalog perangkat ini. Tersedia: " + (head || "(kosong)");
 }
 
 export function getSavedModelId() {
@@ -111,7 +179,8 @@ export function getStatus() {
     badge: formatBadge(activeModelId),
     ready: status === "ready",
     mobile: isMobile(),
-    catalog: listGemmaModels().map((m) => m.model_id),
+    hasF16,
+    catalog: listCompatibleModels().map((m) => m.model_id),
   };
 }
 
@@ -120,18 +189,18 @@ async function loadWebLLM() {
   log("Import WebLLM from", WEBLLM_CDN);
   webllm = await import(WEBLLM_CDN);
   catalog = webllm.prebuiltAppConfig?.model_list || [];
-  log("catalog size", catalog.length, "gemma", listGemmaModels().length);
+  log("catalog size", catalog.length);
   return webllm;
 }
 
 export async function resolveModelId(preferred) {
+  await detectF16();
   await loadWebLLM();
-  const gemma = listGemmaModels();
-  const ids = new Set(gemma.map((m) => m.model_id));
-  if (preferred && ids.has(preferred)) return preferred;
+  const allowed = new Set(listCompatibleModels().map((m) => m.model_id));
+  if (preferred && allowed.has(preferred)) return preferred;
   const saved = getSavedModelId();
-  if (saved && ids.has(saved)) return saved;
-  return pickDefaultModel(gemma);
+  if (saved && allowed.has(saved)) return saved;
+  return pickDefaultModel();
 }
 
 export async function initLLM(onProgress, preferredId) {
@@ -150,13 +219,14 @@ export async function initLLM(onProgress, preferredId) {
 
   try {
     const mod = await loadWebLLM();
+    await detectF16();
     const modelId = await resolveModelId(preferredId);
     if (!modelId) {
-      throw new Error("Tidak ada model Gemma di katalog WebLLM.");
+      throw new Error(availableIdsMessage());
     }
     activeModelId = modelId;
     saveModelId(modelId);
-    log("Load model", modelId, isMobile() ? "(mobile)" : "(desktop)");
+    log("Load model", modelId, "f16=" + hasF16, isMobile() ? "(mobile)" : "(desktop)");
 
     engine = await mod.CreateMLCEngine(modelId, {
       initProgressCallback: (report) => {
