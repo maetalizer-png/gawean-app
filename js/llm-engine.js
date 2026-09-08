@@ -1,16 +1,15 @@
 const KEY = "gawean-model";
 const CDN = "https://esm.run/@mlc-ai/web-llm";
-
+const ONLY = "Qwen2.5-0.5B-Instruct-q4f32_1-MLC";
 const SYSTEM =
   "Kamu asisten Indonesia bernama Gawean. Jawab singkat, jujur, dan jelas. Jangan mengarang fakta. Jika tidak tahu, bilang tidak tahu.";
-
-const ONLY = "Qwen2.5-0.5B-Instruct-q4f32_1-MLC";
 
 let webllm = null;
 let catalog = [];
 let engine = null;
 let activeId = "";
 let loading = null;
+let busy = null;
 
 function inCatalog(id) {
   return catalog.some((m) => (m.model_id || "") === id);
@@ -18,11 +17,36 @@ function inCatalog(id) {
 
 function pickOne() {
   if (inCatalog(ONLY)) return ONLY;
-  const f32 = catalog.filter((m) => /qwen2\.5-0\.5b.*q4f32/i.test(m.model_id || ""));
-  if (f32[0]) return f32[0].model_id;
-  const small = catalog.filter((m) => /qwen.*0\.5b.*q4f32/i.test(m.model_id || ""));
-  if (small[0]) return small[0].model_id;
-  return "";
+  const hit = catalog.find((m) => /qwen2\.5-0\.5b-instruct-q4f32_1/i.test(m.model_id || ""));
+  return hit ? hit.model_id : "";
+}
+
+function isGpuFault(err) {
+  const msg = String((err && err.message) || err || "");
+  return /GPUBuffer|mapAsync|ShaderModule|Device lost|WebGPU|unmapped/i.test(msg);
+}
+
+async function createEngine(onProgress) {
+  const report = (info) => {
+    const pct = info && typeof info.progress === "number" ? Math.round(info.progress * 100) : 0;
+    const text = (info && info.text) || "Menyiapkan mesin…";
+    if (onProgress) onProgress(pct, text);
+  };
+  return webllm.CreateMLCEngine(
+    activeId,
+    { initProgressCallback: report },
+    { context_window_size: 512, prefill_chunk_size: 128 }
+  );
+}
+
+async function generateOnce(messages) {
+  const out = await engine.chat.completions.create({
+    messages,
+    stream: false,
+    temperature: 0.6,
+    max_tokens: 96,
+  });
+  return ((((out.choices || [])[0] || {}).message || {}).content || "").trim();
 }
 
 export const llm = {
@@ -36,21 +60,18 @@ export const llm = {
     return engine ? "QWEN 2.5 0.5B • OFFLINE" : "QWEN 2.5 0.5B";
   },
   listPicker() {
-    if (!activeId) return [];
-    return [{ id: activeId, label: "QWEN 2.5 0.5B", active: true }];
+    return activeId ? [{ id: activeId, label: "QWEN 2.5 0.5B", active: true }] : [];
   },
   async prepare() {
     if (webllm && activeId) return activeId;
     try {
       localStorage.removeItem(KEY);
     } catch {}
-    if (!navigator.gpu) {
-      console.warn("[GAWEAN-LLM] WebGPU tidak ada");
-      return "";
-    }
+    if (!navigator.gpu) throw new Error("HP ini tidak punya WebGPU. Pakai Chrome terbaru.");
     webllm = await import(CDN);
     catalog = (webllm.prebuiltAppConfig && webllm.prebuiltAppConfig.model_list) || [];
     activeId = pickOne();
+    if (!activeId) throw new Error("Qwen 2.5 0.5B f32 tidak ada di katalog");
     console.log("[GAWEAN-LLM] only", activeId);
     try {
       localStorage.setItem(KEY, activeId);
@@ -58,22 +79,15 @@ export const llm = {
     return activeId;
   },
   choose(id) {
-    if (id && inCatalog(id) && /q4f32/i.test(id)) activeId = id;
     return activeId;
   },
   async ensure(onProgress) {
     if (engine) return engine;
     if (loading) return loading;
-    await llm.prepare();
-    if (!activeId) throw new Error("Model Qwen 2.5 0.5B (f32) tidak ada di katalog");
     loading = (async () => {
       try {
-        const report = (info) => {
-          const pct = info && typeof info.progress === "number" ? Math.round(info.progress * 100) : 0;
-          const text = (info && info.text) || "Menyiapkan mesin…";
-          if (onProgress) onProgress(pct, text);
-        };
-        engine = await webllm.CreateMLCEngine(activeId, { initProgressCallback: report });
+        await llm.prepare();
+        engine = await createEngine(onProgress);
         return engine;
       } catch (err) {
         engine = null;
@@ -84,22 +98,29 @@ export const llm = {
     })();
     return loading;
   },
-  async reply(history, onDelta) {
-    const inst = await llm.ensure();
-    const messages = [{ role: "system", content: SYSTEM }].concat(history || []);
-    const stream = await inst.chat.completions.create({
-      messages,
-      stream: true,
-      temperature: 0.7,
-      max_tokens: 256,
-    });
-    let out = "";
-    for await (const chunk of stream) {
-      const piece = (((chunk.choices || [])[0] || {}).delta || {}).content || "";
-      if (!piece) continue;
-      out += piece;
-      if (onDelta) onDelta(out);
-    }
-    return out.trim();
+  async reply(history) {
+    if (busy) return busy;
+    busy = (async () => {
+      try {
+        await llm.ensure();
+        const messages = [{ role: "system", content: SYSTEM }].concat((history || []).slice(-4));
+        try {
+          return await generateOnce(messages);
+        } catch (err) {
+          if (!isGpuFault(err)) throw err;
+          console.warn("[GAWEAN-LLM] retry after GPU fault", err);
+          try {
+            if (engine && engine.unload) await engine.unload();
+          } catch {}
+          engine = null;
+          await new Promise((r) => setTimeout(r, 400));
+          engine = await createEngine();
+          return await generateOnce(messages);
+        }
+      } finally {
+        busy = null;
+      }
+    })();
+    return busy;
   },
 };
