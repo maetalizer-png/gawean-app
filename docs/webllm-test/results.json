@@ -6,17 +6,17 @@
       {
         "q": "Selamat malam",
         "answer": "Selamat malam juga! Ada yang bisa dibantu?",
-        "seconds": 0.198,
+        "seconds": 0.213,
         "timedOut": false
       },
       {
         "q": "Ibu kota Indonesia apa?",
         "answer": "Ibu kota Indonesia adalah Jakarta.",
-        "seconds": 0.189,
+        "seconds": 0.201,
         "timedOut": false
       }
     ],
-    "loadSeconds": 0.7,
+    "loadSeconds": 0.688,
     "readyText": "Gawean siap (QWEN2.5 0.5B • OFFLINE). Tanya apa saja.",
     "loadOk": true,
     "engineCreates": 1,
@@ -25,11 +25,24 @@
   {
     "name": "s2a-gpu-fault-persistent-fails-clean",
     "label": "Qwen2.5 0.5B",
-    "steps": [],
-    "loadSeconds": 1.044,
-    "readyText": "Gagal menyiapkan mesin. Failed to execute 'mapAsync' on 'GPUBuffer': A valid external Instance reference no longer exists.",
-    "loadOk": false,
-    "engineCreates": 2,
+    "steps": [
+      {
+        "q": "Selamat malam",
+        "answer": "Selamat malam juga! Ada yang bisa dibantu?",
+        "seconds": 0.205,
+        "timedOut": false
+      },
+      {
+        "q": "Ibu kota Indonesia apa?",
+        "answer": "Ibu kota Indonesia adalah Jakarta.",
+        "seconds": 0.191,
+        "timedOut": false
+      }
+    ],
+    "loadSeconds": 1.486,
+    "readyText": "Gawean siap (SMOLLM2 360M • OFFLINE). Tanya apa saja.",
+    "loadOk": true,
+    "engineCreates": 3,
     "engineUnloads": 0
   },
   {
@@ -39,17 +52,17 @@
       {
         "q": "Selamat malam",
         "answer": "Selamat malam juga! Ada yang bisa dibantu?",
-        "seconds": 0.197,
+        "seconds": 0.193,
         "timedOut": false
       },
       {
         "q": "Ibu kota Indonesia apa?",
         "answer": "Ibu kota Indonesia adalah Jakarta.",
-        "seconds": 0.206,
+        "seconds": 0.192,
         "timedOut": false
       }
     ],
-    "loadSeconds": 1.237,
+    "loadSeconds": 1.127,
     "readyText": "Gawean siap (QWEN2.5 0.5B • OFFLINE). Tanya apa saja.",
     "loadOk": true,
     "engineCreates": 2,
@@ -78,6 +91,7 @@
     "name": "s5-f16-gating",
     "adapterShaderF16": false,
     "pickerLabels": [
+      "SmolLM2 360M",
       "Qwen2.5 0.5B",
       "Llama 3.2 1B",
       "Gemma 2 2B",
@@ -85,5 +99,28 @@
       "Qwen2.5 3B"
     ],
     "f16HiddenCorrectly": true
+  },
+  {
+    "name": "s6-hardware-limit-steps-down-ladder",
+    "label": "Qwen2.5 0.5B",
+    "steps": [
+      {
+        "q": "Selamat malam",
+        "answer": "Selamat malam juga! Ada yang bisa dibantu?",
+        "seconds": 0.197,
+        "timedOut": false
+      },
+      {
+        "q": "Ibu kota Indonesia apa?",
+        "answer": "Ibu kota Indonesia adalah Jakarta (SmolLM2).",
+        "seconds": 0.192,
+        "timedOut": false
+      }
+    ],
+    "loadSeconds": 1.296,
+    "readyText": "Gawean siap (SMOLLM2 360M • OFFLINE). Tanya apa saja.",
+    "loadOk": true,
+    "engineCreates": 3,
+    "engineUnloads": 0
   }
 ]

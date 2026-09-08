@@ -2,13 +2,32 @@
 
 ## TL;DR
 
-The two bugs from the reports (`Failed to execute 'mapAsync' on 'GPUBuffer': A
-valid external Instance reference no longer exists.` and `Model not loaded
-before trying to complete ChatCompletionRequest`) are fixed in `js/llm-engine.js`.
-The model picker is no longer locked to a single model — all 10 models in the
-size ladder (0.5B → 3B, f32/f16) are selectable again, gated by real
-`shader-f16` GPU-feature detection. Default stays the smallest model
-(`Qwen2.5-0.5B-Instruct-q4f32_1-MLC`).
+The two bugs from the first reports (`Failed to execute 'mapAsync' on
+'GPUBuffer': A valid external Instance reference no longer exists.` and
+`Model not loaded before trying to complete ChatCompletionRequest`) are fixed
+in `js/llm-engine.js`. The model picker is no longer locked to a single
+model — all 12 models in the size ladder (360M → 3B, f32/f16) are selectable
+again, gated by real `shader-f16` GPU-feature detection.
+
+### Update after real-device logs
+
+A later report from the actual Android phone showed the real failure mode
+directly: `Requested maxStorageBufferBindingSize exceeds limit.
+requested=1024MB, limit=512MB` followed by `vkQueueSubmit failed with
+VK_ERROR_DEVICE_LOST`. Two things followed from that:
+
+1. An earlier revision of this fix had raised `context_window_size` from 512
+   to 1024 -- that's what pushed the buffer request over this phone's 512MB
+   cap and triggered the device-lost crash. **Reverted back to 512**, which
+   is what the app's own history already showed was deliberately tuned for
+   Android (commit `324cf9b`, "Shrink Qwen context... for Android").
+2. Even at 512, this specific phone's GPU is tight enough that Qwen 0.5B
+   itself can fail. Added `SmolLM2-360M-Instruct-q4f32_1-MLC` (and its f16
+   variant) as a genuinely smaller rung *below* Qwen 0.5B, and `ensure()` now
+   **automatically steps down the ladder** when a load fails with a
+   hardware-class GPU fault (device-lost, buffer-limit, mapAsync/Instance
+   errors) -- it no longer just retries the same model and gives up. See
+   scenario `s6` below, run against the real bug report's exact error text.
 
 ## Why this wasn't tested with real model downloads
 
@@ -51,6 +70,7 @@ Results: `results.json` (raw Playwright run), screenshots below.
 | `s3-switch-model` | Switching models via the picker disposes (`unload()`) the old engine before loading the new one | OK — see `04-model-switch-disposes-old.png` |
 | `s4-concurrent-send` | Two messages sent back-to-back without waiting no longer get their answers swapped (old bug: shared promise leaked the first answer onto the second bubble) | OK |
 | `s5-f16-gating` | Picker hides `(f16)` model variants when the GPU adapter doesn't support `shader-f16` | OK — see `05-picker-f16-gating.png` |
+| `s6-hardware-limit-steps-down-ladder` | User picks Qwen2.5 0.5B; it fails persistently with the exact real-device error (`mapAsync`/`Instance reference`); `ensure()` automatically falls back down the ladder to SmolLM2 360M, which loads and answers correctly | OK — see `06-ladder-steps-down-on-hardware-fault.png` |
 
 ## Bugs found and fixed (`js/llm-engine.js`)
 
@@ -75,14 +95,23 @@ Results: `results.json` (raw Playwright run), screenshots below.
    `ensure()` path.
 4. **Stale engine after switching models.** The old build locked the app to
    one hardcoded model and had no real switch path. Restored a real picker
-   over a 10-model ladder (Qwen2.5 0.5B → 3B, Llama 3.2 1B, Gemma 2 2B, Phi
-   3.5 Mini) with `f16` variants gated by `adapter.features.has("shader-f16")`,
-   and `choose()` now disposes the previous engine before switching.
+   over a 12-model ladder (SmolLM2 360M → Qwen2.5 3B) with `f16` variants
+   gated by `adapter.features.has("shader-f16")`, and `choose()` now disposes
+   the previous engine before switching.
+5. **Buffer request over the device's hard GPU limit → device-lost crash.**
+   Real-device logs showed `requested=1024MB, limit=512MB` immediately
+   followed by `VK_ERROR_DEVICE_LOST`. `context_window_size` reverted to 512
+   (an earlier revision of this fix had bumped it to 1024, which is what
+   caused this). `ensure()` also now steps down the model ladder
+   automatically on this class of fault instead of retrying the same
+   too-big model forever.
 
-## Ladder (smallest → largest, as requested)
+## Ladder (smallest → largest)
 
 ```
-Qwen2.5-0.5B-Instruct-q4f32_1-MLC      (default)
+SmolLM2-360M-Instruct-q4f32_1-MLC      (default -- smallest, most likely to fit tight GPU limits)
+SmolLM2-360M-Instruct-q4f16_1-MLC      (needs shader-f16)
+Qwen2.5-0.5B-Instruct-q4f32_1-MLC
 Qwen2.5-0.5B-Instruct-q4f16_1-MLC      (needs shader-f16)
 Llama-3.2-1B-Instruct-q4f32_1-MLC
 Llama-3.2-1B-Instruct-q4f16_1-MLC      (needs shader-f16)
@@ -94,11 +123,21 @@ Qwen2.5-3B-Instruct-q4f32_1-MLC
 Phi-3.5-mini-instruct-q4f16_1-MLC      (needs shader-f16)
 ```
 
+`ensure()` starts at whatever the user picked and, only on a hardware-class
+GPU fault (device-lost, buffer-limit, mapAsync/Instance-reference errors —
+never on a plain network/download failure), automatically steps down to the
+next smaller rung until one actually loads, and remembers that one as the
+new active model.
+
 ## What still needs to happen on a real device
 
 Run the app (this branch) on a machine/phone with normal internet access,
-open "Pilih Mesin AI", and walk the ladder as originally planned — the picker
-and retry logic now work, so this is just picking a model and sending the two
-test messages. Whichever is the smallest one that answers both correctly
-twice in a row is the real winner; if you want it saved as the new default,
-change `LADDER[0]` in `js/llm-engine.js` (or ask and it'll be wired in).
+open "Pilih Mesin AI", and walk the ladder as originally planned — the picker,
+retry, and auto-step-down logic now work, so this is just picking a model and
+sending the two test messages, or simply trusting the auto-step-down to land
+on something that loads. Whichever is the smallest one that answers both
+correctly twice in a row is the real winner for answer *quality* (loading
+successfully and answering *correctly* are different things — this fix
+target the former; the latter still needs a real run); if you want it saved
+as the permanent default, change `LADDER[0]` in `js/llm-engine.js` (or ask
+and it'll be wired in).

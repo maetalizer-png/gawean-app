@@ -5,7 +5,12 @@ const SYSTEM =
 
 // Tangga model kecil -> besar. f16 hanya dipakai kalau GPU perangkat punya
 // fitur "shader-f16" (dicek sekali lewat adapter.features sebelum katalog dibuka).
+// SmolLM2 360M ditaruh paling depan karena beberapa HP Android budget punya
+// batas GPU (maxStorageBufferBindingSize) yang sangat kecil (terlihat langsung
+// di device: limit 512MB) -- bahkan Qwen 0.5B bisa bikin device lost di sana.
 const LADDER = [
+  { id: "SmolLM2-360M-Instruct-q4f32_1-MLC", label: "SmolLM2 360M", f16: false },
+  { id: "SmolLM2-360M-Instruct-q4f16_1-MLC", label: "SmolLM2 360M (f16)", f16: true },
   { id: "Qwen2.5-0.5B-Instruct-q4f32_1-MLC", label: "Qwen2.5 0.5B", f16: false },
   { id: "Qwen2.5-0.5B-Instruct-q4f16_1-MLC", label: "Qwen2.5 0.5B (f16)", f16: true },
   { id: "Llama-3.2-1B-Instruct-q4f32_1-MLC", label: "Llama 3.2 1B", f16: false },
@@ -82,10 +87,14 @@ async function createEngine(id, onProgress) {
     const text = (info && info.text) || "Menyiapkan mesin…";
     if (onProgress) onProgress(pct, text);
   };
+  // Konteks dijaga kecil (512) -- perangkat Android budget yang jadi target app
+  // ini terbukti punya batas GPU (maxStorageBufferBindingSize) sekecil 512MB;
+  // minta konteks lebih besar dari itu bikin buffer diminta > batas device dan
+  // memicu VK_ERROR_DEVICE_LOST (device lost), bukan cuma lambat.
   const built = await webllm.CreateMLCEngine(
     id,
     { initProgressCallback: report },
-    { context_window_size: 1024, prefill_chunk_size: 128 }
+    { context_window_size: 512, prefill_chunk_size: 128 }
   );
   // Uji jalan beneran sebelum dianggap "siap" -- ini yang mencegah pesan
   // "Gawean siap" palsu yang diikuti error "model not loaded" di pesan pertama.
@@ -148,25 +157,48 @@ export const llm = {
     await llm.prepare();
     if (engine && engineForId === activeId) return engine;
     if (loading) return loading;
-    const wantId = activeId;
+    const rows = availableLadder();
+    if (!rows.length) throw new Error("Tidak ada model yang cocok untuk perangkat ini.");
+    const startIdx = Math.max(
+      0,
+      rows.findIndex((m) => m.id === activeId)
+    );
     loading = (async () => {
-      try {
-        await disposeEngine();
+      let lastErr = null;
+      // Coba model yang dipilih; kalau gagal karena batas GPU device (bukan
+      // sekadar gagal jaringan), turun ke model yang lebih kecil di tangga --
+      // ini yang membuat "cari model yang beneran jalan" otomatis di device.
+      for (let i = startIdx; i >= 0; i--) {
+        const candidate = rows[i];
         try {
-          engine = await createEngine(wantId, onProgress);
-        } catch (err) {
-          if (!isGpuFault(err)) throw err;
-          console.warn("[GAWEAN-LLM] retry load after GPU fault", err);
           await disposeEngine();
-          await new Promise((r) => setTimeout(r, 400));
-          engine = await createEngine(wantId, onProgress);
+          let built;
+          try {
+            built = await createEngine(candidate.id, onProgress);
+          } catch (err) {
+            if (!isGpuFault(err)) throw err;
+            console.warn("[GAWEAN-LLM] retry load after GPU fault", err);
+            await disposeEngine();
+            await new Promise((r) => setTimeout(r, 400));
+            built = await createEngine(candidate.id, onProgress);
+          }
+          engine = built;
+          engineForId = candidate.id;
+          activeId = candidate.id;
+          try {
+            localStorage.setItem(KEY, candidate.id);
+          } catch {}
+          return engine;
+        } catch (err) {
+          lastErr = err;
+          await disposeEngine();
+          if (!isGpuFault(err) || i === 0) throw err;
+          if (onProgress) {
+            onProgress(0, "Perangkat kesulitan menjalankan " + candidate.label + ", coba mesin lebih kecil…");
+          }
         }
-        engineForId = wantId;
-        return engine;
-      } catch (err) {
-        await disposeEngine();
-        throw err;
       }
+      throw lastErr || new Error("Semua mesin gagal dimuat.");
     })();
     try {
       return await loading;
