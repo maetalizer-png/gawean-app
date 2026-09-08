@@ -130,10 +130,7 @@ async function bootEngine(preferredId) {
     fillPicker(st.model);
     setProgress(100, "SIAP — " + st.badge);
     showApp();
-    if (!messagesEl.dataset.greeted) {
-      addBubble("ai", "Gawean siap (" + st.model + "). Tanya apa saja.");
-      messagesEl.dataset.greeted = "1";
-    }
+    addBubble("ai", "Mesin aktif (" + st.model + "). Tanya apa saja.");
   } catch (err) {
     setFatal(err?.message || String(err));
     fillPicker("");
@@ -187,8 +184,15 @@ pickerClose.addEventListener("click", () => {
 $("btn-clear").addEventListener("click", () => {
   resetChat();
   messagesEl.innerHTML = "";
-  delete messagesEl.dataset.greeted;
   addBubble("ai", "Riwayat dikosongkan. Tanya lagi.");
 });
 
-bootEngine();
+function landOnChat() {
+  showApp();
+  setComposerEnabled(false);
+  badge.textContent = "MESIN BELUM AKTIF";
+  addBubble("ai", "Gawean siap dipakai. Mesin AI belum diunduh. Tekan Aktifkan Mesin kalau sudah siap.");
+}
+
+$("btn-activate").addEventListener("click", () => bootEngine());
+landOnChat();
