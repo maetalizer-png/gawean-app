@@ -1,0 +1,6 @@
+Gawean Chat Kit
+
+Hak pakai untuk satu proyek toko/jasa.
+Tidak untuk dijual ulang sebagai template identik.
+Login hanya tersimpan di perangkat.
+Data percakapan milik pemasang.
