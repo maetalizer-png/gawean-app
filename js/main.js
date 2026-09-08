@@ -1,4 +1,13 @@
-import { initLLM, askLLM, getStatus, resetChat, hasWebGPU } from "./llm-engine.js";
+import {
+  initLLM,
+  askLLM,
+  getStatus,
+  resetChat,
+  hasWebGPU,
+  listGemmaModels,
+  formatBadge,
+  resolveModelId,
+} from "./llm-engine.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -13,6 +22,11 @@ const messagesEl = $("messages");
 const input = $("chat-input");
 const sendBtn = $("btn-send");
 const composer = $("composer");
+const badge = $("model-badge");
+const picker = $("model-picker");
+const pickerBtn = $("btn-models");
+const pickerList = $("model-list");
+const pickerClose = $("model-close");
 
 function setComposerEnabled(on) {
   input.disabled = !on;
@@ -53,6 +67,31 @@ function setFatal(message) {
   bootText.textContent = "Gagal memuat model";
 }
 
+function fillPicker(activeId) {
+  const models = listGemmaModels();
+  pickerList.innerHTML = "";
+  if (!models.length) {
+    pickerList.innerHTML = "<p class=\"set-empty\">Katalog Gemma kosong.</p>";
+    return;
+  }
+  models.forEach((m) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "model-item" + (m.model_id === activeId ? " active" : "");
+    const title = document.createElement("span");
+    title.textContent = formatBadge(m.model_id).replace(" • OFFLINE", "");
+    const small = document.createElement("small");
+    small.textContent = m.model_id;
+    btn.appendChild(title);
+    btn.appendChild(small);
+    btn.onclick = () => {
+      picker.hidden = true;
+      bootEngine(m.model_id);
+    };
+    pickerList.appendChild(btn);
+  });
+}
+
 function addBubble(role, text, extraClass) {
   const el = document.createElement("div");
   el.className = "msg " + role + (extraClass ? " " + extraClass : "");
@@ -62,11 +101,13 @@ function addBubble(role, text, extraClass) {
   return el;
 }
 
-async function bootEngine() {
+async function bootEngine(preferredId) {
   showBoot();
   bootError.hidden = true;
   bootRetry.hidden = true;
-  setProgress(0, "Mengunduh Qwen 4B (±2.5 GB)…");
+  picker.hidden = true;
+  setProgress(0, "Menyiapkan katalog Gemma…");
+  badge.textContent = "GEMMA • OFFLINE";
 
   if (!hasWebGPU()) {
     setFatal("Browser tidak support WebGPU. Gunakan Chrome atau Edge versi terbaru.");
@@ -74,22 +115,28 @@ async function bootEngine() {
   }
 
   try {
-    await initLLM(({ percent, text }) => {
+    const chosen = await resolveModelId(preferredId);
+    setProgress(0, "Mengunduh " + (chosen || "Gemma") + "…");
+    await initLLM(({ percent, text, model }) => {
       const label =
         percent != null && percent < 100
-          ? "Mengunduh Qwen 4B (±2.5 GB)… " + percent + "%"
+          ? "Mengunduh " + (model || "Gemma") + "… " + percent + "%"
           : text || "Menyiapkan mesin…";
       setProgress(percent, label);
-    });
-    setProgress(100, "SIAP — Qwen 4B lokal aktif");
+      if (model) badge.textContent = formatBadge(model);
+    }, preferredId);
+    const st = getStatus();
+    badge.textContent = st.badge;
+    fillPicker(st.model);
+    setProgress(100, "SIAP — " + st.badge);
     showApp();
     if (!messagesEl.dataset.greeted) {
-      addBubble("ai", "Gawean siap. Tanya apa saja — jawaban dari Qwen 4B di perangkat ini.");
+      addBubble("ai", "Gawean siap (" + st.model + "). Tanya apa saja.");
       messagesEl.dataset.greeted = "1";
     }
   } catch (err) {
-    const msg = err?.message || String(err);
-    setFatal(msg);
+    setFatal(err?.message || String(err));
+    fillPicker("");
   }
 }
 
@@ -101,7 +148,6 @@ async function send() {
   input.value = "";
   addBubble("user", q);
   setComposerEnabled(false);
-
   const typing = addBubble("ai", "mengetik…", "typing");
 
   try {
@@ -131,12 +177,18 @@ input.addEventListener("keydown", (e) => {
   }
 });
 bootRetry.addEventListener("click", () => bootEngine());
-
-$("btn-clear")?.addEventListener("click", () => {
+pickerBtn.addEventListener("click", () => {
+  fillPicker(getStatus().model);
+  picker.hidden = !picker.hidden;
+});
+pickerClose.addEventListener("click", () => {
+  picker.hidden = true;
+});
+$("btn-clear").addEventListener("click", () => {
   resetChat();
   messagesEl.innerHTML = "";
   delete messagesEl.dataset.greeted;
-  addBubble("ai", "Riwayat di perangkat ini dikosongkan. Tanya lagi.");
+  addBubble("ai", "Riwayat dikosongkan. Tanya lagi.");
 });
 
 bootEngine();
