@@ -1,0 +1,26 @@
+[
+  {
+    "id": "k-kopi",
+    "nama": "Kopi tubruk 250g",
+    "harga": "Rp28.000",
+    "stok": "ready",
+    "catatan": "Pahit sedang, cocok seduh manual",
+    "tags": ["kopi", "tubruk"]
+  },
+  {
+    "id": "k-gula",
+    "nama": "Gula aren cair 500ml",
+    "harga": "Rp22.000",
+    "stok": "ready",
+    "catatan": "Untuk kopi atau es",
+    "tags": ["gula", "aren"]
+  },
+  {
+    "id": "k-kaos",
+    "nama": "Kaos polos cotton",
+    "harga": "Rp65.000",
+    "stok": "pre-order",
+    "catatan": "S–XXL, custom sablon min. 12 pcs",
+    "tags": ["kaos", "sablon", "custom"]
+  }
+]
