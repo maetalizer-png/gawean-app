@@ -1,0 +1,5 @@
+[
+  {"id":"fb-santai","kategori":"umum","teks":"Oke, aku dengerin. Mau bahas yang mana?","tags":["umum","lanjut"],"gaya":"santai","meta":{"jenis":"umum","gaya":"santai"}},
+  {"id":"fb-toko","kategori":"umum","teks":"Siap. Ceritakan keperluannya.","tags":["umum","lanjut"],"gaya":"toko","meta":{"jenis":"umum","gaya":"toko"}},
+  {"id":"fb-formal","kategori":"umum","teks":"Silakan sampaikan keperluannya.","tags":["umum","lanjut"],"gaya":"formal","meta":{"jenis":"umum","gaya":"formal"}}
+]

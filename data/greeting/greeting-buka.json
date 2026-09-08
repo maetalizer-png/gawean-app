@@ -1,0 +1,4 @@
+[
+  {"id":"greeting-buka-formal-002","kategori":"greeting","nama":"Buka formal","tags":["buka"],"teks":"Selamat datang. Selamat datang. Ada yang bisa dibantu?","meta":{"jenis":"buka","variants":["Selamat datang."]}},
+  {"id":"greeting-buka-santai-003","kategori":"greeting","nama":"Buka santai","tags":["buka"],"teks":"Hai! Ngobrol santai juga boleh.","meta":{"jenis":"buka","variants":["Halo santai."]}}
+]
