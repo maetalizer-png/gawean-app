@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Gawean — Qwen 4B lokal</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section id="boot">
+    <div class="boot-card">
+      <div class="boot-mark">G</div>
+      <h1>Gawean</h1>
+      <p id="boot-text">Mengunduh Qwen 4B (±2.5 GB)…</p>
+      <div class="bar"><i id="boot-fill"></i></div>
+      <div id="boot-pct">0%</div>
+      <p id="boot-error" hidden></p>
+      <button type="button" class="retry" id="boot-retry" hidden>Coba lagi</button>
+    </div>
+  </section>
+
+  <section id="app" hidden>
+    <header id="topbar">
+      <span class="brand">Gawean</span>
+      <span class="badge">QWEN 4B LOCAL • OFFLINE</span>
+      <button type="button" id="btn-clear">Kosongkan</button>
+    </header>
+    <div id="messages"></div>
+    <footer id="composer" class="disabled">
+      <div class="row">
+        <textarea id="chat-input" rows="1" placeholder="Tulis pesan" disabled></textarea>
+        <button type="button" id="btn-send" disabled aria-label="Kirim">↑</button>
+      </div>
+    </footer>
+  </section>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
