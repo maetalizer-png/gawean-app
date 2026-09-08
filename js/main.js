@@ -1,11 +1,12 @@
 import { $, toast } from "./dom.js";
 import { auth } from "./auth.js";
-import { engine } from "./ai/engine.js";
+import { llm } from "./llm-engine.js";
 import { business } from "./business.js";
 import { theme } from "./ui/theme.js";
 import { shell } from "./ui/shell.js";
 import { chat } from "./ui/chat.js";
 import { attach } from "./ui/attach.js";
+import { models } from "./ui/models.js";
 import { gate } from "./ui/gate.js";
 import { settings } from "./ui/settings.js";
 
@@ -15,6 +16,7 @@ async function start() {
   shell.bind();
   chat.bind();
   attach.bind();
+  models.bind();
   gate.bind();
   settings.bind();
 
@@ -37,11 +39,11 @@ async function start() {
   document.documentElement.classList.add("ready");
 
   try {
-    await engine.init();
     await business.init();
     business.applyTheme();
     shell.brand();
     settings.render();
+    await llm.prepare();
   } catch {
     toast("Jalankan lewat http server");
   }
