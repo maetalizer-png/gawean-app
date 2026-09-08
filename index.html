@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Gawean — Qwen 4B lokal</title>
+  <title>Gawean — Gemma lokal</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icon.svg">
   <meta name="theme-color" content="#0f766e">
@@ -14,7 +14,7 @@
     <div class="boot-card">
       <div class="boot-mark">G</div>
       <h1>Gawean</h1>
-      <p id="boot-text">Mengunduh Qwen 4B (±2.5 GB)…</p>
+      <p id="boot-text">Menyiapkan katalog Gemma…</p>
       <div class="bar"><i id="boot-fill"></i></div>
       <div id="boot-pct">0%</div>
       <p id="boot-error" hidden></p>
@@ -25,9 +25,17 @@
   <section id="app" hidden>
     <header id="topbar">
       <span class="brand">Gawean</span>
-      <span class="badge">QWEN 4B LOCAL • OFFLINE</span>
+      <span class="badge" id="model-badge">GEMMA • OFFLINE</span>
+      <button type="button" id="btn-models">Pilih Mesin AI</button>
       <button type="button" id="btn-clear">Kosongkan</button>
     </header>
+    <div id="model-picker" hidden>
+      <div class="picker-head">
+        <strong>Pilih Mesin AI</strong>
+        <button type="button" id="model-close">Tutup</button>
+      </div>
+      <div id="model-list"></div>
+    </div>
     <div id="messages"></div>
     <footer id="composer" class="disabled">
       <div class="row">
