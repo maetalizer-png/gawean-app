@@ -27,10 +27,11 @@ async function start() {
     toast("Dikosongkan");
   };
 
-  if (auth.session()) {
-    shell.lock(false);
-    chat.restore();
-  } else shell.lock(true);
+  if (!auth.session()) {
+    try { localStorage.setItem("gawean-session", "tamu@gawean.local"); } catch {}
+  }
+  shell.lock(false);
+  chat.restore();
 
   document.documentElement.classList.remove("booting");
   document.documentElement.classList.add("ready");

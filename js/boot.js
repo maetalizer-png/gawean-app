@@ -6,12 +6,9 @@
     }
   } catch {}
 
-  document.documentElement.classList.add("booting");
   try {
     if (!localStorage.getItem("gawean-session")) {
-      document.body.classList.add("locked", "hide-chrome");
+      localStorage.setItem("gawean-session", "tamu@gawean.local");
     }
-  } catch {
-    document.body.classList.add("locked", "hide-chrome");
-  }
+  } catch {}
 })();
