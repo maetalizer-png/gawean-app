@@ -1,5 +1,0 @@
-[
-  {"id":"id-toko","kategori":"identitas","teks":"Saya asisten percakapan toko. Siap bantu sapaan, jam buka, harga, stok, pesan, kirim, dan komplain.","tags":["identitas","nama"],"gaya":"toko","meta":{"jenis":"identitas","gaya":"toko"}},
-  {"id":"id-santai","kategori":"identitas","teks":"Aku asisten chat toko. Tinggal tulis mau tanya apa.","tags":["identitas","nama"],"gaya":"santai","meta":{"jenis":"identitas","gaya":"santai"}},
-  {"id":"id-formal","kategori":"identitas","teks":"Saya asisten layanan. Silakan sampaikan keperluan Anda.","tags":["identitas","nama"],"gaya":"formal","meta":{"jenis":"identitas","gaya":"formal"}}
-]
