@@ -1,51 +1,190 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Gawean — Gemma lokal</title>
+  <meta http-equiv="Permissions-Policy" content="camera=(self), microphone=()">
+  <title></title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icon.svg">
   <meta name="theme-color" content="#0f766e">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <section id="boot" hidden>
-    <div class="boot-card">
-      <div class="boot-mark">G</div>
-      <h1>Gawean</h1>
-      <p id="boot-text">Menyiapkan katalog Gemma…</p>
-      <div class="bar"><i id="boot-fill"></i></div>
-      <div id="boot-pct">0%</div>
-      <p id="boot-error" hidden></p>
-      <button type="button" class="retry" id="boot-retry" hidden>Coba lagi</button>
-    </div>
-  </section>
-
-  <section id="app">
-    <header id="topbar">
-      <span class="brand">Gawean</span>
-      <span class="badge" id="model-badge">MESIN BELUM AKTIF</span>
-      <button type="button" id="btn-activate">Aktifkan Mesin</button>
-      <button type="button" id="btn-models">Pilih Mesin AI</button>
-      <button type="button" id="btn-clear">Kosongkan</button>
-    </header>
-    <div id="model-picker" hidden>
-      <div class="picker-head">
-        <strong>Pilih Mesin AI</strong>
-        <button type="button" id="model-close">Tutup</button>
+  <script src="js/boot.js"></script>
+  <svg class="icon-defs" aria-hidden="true">
+    <symbol id="ic-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></symbol>
+    <symbol id="ic-search" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3" stroke-linecap="round"/></symbol>
+    <symbol id="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></symbol>
+    <symbol id="ic-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></symbol>
+    <symbol id="ic-send" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-back" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M19 12H5M11 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 8h3l1.6-2.4A2 2 0 0 1 10.3 5h3.4a2 2 0 0 1 1.7.6L17 8h3a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2z"/><circle cx="12" cy="14" r="3.2"/></symbol>
+    <symbol id="ic-gallery" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 16l5.2-4.2a2 2 0 0 1 2.5 0L17 17"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="ic-file" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 3h8l5 5v13H7z"/><path d="M15 3v5h5"/></symbol>
+    <symbol id="ic-new-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 7v6M9 10h6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-history" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09A1.65 1.65 0 0 0 19.4 15z"/></symbol>
+  </svg>
+  <header id="topbar">
+    <button class="icon" id="btn-menu" aria-label="Menu"><svg class="ico" width="22" height="22" stroke-width="2.2"><use href="#ic-menu"/></svg></button>
+    <span class="grow"></span>
+    <button class="icon" id="btn-chat-search" aria-label="Cari"><svg class="ico" width="22" height="22" stroke-width="2.2"><use href="#ic-search"/></svg></button>
+  </header>
+  <div id="chat-search-bar" hidden>
+    <input id="chat-search-input" type="search" placeholder="Cari…">
+    <button class="icon" id="chat-search-close" aria-label="Tutup"><svg class="ico" width="18" height="18" stroke-width="2.2"><use href="#ic-close"/></svg></button>
+  </div>
+  <main id="app">
+    <section id="view-chat" class="view">
+      <div id="empty-state" class="empty">
+        <div>
+          <strong id="empty-title"></strong>
+          <p id="empty-tag"></p>
+        </div>
       </div>
-      <div id="model-list"></div>
-    </div>
-    <div id="messages"></div>
-    <footer id="composer" class="disabled">
-      <div class="row">
-        <textarea id="chat-input" rows="1" placeholder="Tulis pesan" disabled></textarea>
-        <button type="button" id="btn-send" disabled aria-label="Kirim">↑</button>
+      <div id="messages"></div>
+      <footer id="composer">
+        <div class="bar">
+          <button id="btn-plus" class="icon" aria-label="Lampirkan"><svg class="ico" width="22" height="22" stroke-width="2.2"><use href="#ic-plus"/></svg></button>
+          <textarea id="chat-input" rows="1" placeholder="Tulis pesan"></textarea>
+          <button id="btn-send" class="send" aria-label="Kirim"><svg class="ico" width="20" height="20" stroke-width="2.2"><use href="#ic-send"/></svg></button>
+        </div>
+      </footer>
+    </section>
+    <section id="view-settings" class="view" hidden>
+      <div class="settings-page">
+        <header class="settings-header">
+          <button id="btn-back" class="back-plain" aria-label="Kembali"><svg class="ico" width="22" height="22" stroke-width="2.2"><use href="#ic-back"/></svg></button>
+          <h1>Pengaturan</h1>
+        </header>
+        <section class="set-card account-card">
+          <p class="set-kicker">Akun</p>
+          <div class="account-line">
+            <span class="account-avatar" id="settings-initial">G</span>
+            <span>
+              <strong id="settings-email">—</strong>
+              <small>Masuk di perangkat ini</small>
+            </span>
+          </div>
+        </section>
+        <section class="set-card">
+          <p class="set-kicker">Tampilan</p>
+          <div class="theme-tiles">
+            <button class="theme-tile active" data-theme="light"><span class="tile-preview light"></span>Terang</button>
+            <button class="theme-tile" data-theme="dark"><span class="tile-preview dark"></span>Gelap</button>
+          </div>
+        </section>
+        <section class="set-card">
+          <p class="set-kicker">Percakapan</p>
+          <label class="set-toggle"><span><strong>Kirim dengan Enter</strong></span><input type="checkbox" id="opt-enter"><i></i></label>
+        </section>
+        <section class="set-card">
+          <p class="set-kicker">Kontak</p>
+          <div id="contact-empty" class="set-empty" hidden>Belum ada kontak diatur.</div>
+          <a class="set-action" id="contact-mail" href="#" target="_blank" rel="noopener" hidden>Hubungi via Gmail</a>
+        </section>
+        <section class="set-card">
+          <p class="set-kicker">Penyimpanan</p>
+          <div class="storage-line">
+            <strong id="cache-used">—</strong>
+            <small id="cache-detail">Mengukur cache lokal</small>
+          </div>
+          <div class="storage-bar"><i id="cache-bar"></i></div>
+        </section>
+        <section class="set-card">
+          <p class="set-kicker">Konfigurasi Bisnis</p>
+          <p class="set-desc">Cadangkan atau pindahkan pengaturan toko (nama, kontak, warna, katalog) sebagai satu berkas. Berguna saat ganti perangkat atau menyalin pengaturan ke toko lain.</p>
+          <button class="set-action" id="row-export">Ekspor konfigurasi (.json)</button>
+          <button class="set-action" id="row-import">Impor konfigurasi (.json)</button>
+          <input type="file" id="row-import-file" accept="application/json" hidden>
+        </section>
+        <section class="set-card">
+          <p class="set-kicker">Data</p>
+          <button class="set-action danger" id="row-clear-chat">Kosongkan percakapan</button>
+          <button class="set-action danger" id="row-logout">Keluar</button>
+        </section>
+        <p class="set-foot" id="about-line"></p>
+        <p class="set-foot" id="about-category"></p>
       </div>
-    </footer>
-  </section>
-
+    </section>
+    <section id="view-login" class="view" hidden>
+      <div class="gate">
+        <div class="gate-mark" aria-hidden="true" data-brand-mark>G</div>
+        <h1 class="gate-title" id="gate-title">Masuk</h1>
+        <p class="gate-sub" id="gate-sub">Akun tersimpan di perangkat ini</p>
+        <div class="login-tabs">
+          <button class="login-tab active" id="login-tab-in">Masuk</button>
+          <button class="login-tab" id="login-tab-up">Daftar</button>
+        </div>
+        <input class="auth-input" id="auth-email" type="email" placeholder="Email" autocomplete="username">
+        <input class="auth-input" id="auth-pass" type="password" placeholder="Kata sandi" autocomplete="current-password">
+        <p id="auth-error" class="auth-error"></p>
+        <button class="auth-submit" id="auth-submit">Masuk</button>
+      </div>
+    </section>
+  </main>
+  <div id="sheet-backdrop" class="sheet-backdrop"></div>
+  <div id="attach-sheet" class="sheet" hidden>
+    <div class="sheet-grab"></div>
+    <div class="sheet-head">
+      <span>Lampirkan</span>
+      <button id="attach-close" class="icon" aria-label="Tutup"><svg class="ico" width="18" height="18" stroke-width="2.2"><use href="#ic-close"/></svg></button>
+    </div>
+    <div class="attach-grid">
+      <button type="button" class="attach-card" id="att-camera">
+        <span class="attach-ico"><svg class="ico" stroke-width="1.8"><use href="#ic-camera"/></svg></span>
+        Kamera
+      </button>
+      <label class="attach-card">
+        <input id="pick-gallery" class="file-overlay" type="file" accept="image/*">
+        <span class="attach-ico"><svg class="ico" stroke-width="1.8"><use href="#ic-gallery"/></svg></span>
+        Galeri
+      </label>
+      <label class="attach-card">
+        <input id="pick-file" class="file-overlay" type="file">
+        <span class="attach-ico"><svg class="ico" stroke-width="1.8"><use href="#ic-file"/></svg></span>
+        File
+      </label>
+    </div>
+  </div>
+  <div id="backdrop"></div>
+  <aside id="sidebar">
+    <div class="side-head">
+      <div class="side-title" id="side-name"></div>
+      <button id="btn-login" class="foot-icon" aria-label="Akun">
+        <span class="account-avatar sm" id="side-initial">G</span>
+      </button>
+    </div>
+    <button id="btn-new-chat" class="side-link"><svg class="ico side-ico" stroke-width="2"><use href="#ic-new-chat"/></svg>Chat baru</button>
+    <div class="side-block">
+      <div class="hist-label"><svg class="ico side-ico" stroke-width="2"><use href="#ic-history"/></svg>Riwayat</div>
+      <div class="hist-search">
+        <svg class="ico side-ico" stroke-width="2"><use href="#ic-search"/></svg>
+        <input id="history-search" type="search" placeholder="Cari" autocomplete="off">
+      </div>
+      <div id="history-list"></div>
+      <div id="history-empty">Belum ada percakapan</div>
+    </div>
+    <div class="side-foot">
+      <button id="btn-settings" class="foot-icon" aria-label="Pengaturan"><svg class="ico" width="22" height="22" stroke-width="2"><use href="#ic-settings"/></svg></button>
+    </div>
+  </aside>
+  <input id="pick-camera" class="file-pick" type="file" accept="image/*" capture="environment">
+  <div id="camera-overlay" hidden>
+    <video id="camera-video" autoplay muted playsinline></video>
+    <div class="camera-actions" id="camera-actions">
+      <button type="button" id="camera-cancel" class="auth-submit">Batal</button>
+      <button type="button" id="camera-shot" class="auth-submit">Ambil</button>
+    </div>
+    <div class="camera-actions" id="camera-review-actions" hidden>
+      <button type="button" id="camera-retake" class="auth-submit">Ulangi</button>
+      <button type="button" id="camera-save-gallery" class="auth-submit">Simpan ke Galeri</button>
+      <button type="button" id="camera-send" class="auth-submit">Kirim</button>
+    </div>
+    <canvas id="camera-canvas"></canvas>
+  </div>
+  <div id="toast"></div>
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
