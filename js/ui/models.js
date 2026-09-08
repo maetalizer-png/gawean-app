@@ -37,8 +37,9 @@ function paint() {
     btn.type = "button";
     btn.className = "model-row" + (row.active ? " active" : "");
     btn.textContent = row.label;
-    btn.onclick = () => {
-      llm.choose(row.id);
+    btn.onclick = async () => {
+      btn.disabled = true;
+      await llm.choose(row.id);
       paint();
     };
     box.appendChild(btn);

@@ -128,7 +128,7 @@ export const chat = {
     paintList();
   },
   async activate() {
-    const el = chat.add("ai", "Menyiapkan Qwen 2.5 0.5B…");
+    const el = chat.add("ai", "Menyiapkan " + llm.activeLabel() + "…");
     el.classList.add("typing");
     try {
       await llm.ensure((pct, text) => {
@@ -151,7 +151,7 @@ export const chat = {
     threads.append({ role: "user", text });
     chat.add("user", text);
     paintList();
-    const wait = chat.add("ai", llm.ready() ? "sedang mengetik…" : "Menyiapkan Qwen 2.5 0.5B…");
+    const wait = chat.add("ai", llm.ready() ? "sedang mengetik…" : "Menyiapkan " + llm.activeLabel() + "…");
     wait.classList.add("typing");
     try {
       if (!llm.ready()) {

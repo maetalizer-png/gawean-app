@@ -1,126 +1,204 @@
 const KEY = "gawean-model";
 const CDN = "https://esm.run/@mlc-ai/web-llm";
-const ONLY = "Qwen2.5-0.5B-Instruct-q4f32_1-MLC";
 const SYSTEM =
   "Kamu asisten Indonesia bernama Gawean. Jawab singkat, jujur, dan jelas. Jangan mengarang fakta. Jika tidak tahu, bilang tidak tahu.";
 
+// Tangga model kecil -> besar. f16 hanya dipakai kalau GPU perangkat punya
+// fitur "shader-f16" (dicek sekali lewat adapter.features sebelum katalog dibuka).
+const LADDER = [
+  { id: "Qwen2.5-0.5B-Instruct-q4f32_1-MLC", label: "Qwen2.5 0.5B", f16: false },
+  { id: "Qwen2.5-0.5B-Instruct-q4f16_1-MLC", label: "Qwen2.5 0.5B (f16)", f16: true },
+  { id: "Llama-3.2-1B-Instruct-q4f32_1-MLC", label: "Llama 3.2 1B", f16: false },
+  { id: "Llama-3.2-1B-Instruct-q4f16_1-MLC", label: "Llama 3.2 1B (f16)", f16: true },
+  { id: "gemma-2-2b-it-q4f32_1-MLC", label: "Gemma 2 2B", f16: false },
+  { id: "gemma-2-2b-it-q4f16_1-MLC", label: "Gemma 2 2B (f16)", f16: true },
+  { id: "Qwen2.5-1.5B-Instruct-q4f32_1-MLC", label: "Qwen2.5 1.5B", f16: false },
+  { id: "Qwen2.5-1.5B-Instruct-q4f16_1-MLC", label: "Qwen2.5 1.5B (f16)", f16: true },
+  { id: "Qwen2.5-3B-Instruct-q4f32_1-MLC", label: "Qwen2.5 3B", f16: false },
+  { id: "Phi-3.5-mini-instruct-q4f16_1-MLC", label: "Phi 3.5 Mini", f16: true },
+];
+const DEFAULT_ID = LADDER[0].id;
+
 let webllm = null;
 let catalog = [];
+let supportsF16 = null;
 let engine = null;
-let activeId = "";
+let engineForId = ""; // id model yang benar-benar sudah selesai dimuat & diuji oleh `engine`
+let activeId = ""; // id model yang sedang dipilih (belum tentu sudah dimuat)
 let loading = null;
-let busy = null;
+let busy = Promise.resolve(); // rantai antrean balasan, biar pesan tidak saling serobot/ketuker
 
 function inCatalog(id) {
-  return catalog.some((m) => (m.model_id || "") === id);
+  return catalog.length === 0 || catalog.some((m) => (m.model_id || "") === id);
 }
 
-function pickOne() {
-  if (inCatalog(ONLY)) return ONLY;
-  const hit = catalog.find((m) => /qwen2\.5-0\.5b-instruct-q4f32_1/i.test(m.model_id || ""));
-  return hit ? hit.model_id : "";
+async function detectF16() {
+  if (supportsF16 !== null) return supportsF16;
+  try {
+    if (!navigator.gpu) {
+      supportsF16 = false;
+      return false;
+    }
+    const adapter = await navigator.gpu.requestAdapter();
+    supportsF16 = !!(adapter && adapter.features && adapter.features.has("shader-f16"));
+  } catch {
+    supportsF16 = false;
+  }
+  return supportsF16;
+}
+
+function availableLadder() {
+  return LADDER.filter((m) => (supportsF16 || !m.f16) && inCatalog(m.id));
 }
 
 function isGpuFault(err) {
   const msg = String((err && err.message) || err || "");
-  return /GPUBuffer|mapAsync|ShaderModule|Device lost|WebGPU|unmapped/i.test(msg);
+  return /GPUBuffer|mapAsync|ShaderModule|Device lost|WebGPU|unmapped|Instance reference|model not loaded|reload\(/i.test(msg);
 }
 
-async function createEngine(onProgress) {
+async function loadWebllmOnce() {
+  if (webllm) return webllm;
+  if (!navigator.gpu) throw new Error("HP ini tidak punya WebGPU. Pakai Chrome terbaru.");
+  webllm = await import(CDN);
+  catalog = (webllm.prebuiltAppConfig && webllm.prebuiltAppConfig.model_list) || [];
+  await detectF16();
+  return webllm;
+}
+
+async function disposeEngine() {
+  const old = engine;
+  engine = null;
+  engineForId = "";
+  if (old) {
+    try {
+      await old.unload();
+    } catch {}
+  }
+}
+
+async function createEngine(id, onProgress) {
   const report = (info) => {
     const pct = info && typeof info.progress === "number" ? Math.round(info.progress * 100) : 0;
     const text = (info && info.text) || "Menyiapkan mesin…";
     if (onProgress) onProgress(pct, text);
   };
-  return webllm.CreateMLCEngine(
-    activeId,
+  const built = await webllm.CreateMLCEngine(
+    id,
     { initProgressCallback: report },
-    { context_window_size: 512, prefill_chunk_size: 128 }
+    { context_window_size: 1024, prefill_chunk_size: 128 }
   );
+  // Uji jalan beneran sebelum dianggap "siap" -- ini yang mencegah pesan
+  // "Gawean siap" palsu yang diikuti error "model not loaded" di pesan pertama.
+  await built.chat.completions.create({
+    messages: [{ role: "user", content: "hi" }],
+    stream: false,
+    max_tokens: 1,
+    temperature: 0,
+  });
+  return built;
 }
 
-async function generateOnce(messages) {
-  const out = await engine.chat.completions.create({
-    messages,
-    stream: false,
-    temperature: 0.6,
-    max_tokens: 96,
-  });
-  return ((((out.choices || [])[0] || {}).message || {}).content || "").trim();
+function generateOnce(messages) {
+  return engine.chat.completions
+    .create({ messages, stream: false, temperature: 0.6, max_tokens: 96 })
+    .then((out) => ((((out.choices || [])[0] || {}).message || {}).content || "").trim());
 }
 
 export const llm = {
   ready() {
-    return !!engine;
+    return !!engine && engineForId === activeId;
   },
   activeId() {
     return activeId;
   },
+  activeLabel() {
+    const row = LADDER.find((m) => m.id === activeId);
+    return row ? row.label : activeId || "Mesin AI";
+  },
   badge() {
-    return engine ? "QWEN 2.5 0.5B • OFFLINE" : "QWEN 2.5 0.5B";
+    const label = llm.activeLabel().toUpperCase();
+    return llm.ready() ? label + " • OFFLINE" : label;
   },
   listPicker() {
-    return activeId ? [{ id: activeId, label: "QWEN 2.5 0.5B", active: true }] : [];
+    return availableLadder().map((m) => ({ id: m.id, label: m.label, active: m.id === activeId }));
   },
   async prepare() {
-    if (webllm && activeId) return activeId;
-    try {
-      localStorage.removeItem(KEY);
-    } catch {}
-    if (!navigator.gpu) throw new Error("HP ini tidak punya WebGPU. Pakai Chrome terbaru.");
-    webllm = await import(CDN);
-    catalog = (webllm.prebuiltAppConfig && webllm.prebuiltAppConfig.model_list) || [];
-    activeId = pickOne();
-    if (!activeId) throw new Error("Qwen 2.5 0.5B f32 tidak ada di katalog");
-    console.log("[GAWEAN-LLM] only", activeId);
-    try {
-      localStorage.setItem(KEY, activeId);
-    } catch {}
+    await loadWebllmOnce();
+    if (!activeId) {
+      let saved = "";
+      try {
+        saved = localStorage.getItem(KEY) || "";
+      } catch {}
+      const rows = availableLadder();
+      activeId = rows.some((m) => m.id === saved) ? saved : rows[0] ? rows[0].id : DEFAULT_ID;
+    }
     return activeId;
   },
-  choose(id) {
+  async choose(id) {
+    await loadWebllmOnce();
+    if (id === activeId) return activeId;
+    activeId = id;
+    try {
+      localStorage.setItem(KEY, id);
+    } catch {}
+    if (engineForId && engineForId !== id) await disposeEngine();
     return activeId;
   },
   async ensure(onProgress) {
-    if (engine) return engine;
+    await llm.prepare();
+    if (engine && engineForId === activeId) return engine;
     if (loading) return loading;
+    const wantId = activeId;
     loading = (async () => {
       try {
-        await llm.prepare();
-        engine = await createEngine(onProgress);
-        return engine;
-      } catch (err) {
-        engine = null;
-        throw err;
-      } finally {
-        loading = null;
-      }
-    })();
-    return loading;
-  },
-  async reply(history) {
-    if (busy) return busy;
-    busy = (async () => {
-      try {
-        await llm.ensure();
-        const messages = [{ role: "system", content: SYSTEM }].concat((history || []).slice(-4));
+        await disposeEngine();
         try {
-          return await generateOnce(messages);
+          engine = await createEngine(wantId, onProgress);
         } catch (err) {
           if (!isGpuFault(err)) throw err;
-          console.warn("[GAWEAN-LLM] retry after GPU fault", err);
-          try {
-            if (engine && engine.unload) await engine.unload();
-          } catch {}
-          engine = null;
+          console.warn("[GAWEAN-LLM] retry load after GPU fault", err);
+          await disposeEngine();
           await new Promise((r) => setTimeout(r, 400));
-          engine = await createEngine();
-          return await generateOnce(messages);
+          engine = await createEngine(wantId, onProgress);
         }
-      } finally {
-        busy = null;
+        engineForId = wantId;
+        return engine;
+      } catch (err) {
+        await disposeEngine();
+        throw err;
       }
     })();
-    return busy;
+    try {
+      return await loading;
+    } finally {
+      loading = null;
+    }
+  },
+  async reply(history) {
+    const messages = [{ role: "system", content: SYSTEM }].concat((history || []).slice(-4));
+    const run = async () => {
+      await llm.ensure();
+      try {
+        return await generateOnce(messages);
+      } catch (err) {
+        if (!isGpuFault(err)) throw err;
+        console.warn("[GAWEAN-LLM] retry after GPU fault", err);
+        const id = activeId;
+        await disposeEngine();
+        await new Promise((r) => setTimeout(r, 400));
+        engine = await createEngine(id);
+        engineForId = id;
+        return await generateOnce(messages);
+      }
+    };
+    // Antre: setiap balasan menunggu balasan sebelumnya selesai (sukses atau
+    // gagal) supaya dua pesan tidak pernah berebut GPU buffer yang sama, dan
+    // jawaban tidak pernah ketuker pasangan pertanyaannya.
+    const result = busy.then(run, run);
+    busy = result.then(
+      () => {},
+      () => {}
+    );
+    return result;
   },
 };
