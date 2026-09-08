@@ -1,4 +1,4 @@
-const MODEL_ID = "Qwen2.5-4B-Instruct-q4f16_1-MLC";
+const MODEL_ID = "Qwen3-4B-q4f16_1-MLC";
 const WEBLLM_CDN = "https://esm.run/@mlc-ai/web-llm";
 const SYSTEM_PROMPT =
   "Kamu adalah Gawean, asisten AI cerdas. Jawab padat dan jelas.";
