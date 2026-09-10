@@ -1,8 +1,8 @@
 import { $ } from "../dom.js";
+import { engine } from "../ai/engine.js";
 import { threads } from "../threads.js";
 import { business } from "../business.js";
 import { store } from "../store.js";
-import { llm } from "../llm-engine.js";
 
 function resizeInput() {
   const input = $("chat-input");
@@ -66,15 +66,6 @@ function mediaBubble(src) {
   return wrap;
 }
 
-function historyForLlm() {
-  const item = threads.current();
-  const msgs = item ? item.messages || [] : [];
-  return msgs.filter((m) => m.text).slice(-8).map((m) => ({
-    role: m.role === "ai" ? "assistant" : "user",
-    content: m.text,
-  }));
-}
-
 export const chat = {
   openThread(id) {
     threads.open(id);
@@ -127,21 +118,6 @@ export const chat = {
     chat.render();
     paintList();
   },
-  async activate() {
-    const el = chat.add("ai", "Menyiapkan " + llm.activeLabel() + "…");
-    el.classList.add("typing");
-    try {
-      await llm.ensure((pct, text) => {
-        el.textContent = text || ("Mengunduh " + pct + "%");
-      });
-      el.classList.remove("typing");
-      el.textContent = "Gawean siap (" + llm.badge() + "). Tanya apa saja.";
-      threads.append({ role: "ai", text: el.textContent });
-    } catch (err) {
-      el.classList.remove("typing");
-      el.textContent = "Gagal menyiapkan mesin. " + (err.message || "Coba lagi.");
-    }
-  },
   async send() {
     const input = $("chat-input");
     const text = input.value.trim();
@@ -151,27 +127,18 @@ export const chat = {
     threads.append({ role: "user", text });
     chat.add("user", text);
     paintList();
-    const wait = chat.add("ai", llm.ready() ? "sedang mengetik…" : "Menyiapkan " + llm.activeLabel() + "…");
+    const wait = chat.add("ai", "sedang mengetik…");
     wait.classList.add("typing");
-    try {
-      if (!llm.ready()) {
-        await llm.ensure((pct, info) => {
-          wait.textContent = info || ("Mengunduh " + pct + "%");
-        });
-      }
-      wait.textContent = "";
-      const answer = await llm.reply(historyForLlm(), (soFar) => {
-        wait.classList.remove("typing");
-        wait.textContent = soFar;
-        $("messages").scrollTop = $("messages").scrollHeight;
-      });
-      wait.classList.remove("typing");
-      wait.textContent = answer || "Mesin lokal tidak menjawab. Coba ulangi.";
-      threads.append({ role: "ai", text: wait.textContent });
-    } catch (err) {
-      wait.classList.remove("typing");
-      wait.textContent = "Mesin lokal error. " + (err.message || "Coba ulangi pertanyaan.");
+    const answer = engine.respond(text);
+    await new Promise((r) => setTimeout(r, 450 + Math.min(answer.length * 8, 900)));
+    wait.classList.remove("typing");
+    wait.textContent = "";
+    for (let i = 0; i < answer.length; i++) {
+      wait.textContent += answer[i];
+      $("messages").scrollTop = $("messages").scrollHeight;
+      await new Promise((r) => setTimeout(r, answer[i] === " " ? 12 : 18));
     }
+    threads.append({ role: "ai", text: answer });
   },
   bind() {
     $("btn-send").onclick = () => chat.send();
@@ -210,6 +177,5 @@ export const chat = {
         el.hidden = q && !el.textContent.toLowerCase().includes(q);
       });
     });
-    document.addEventListener("gawean-activate-model", () => chat.activate());
   },
 };
