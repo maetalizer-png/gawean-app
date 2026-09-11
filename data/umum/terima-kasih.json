@@ -1,0 +1,42 @@
+[
+  {
+    "id": "tk-toko",
+    "kategori": "terima_kasih",
+    "teks": "Sama-sama. Ada lagi yang ingin ditanyakan?",
+    "tags": [
+      "terima_kasih",
+      "makasih"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "terima_kasih",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "tk-santai",
+    "kategori": "terima_kasih",
+    "teks": "Sama-sama. Tinggal chat lagi kalau perlu.",
+    "tags": [
+      "terima_kasih"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "terima_kasih",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "tk-formal",
+    "kategori": "terima_kasih",
+    "teks": "Kembali. Apabila masih ada keperluan, silakan disampaikan.",
+    "tags": [
+      "terima_kasih"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "terima_kasih",
+      "gaya": "formal"
+    }
+  }
+]

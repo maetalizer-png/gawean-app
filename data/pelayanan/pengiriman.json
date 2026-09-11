@@ -1,0 +1,134 @@
+[
+  {
+    "id": "pelayanan-kirim-001",
+    "kategori": "pelayanan",
+    "teks": "Area kirim: {{area}}.",
+    "tags": [
+      "kirim",
+      "ongkir"
+    ],
+    "meta": {
+      "jenis": "kirim"
+    }
+  },
+  {
+    "id": "pelayanan-resi-002",
+    "kategori": "pelayanan",
+    "teks": "Nomor resi dikirim setelah paket diserahkan ke kurir.",
+    "tags": [
+      "resi"
+    ],
+    "meta": {
+      "jenis": "resi"
+    }
+  },
+  {
+    "id": "pelayanan-kirim-extra-003",
+    "kategori": "pelayanan",
+    "teks": "JNE, J&T, atau Sicepat. Pilih yang dekat.",
+    "tags": [
+      "kirim"
+    ],
+    "meta": {
+      "jenis": "kirim"
+    }
+  },
+  {
+    "id": "pelayanan-ongkir-extra-004",
+    "kategori": "pelayanan",
+    "teks": "Ongkir dihitung dari berat dan kode pos.",
+    "tags": [
+      "ongkir"
+    ],
+    "meta": {
+      "jenis": "ongkir"
+    }
+  },
+  {
+    "id": "pelayanan-resi-extra-005",
+    "kategori": "pelayanan",
+    "teks": "Resi dikirim di chat yang sama, biasanya sore setelah pickup.",
+    "tags": [
+      "resi"
+    ],
+    "meta": {
+      "jenis": "resi"
+    }
+  },
+  {
+    "id": "pelayanan-kirim-extra-006",
+    "kategori": "pelayanan",
+    "teks": "Packing kardus + bubble. Pecah belah extra bubble.",
+    "tags": [
+      "kirim"
+    ],
+    "meta": {
+      "jenis": "kirim"
+    }
+  },
+  {
+    "id": "pelayanan-cod-extra-007",
+    "kategori": "pelayanan",
+    "teks": "COD hanya area tertentu. Tanya dulu sebelum order.",
+    "tags": [
+      "cod"
+    ],
+    "meta": {
+      "jenis": "cod"
+    }
+  },
+  {
+    "id": "pengiriman-gaya-008",
+    "kategori": "pelayanan",
+    "teks": "Dalam kota 1–2 hari. Luar kota 2–4 hari. Resi menyusul setelah pickup.",
+    "tags": [
+      "kirim",
+      "ongkir"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "kirim",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "pengiriman-gaya-009",
+    "kategori": "pelayanan",
+    "teks": "Dalam kota biasanya besok sampai. Luar kota 2–4 hari.",
+    "tags": [
+      "kirim"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "kirim",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "pengiriman-gaya-010",
+    "kategori": "pelayanan",
+    "teks": "Estimasi pengiriman dalam kota satu sampai dua hari, luar kota dua sampai empat hari.",
+    "tags": [
+      "kirim"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "kirim",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "pengiriman-ph",
+    "kategori": "pelayanan",
+    "teks": "Area kirim: {{area}}.",
+    "tags": [
+      "kirim",
+      "ongkir"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "kirim",
+      "gaya": "toko"
+    }
+  }
+]

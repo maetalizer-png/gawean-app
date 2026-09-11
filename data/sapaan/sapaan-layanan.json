@@ -1,0 +1,182 @@
+[
+  {
+    "id": "sapaan-layanan-bantuan-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Minta bantuan layanan",
+    "tags": [
+      "layanan",
+      "bantuan"
+    ],
+    "teks": "Silakan sampaikan kendalanya. Nanti kita cari solusinya bersama.",
+    "meta": {
+      "variants": [
+        "Ada yang bisa dibantu?",
+        "Ceritakan saja masalahnya."
+      ],
+      "jenis": "layanan"
+    }
+  },
+  {
+    "id": "sapaan-layanan-komplain-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Komplain",
+    "tags": [
+      "layanan",
+      "komplain"
+    ],
+    "teks": "Terima kasih sudah menyampaikan. Mohon maaf atas ketidaknyamanannya.",
+    "meta": {
+      "variants": [
+        "Kami catat dulu keluhannya.",
+        "Nanti kami cek dan kabari hasilnya."
+      ],
+      "jenis": "layanan"
+    }
+  },
+  {
+    "id": "sapaan-layanan-status-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Cek status",
+    "tags": [
+      "layanan",
+      "status"
+    ],
+    "teks": "Boleh kirim nomor pesanan atau detailnya supaya bisa dicek.",
+    "meta": {
+      "variants": [
+        "Mohon informasinya dilengkapi.",
+        "Nanti kami bantu cek statusnya."
+      ],
+      "jenis": "layanan"
+    }
+  },
+  {
+    "id": "sapaan-layanan-antrian-004",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Antrian",
+    "tags": [
+      "layanan",
+      "antrian"
+    ],
+    "teks": "Mohon ditunggu sebentar. Giliran Anda akan segera diproses.",
+    "meta": {
+      "variants": [
+        "Sedang dalam antrian.",
+        "Kami usahakan secepat mungkin."
+      ],
+      "jenis": "layanan"
+    }
+  },
+  {
+    "id": "sapaan-layanan-booking-005",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Booking / reservasi",
+    "tags": [
+      "layanan",
+      "booking"
+    ],
+    "teks": "Untuk reservasi, mohon sebutkan tanggal dan jumlah orangnya.",
+    "meta": {
+      "variants": [
+        "Bisa dibantu booking-nya.",
+        "Data lengkapnya nanti kami konfirmasi."
+      ],
+      "jenis": "layanan"
+    }
+  },
+  {
+    "id": "sapaan-layanan-selesai-006",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Layanan selesai",
+    "tags": [
+      "layanan",
+      "selesai"
+    ],
+    "teks": "Sudah selesai. Ada lagi yang bisa dibantu?",
+    "meta": {
+      "variants": [
+        "Berhasil diproses.",
+        "Kalau ada pertanyaan lain, silakan."
+      ],
+      "jenis": "layanan"
+    }
+  },
+  {
+    "id": "sapaan-layanan-maaf-007",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Permintaan maaf",
+    "tags": [
+      "layanan",
+      "maaf"
+    ],
+    "teks": "Mohon maaf atas ketidaknyamanannya. Kami akan perbaiki.",
+    "meta": {
+      "variants": [
+        "Kami mohon maaf.",
+        "Terima kasih sudah mengingatkan."
+      ],
+      "jenis": "layanan"
+    }
+  },
+  {
+    "id": "sapaan-layanan-terima-kasih-008",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Terima kasih pelanggan",
+    "tags": [
+      "layanan",
+      "terima-kasih"
+    ],
+    "teks": "Terima kasih sudah menghubungi kami. Semoga membantu.",
+    "meta": {
+      "variants": [
+        "Sama-sama.",
+        "Senang bisa membantu."
+      ],
+      "jenis": "layanan"
+    }
+  },
+  {
+    "id": "sapaan-layanan-formal-009",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Gaya formal layanan",
+    "tags": [
+      "layanan",
+      "formal"
+    ],
+    "teks": "Baik, kami akan segera menindaklanjuti permintaan Bapak/Ibu.",
+    "meta": {
+      "variants": [
+        "Mohon ditunggu konfirmasi selanjutnya.",
+        "Terima kasih atas kesabarannya."
+      ],
+      "jenis": "layanan"
+    }
+  },
+  {
+    "id": "sapaan-layanan-informal-010",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Gaya informal layanan",
+    "tags": [
+      "layanan",
+      "informal"
+    ],
+    "teks": "Oke, nanti kami cek dulu ya. Ditunggu sebentar.",
+    "meta": {
+      "variants": [
+        "Siap, kami bantu.",
+        "Tenang, nanti dikabari."
+      ],
+      "jenis": "layanan"
+    }
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "jl-1",
+    "kategori": "pelayanan",
+    "teks": "Chat dibalas di jam operasional. Di luar jam, pesan tetap masuk.",
+    "tags": [
+      "cs",
+      "balas"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "cs",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "jl-2",
+    "kategori": "pelayanan",
+    "teks": "Kalau admin gudang perlu cek, jedanya beberapa menit.",
+    "tags": [
+      "cs"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "cs",
+      "gaya": "santai"
+    }
+  }
+]

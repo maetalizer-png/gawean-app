@@ -1,0 +1,42 @@
+[
+  {
+    "id": "tp-toko",
+    "kategori": "tutup",
+    "teks": "Sampai jumpa. Terima kasih sudah menghubungi.",
+    "tags": [
+      "tutup",
+      "penutup"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "tutup",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "tp-santai",
+    "kategori": "tutup",
+    "teks": "Oke, sampai ketemu. Hati-hati.",
+    "tags": [
+      "tutup"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "tutup",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "tp-formal",
+    "kategori": "tutup",
+    "teks": "Terima kasih. Semoga harinya berjalan lancar.",
+    "tags": [
+      "tutup"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "tutup",
+      "gaya": "formal"
+    }
+  }
+]

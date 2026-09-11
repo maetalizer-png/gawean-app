@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pelayanan-komplain-001",
+    "kategori": "pelayanan",
+    "teks": "Mohon maaf atas kendalanya. Jelaskan barang, tanggal, dan fotonya.",
+    "tags": [
+      "komplain"
+    ],
+    "meta": {
+      "jenis": "komplain"
+    }
+  },
+  {
+    "id": "pelayanan-refund-002",
+    "kategori": "pelayanan",
+    "teks": "Klaim kami proses setelah data lengkap. Biasanya 1–3 hari kerja.",
+    "tags": [
+      "refund"
+    ],
+    "meta": {
+      "jenis": "refund"
+    }
+  },
+  {
+    "id": "pelayanan-komplain-extra-003",
+    "kategori": "pelayanan",
+    "teks": "Foto barang + kemasan + resi mempercepat cek.",
+    "tags": [
+      "komplain"
+    ],
+    "meta": {
+      "jenis": "komplain"
+    }
+  },
+  {
+    "id": "pelayanan-komplain-extra-004",
+    "kategori": "pelayanan",
+    "teks": "Salah ukuran: tukar 3 hari jika label masih ada.",
+    "tags": [
+      "komplain"
+    ],
+    "meta": {
+      "jenis": "komplain"
+    }
+  },
+  {
+    "id": "pelayanan-refund-extra-005",
+    "kategori": "pelayanan",
+    "teks": "Refund ke rekening pengirim, 1–3 hari kerja setelah disetujui.",
+    "tags": [
+      "refund"
+    ],
+    "meta": {
+      "jenis": "refund"
+    }
+  },
+  {
+    "id": "pelayanan-komplain-extra-006",
+    "kategori": "pelayanan",
+    "teks": "Jangan rating dulu, kami selesaikan di chat ini.",
+    "tags": [
+      "komplain"
+    ],
+    "meta": {
+      "jenis": "komplain"
+    }
+  },
+  {
+    "id": "komplain-gaya-007",
+    "kategori": "pelayanan",
+    "teks": "Mohon maaf. Jelaskan barang, tanggal, dan kirim foto jika ada.",
+    "tags": [
+      "komplain"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "komplain",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "komplain-gaya-008",
+    "kategori": "pelayanan",
+    "teks": "Maaf ya. Ceritain kendalanya, foto ikut kalau ada.",
+    "tags": [
+      "komplain"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "komplain",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "komplain-gaya-009",
+    "kategori": "pelayanan",
+    "teks": "Mohon maaf atas ketidaknyamanan. Mohon rincian barang, tanggal, dan dokumentasi.",
+    "tags": [
+      "komplain"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "komplain",
+      "gaya": "formal"
+    }
+  }
+]

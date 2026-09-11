@@ -1,0 +1,177 @@
+[
+  {
+    "id": "greeting-chat-ketik-terus-001",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Ketik terus",
+    "tags": [
+      "chat"
+    ],
+    "teks": "Silakan tulis saja. Saya ikuti alurnya.",
+    "meta": {
+      "variants": [
+        "Lanjut ketik aja.",
+        "Dari mana saja boleh."
+      ],
+      "jenis": "chat"
+    }
+  },
+  {
+    "id": "greeting-chat-bingung-mulai-002",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Bingung mulai",
+    "tags": [
+      "chat"
+    ],
+    "teks": "Tidak perlu sempurna. Mulai dari satu kalimat saja.",
+    "meta": {
+      "variants": [
+        "Dari mana saja boleh.",
+        "Santai saja."
+      ],
+      "jenis": "chat"
+    }
+  },
+  {
+    "id": "greeting-chat-ganti-topik-003",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Ganti topik",
+    "tags": [
+      "chat"
+    ],
+    "teks": "Boleh ganti topik kapan saja. Mau bahas apa?",
+    "meta": {
+      "variants": [
+        "Topik baru juga oke.",
+        "Silakan arahkan saja."
+      ],
+      "jenis": "chat"
+    }
+  },
+  {
+    "id": "greeting-chat-diam-dulu-004",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Diam dulu",
+    "tags": [
+      "chat"
+    ],
+    "teks": "Tidak apa-apa diam sejenak. Saya tunggu.",
+    "meta": {
+      "variants": [
+        "Ambil waktu dulu boleh.",
+        "Nanti lanjut saja."
+      ],
+      "jenis": "chat"
+    }
+  },
+  {
+    "id": "greeting-chat-formal-005",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Gaya formal",
+    "tags": [
+      "chat",
+      "formal"
+    ],
+    "teks": "Silakan disampaikan keperluannya. Saya siap membantu.",
+    "meta": {
+      "variants": [
+        "Mohon disampaikan saja.",
+        "Saya dengarkan."
+      ],
+      "jenis": "chat"
+    }
+  },
+  {
+    "id": "greeting-chat-informal-006",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Gaya informal",
+    "tags": [
+      "chat",
+      "informal"
+    ],
+    "teks": "Gas aja, mau ngomongin apa?",
+    "meta": {
+      "variants": [
+        "Santai saja.",
+        "Langsung aja."
+      ],
+      "jenis": "chat"
+    }
+  },
+  {
+    "id": "greeting-chat-lucu-007",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Gaya lucu ringan",
+    "tags": [
+      "chat",
+      "lucu"
+    ],
+    "teks": "Siap menerima curhatan, pertanyaan, atau sekadar iseng.",
+    "meta": {
+      "variants": [
+        "Mode mendengarkan aktif.",
+        "Silakan, saya sudah siap."
+      ],
+      "jenis": "chat"
+    }
+  },
+  {
+    "id": "greeting-chat-empati-008",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Gaya empati",
+    "tags": [
+      "chat",
+      "empati"
+    ],
+    "teks": "Kalau lagi berat, boleh cerita pelan-pelan. Tidak harus langsung tuntas.",
+    "meta": {
+      "variants": [
+        "Saya di sini.",
+        "Ambil napas dulu saja."
+      ],
+      "jenis": "chat"
+    }
+  },
+  {
+    "id": "greeting-chat-tegas-009",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Gaya tegas ramah",
+    "tags": [
+      "chat",
+      "tegas"
+    ],
+    "teks": "Langsung saja ke intinya biar lebih cepat terbantu.",
+    "meta": {
+      "variants": [
+        "Fokus ke masalah utamanya.",
+        "Kita selesaikan satu per satu."
+      ],
+      "jenis": "chat"
+    }
+  },
+  {
+    "id": "greeting-chat-lanjut-010",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Lanjut percakapan",
+    "tags": [
+      "chat"
+    ],
+    "teks": "Lanjut dari sebelumnya, atau mau mulai topik baru?",
+    "meta": {
+      "variants": [
+        "Mau dilanjutkan?",
+        "Atau ganti saja."
+      ],
+      "jenis": "chat"
+    }
+  }
+]

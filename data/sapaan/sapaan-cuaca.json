@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sapaan-cuaca-hujan-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Hujan",
+    "tags": [
+      "cuaca"
+    ],
+    "teks": "Hati-hati kalau sedang hujan. Bawa payung ya.",
+    "meta": {
+      "variants": [
+        "Hujan, hati-hati."
+      ],
+      "jenis": "cuaca"
+    }
+  },
+  {
+    "id": "sapaan-cuaca-panas-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Panas",
+    "tags": [
+      "cuaca"
+    ],
+    "teks": "Cuaca panas, jaga cairan tubuh.",
+    "meta": {
+      "variants": [
+        "Panas ya hari ini."
+      ],
+      "jenis": "cuaca"
+    }
+  },
+  {
+    "id": "sapaan-cuaca-mendung-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Mendung",
+    "tags": [
+      "cuaca"
+    ],
+    "teks": "Mendung begini enaknya di dalam, tetap produktif.",
+    "meta": {
+      "variants": [
+        "Mendung nih."
+      ],
+      "jenis": "cuaca"
+    }
+  }
+]

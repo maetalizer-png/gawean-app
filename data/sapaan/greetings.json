@@ -1,0 +1,2153 @@
+[
+  {
+    "id": "greetings-pagi-000",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi",
+    "tags": [
+      "sapaan",
+      "pagi"
+    ],
+    "teks": "Selamat pagi! Semoga hari Anda dimulai dengan semangat dan energi positif.",
+    "meta": {
+      "type": "waktu",
+      "code": "PAGI",
+      "jamMulai": 3,
+      "jamSelesai": 12
+    }
+  },
+  {
+    "id": "greetings-siang-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Siang",
+    "tags": [
+      "sapaan",
+      "siang"
+    ],
+    "teks": "Selamat siang! Bagaimana kabar Anda? Semoga hari ini produktif.",
+    "meta": {
+      "type": "waktu",
+      "code": "SIANG",
+      "jamMulai": 12,
+      "jamSelesai": 15
+    }
+  },
+  {
+    "id": "greetings-sore-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sore",
+    "tags": [
+      "sapaan",
+      "sore"
+    ],
+    "teks": "Selamat sore! Semoga sisa hari Anda menyenangkan dan penuh pencapaian.",
+    "meta": {
+      "type": "waktu",
+      "code": "SORE",
+      "jamMulai": 15,
+      "jamSelesai": 18
+    }
+  },
+  {
+    "id": "greetings-malam-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Malam",
+    "tags": [
+      "sapaan",
+      "malam"
+    ],
+    "teks": "Selamat malam! Istirahat yang cukup dan jangan lupa bersyukur hari ini.",
+    "meta": {
+      "type": "waktu",
+      "code": "MALAM",
+      "jamMulai": 18,
+      "jamSelesai": 3
+    }
+  },
+  {
+    "id": "greetings-umum-004",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Umum",
+    "tags": [
+      "sapaan",
+      "umum"
+    ],
+    "teks": "Halo! Senang bertemu dengan Anda. Ada yang bisa saya bantu hari ini?",
+    "meta": {
+      "type": "waktu",
+      "code": "UMUM"
+    }
+  },
+  {
+    "id": "greetings-selamat-datang-005",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Selamat Datang",
+    "tags": [
+      "sapaan",
+      "datang"
+    ],
+    "teks": "Selamat datang di Gawean! Saya Gawean, siap membantu Anda.",
+    "meta": {
+      "type": "waktu",
+      "code": "DATANG"
+    }
+  },
+  {
+    "id": "greetings-salam-kenal-006",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Salam Kenal",
+    "tags": [
+      "sapaan",
+      "kenal"
+    ],
+    "teks": "Halo! Perkenalkan, saya Gawean, asisten lokal Gawean. Senang berkenalan dengan Anda!",
+    "meta": {
+      "type": "waktu",
+      "code": "KENAL"
+    }
+  },
+  {
+    "id": "greetings-sapaan-7-007",
+    "kategori": "sapaan",
+    "wilayah": "Indonesia",
+    "nama": "sapaan-7",
+    "tags": [
+      "sapaan",
+      "indonesia"
+    ],
+    "teks": "Bahasa Indonesia: Selamat pagi, selamat siang, selamat sore, selamat malam.",
+    "meta": {
+      "type": "negara",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "greetings": {
+        "pagi": "Selamat pagi",
+        "siang": "Selamat siang",
+        "sore": "Selamat sore",
+        "malam": "Selamat malam",
+        "umum": "Halo"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-8-008",
+    "kategori": "sapaan",
+    "wilayah": "Malaysia",
+    "nama": "sapaan-8",
+    "tags": [
+      "sapaan",
+      "malaysia"
+    ],
+    "teks": "Bahasa Melayu: Selamat pagi, selamat tengah hari, selamat petang, selamat malam.",
+    "meta": {
+      "type": "negara",
+      "country": "Malaysia",
+      "countryCode": "MY",
+      "greetings": {
+        "pagi": "Selamat pagi",
+        "siang": "Selamat tengah hari",
+        "sore": "Selamat petang",
+        "malam": "Selamat malam",
+        "umum": "Hai"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-9-009",
+    "kategori": "sapaan",
+    "wilayah": "Singapura",
+    "nama": "sapaan-9",
+    "tags": [
+      "sapaan",
+      "singapura"
+    ],
+    "teks": "Singapura: Good morning, Selamat pagi, 早上好, காலை வணக்கம்.",
+    "meta": {
+      "type": "negara",
+      "country": "Singapura",
+      "countryCode": "SG",
+      "greetings": {
+        "pagi": {
+          "en": "Good morning",
+          "ms": "Selamat pagi",
+          "zh": "早上好",
+          "ta": "காலை வணக்கம்"
+        },
+        "siang": {
+          "en": "Good afternoon",
+          "ms": "Selamat tengah hari",
+          "zh": "下午好",
+          "ta": "மதிய வணக்கம்"
+        },
+        "sore": {
+          "en": "Good evening",
+          "ms": "Selamat petang",
+          "zh": "晚上好",
+          "ta": "மாலை வணக்கம்"
+        },
+        "malam": {
+          "en": "Good night",
+          "ms": "Selamat malam",
+          "zh": "晚安",
+          "ta": "இரவு வணக்கம்"
+        },
+        "umum": {
+          "en": "Hello",
+          "ms": "Hai",
+          "zh": "你好",
+          "ta": "வணக்கம்"
+        }
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-10-010",
+    "kategori": "sapaan",
+    "wilayah": "Filipina",
+    "nama": "sapaan-10",
+    "tags": [
+      "sapaan",
+      "filipina"
+    ],
+    "teks": "Bahasa Tagalog: Magandang umaga, magandang tanghali, magandang hapon, magandang gabi.",
+    "meta": {
+      "type": "negara",
+      "country": "Filipina",
+      "countryCode": "PH",
+      "greetings": {
+        "pagi": "Magandang umaga",
+        "siang": "Magandang tanghali",
+        "sore": "Magandang hapon",
+        "malam": "Magandang gabi",
+        "umum": "Kumusta"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-11-011",
+    "kategori": "sapaan",
+    "wilayah": "Thailand",
+    "nama": "sapaan-11",
+    "tags": [
+      "sapaan",
+      "thailand"
+    ],
+    "teks": "Bahasa Thai: สวัสดีตอนเช้า (Sawatdee ton chao), สวัสดีตอนบ่าย (Sawatdee ton bai), สวัสดีตอนเย็น (Sawatdee ton yen), ราตรีสวัสดิ์ (Ratee sawat).",
+    "meta": {
+      "type": "negara",
+      "country": "Thailand",
+      "countryCode": "TH",
+      "greetings": {
+        "pagi": "สวัสดีตอนเช้า (Sawatdee ton chao)",
+        "siang": "สวัสดีตอนบ่าย (Sawatdee ton bai)",
+        "sore": "สวัสดีตอนเย็น (Sawatdee ton yen)",
+        "malam": "ราตรีสวัสดิ์ (Ratee sawat)",
+        "umum": "สวัสดี (Sawatdee)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-12-012",
+    "kategori": "sapaan",
+    "wilayah": "Vietnam",
+    "nama": "sapaan-12",
+    "tags": [
+      "sapaan",
+      "vietnam"
+    ],
+    "teks": "Bahasa Vietnam: Chào buổi sáng, chào buổi trưa, chào buổi chiều, chào buổi tối.",
+    "meta": {
+      "type": "negara",
+      "country": "Vietnam",
+      "countryCode": "VN",
+      "greetings": {
+        "pagi": "Chào buổi sáng",
+        "siang": "Chào buổi trưa",
+        "sore": "Chào buổi chiều",
+        "malam": "Chào buổi tối",
+        "umum": "Xin chào"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-13-013",
+    "kategori": "sapaan",
+    "wilayah": "Myanmar",
+    "nama": "sapaan-13",
+    "tags": [
+      "sapaan",
+      "myanmar"
+    ],
+    "teks": "Bahasa Myanmar: မင်္ဂလာနံနက်ခင်း (Mingalaba nanè khin), မင်္ဂလာနေ့လည်ခင်း (Mingalaba neil yan khin), မင်္ဂလာညချမ်း (Mingalaba nya chan).",
+    "meta": {
+      "type": "negara",
+      "country": "Myanmar",
+      "countryCode": "MM",
+      "greetings": {
+        "pagi": "မင်္ဂလာနံနက်ခင်း (Mingalaba nanè khin)",
+        "siang": "မင်္ဂလာနေ့လည်ခင်း (Mingalaba neil yan khin)",
+        "sore": "မင်္ဂလာညချမ်း (Mingalaba nya chan)",
+        "malam": "မင်္ဂလာညချမ်း (Mingalaba nya chan)",
+        "umum": "မင်္ဂလာပါ (Mingalaba)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-14-014",
+    "kategori": "sapaan",
+    "wilayah": "Kamboja",
+    "nama": "sapaan-14",
+    "tags": [
+      "sapaan",
+      "kamboja"
+    ],
+    "teks": "Bahasa Khmer (Kamboja): អរុណសួស្តី (Arun suosdei), ទិវាសួស្តី (Tivea suosdei), រាត្រីសួស្តី (Reatrey suosdei).",
+    "meta": {
+      "type": "negara",
+      "country": "Kamboja",
+      "countryCode": "KH",
+      "greetings": {
+        "pagi": "អរុណសួស្តី (Arun suosdei)",
+        "siang": "ទិវាសួស្តី (Tivea suosdei)",
+        "sore": "ទិវាសួស្តី (Tivea suosdei)",
+        "malam": "រាត្រីសួស្តី (Reatrey suosdei)",
+        "umum": "សួស្តី (Suosdei)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-15-015",
+    "kategori": "sapaan",
+    "wilayah": "Laos",
+    "nama": "sapaan-15",
+    "tags": [
+      "sapaan",
+      "laos"
+    ],
+    "teks": "Bahasa Lao (Laos): ສະບາຍດີຕອນເຊົ້າ (Sabai di ton sao), ສະບາຍດີຕອນບ່າຍ (Sabai di ton bai), ສະບາຍດີຕອນແລງ (Sabai di ton leng), ຝັນດີ (Fan di).",
+    "meta": {
+      "type": "negara",
+      "country": "Laos",
+      "countryCode": "LA",
+      "greetings": {
+        "pagi": "ສະບາຍດີຕອນເຊົ້າ (Sabai di ton sao)",
+        "siang": "ສະບາຍດີຕອນບ່າຍ (Sabai di ton bai)",
+        "sore": "ສະບາຍດີຕອນແລງ (Sabai di ton leng)",
+        "malam": "ຝັນດີ (Fan di)",
+        "umum": "ສະບາຍດີ (Sabai di)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-16-016",
+    "kategori": "sapaan",
+    "wilayah": "Jepang",
+    "nama": "sapaan-16",
+    "tags": [
+      "sapaan",
+      "jepang"
+    ],
+    "teks": "Bahasa Jepang: おはようございます (Ohayō gozaimasu), こんにちは (Konnichiwa), こんばんは (Konbanwa), おやすみなさい (Oyasuminasai).",
+    "meta": {
+      "type": "negara",
+      "country": "Jepang",
+      "countryCode": "JP",
+      "greetings": {
+        "pagi": "おはようございます (Ohayō gozaimasu)",
+        "siang": "こんにちは (Konnichiwa)",
+        "sore": "こんばんは (Konbanwa)",
+        "malam": "おやすみなさい (Oyasuminasai)",
+        "umum": "こんにちは (Konnichiwa)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-17-017",
+    "kategori": "sapaan",
+    "wilayah": "China",
+    "nama": "sapaan-17",
+    "tags": [
+      "sapaan",
+      "china"
+    ],
+    "teks": "Bahasa Mandarin: 早上好 (Zǎoshang hǎo), 下午好 (Xiàwǔ hǎo), 晚上好 (Wǎnshàng hǎo), 晚安 (Wǎn ān).",
+    "meta": {
+      "type": "negara",
+      "country": "China",
+      "countryCode": "CN",
+      "greetings": {
+        "pagi": "早上好 (Zǎoshang hǎo)",
+        "siang": "下午好 (Xiàwǔ hǎo)",
+        "sore": "晚上好 (Wǎnshàng hǎo)",
+        "malam": "晚安 (Wǎn ān)",
+        "umum": "你好 (Nǐ hǎo)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-18-018",
+    "kategori": "sapaan",
+    "wilayah": "Korea Selatan",
+    "nama": "sapaan-18",
+    "tags": [
+      "sapaan",
+      "korea"
+    ],
+    "teks": "Bahasa Korea: 좋은 아침입니다 (Jo-eun achimimnida), 안녕하세요 (Annyeonghaseyo), 잘 자요 (Jal jayo).",
+    "meta": {
+      "type": "negara",
+      "country": "Korea Selatan",
+      "countryCode": "KR",
+      "greetings": {
+        "pagi": "좋은 아침입니다 (Jo-eun achimimnida)",
+        "siang": "안녕하세요 (Annyeonghaseyo)",
+        "sore": "안녕하세요 (Annyeonghaseyo)",
+        "malam": "잘 자요 (Jal jayo)",
+        "umum": "안녕하세요 (Annyeonghaseyo)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-19-019",
+    "kategori": "sapaan",
+    "wilayah": "Mongolia",
+    "nama": "sapaan-19",
+    "tags": [
+      "sapaan",
+      "mongolia"
+    ],
+    "teks": "Bahasa Mongolia: Өглөөний мэнд (Öglöönii mend), өдрийн мэнд (ödriin mend), оройн мэнд (oroin mend), сайн унтуу (sain untuu).",
+    "meta": {
+      "type": "negara",
+      "country": "Mongolia",
+      "countryCode": "MN",
+      "greetings": {
+        "pagi": "Өглөөний мэнд (Öglöönii mend)",
+        "siang": "Өдрийн мэнд (Ödriin mend)",
+        "sore": "Оройн мэнд (Oroin mend)",
+        "malam": "Сайн унтуу (Sain untuu)",
+        "umum": "Сайн уу (Sain uu)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-20-020",
+    "kategori": "sapaan",
+    "wilayah": "India",
+    "nama": "sapaan-20",
+    "tags": [
+      "sapaan",
+      "india"
+    ],
+    "teks": "Bahasa Hindi: शुभ प्रभात (Shubh prabhat), शुभ दोपहर (Shubh dopahar), शुभ संध्या (Shubh sandhya), शुभ रात्रि (Shubh ratri).",
+    "meta": {
+      "type": "negara",
+      "country": "India",
+      "countryCode": "IN",
+      "greetings": {
+        "pagi": "शुभ प्रभात (Shubh prabhat)",
+        "siang": "शुभ दोपहर (Shubh dopahar)",
+        "sore": "शुभ संध्या (Shubh sandhya)",
+        "malam": "शुभ रात्रि (Shubh ratri)",
+        "umum": "नमस्ते (Namaste)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-21-021",
+    "kategori": "sapaan",
+    "wilayah": "Pakistan",
+    "nama": "sapaan-21",
+    "tags": [
+      "sapaan",
+      "pakistan"
+    ],
+    "teks": "Bahasa Urdu (Pakistan): صبح بخیر (Subah bakhair), دوپہر بخیر (Dopehar bakhair), شام بخیر (Shaam bakhair), شب بخیر (Shab bakhair).",
+    "meta": {
+      "type": "negara",
+      "country": "Pakistan",
+      "countryCode": "PK",
+      "greetings": {
+        "pagi": "صبح بخیر (Subah bakhair)",
+        "siang": "دوپہر بخیر (Dopehar bakhair)",
+        "sore": "شام بخیر (Shaam bakhair)",
+        "malam": "شب بخیر (Shab bakhair)",
+        "umum": "السلام علیکم (Assalam-o-Alaikum)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-22-022",
+    "kategori": "sapaan",
+    "wilayah": "Bangladesh",
+    "nama": "sapaan-22",
+    "tags": [
+      "sapaan",
+      "bangladesh"
+    ],
+    "teks": "Bahasa Bengali (Bangladesh): শুভ সকাল (Shubho shokal), শুভ বিকাল (Shubho bikal), শুভ সন্ধ্যা (Shubho sondhya), শুভ রাত্রি (Shubho ratri).",
+    "meta": {
+      "type": "negara",
+      "country": "Bangladesh",
+      "countryCode": "BD",
+      "greetings": {
+        "pagi": "শুভ সকাল (Shubho shokal)",
+        "siang": "শুভ বিকাল (Shubho bikal)",
+        "sore": "শুভ সন্ধ্যা (Shubho sondhya)",
+        "malam": "শুভ রাত্রি (Shubho ratri)",
+        "umum": "নমস্কার (Nomoshkar)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-23-023",
+    "kategori": "sapaan",
+    "wilayah": "Nepal",
+    "nama": "sapaan-23",
+    "tags": [
+      "sapaan",
+      "nepal"
+    ],
+    "teks": "Bahasa Nepal: शुभ प्रभात (Shubha prabhat), शुभ दिउँसो (Shubha diunsu), शुभ साँझ (Shubha sanjh), शुभ रात्री (Shubha ratri).",
+    "meta": {
+      "type": "negara",
+      "country": "Nepal",
+      "countryCode": "NP",
+      "greetings": {
+        "pagi": "शुभ प्रभात (Shubha prabhat)",
+        "siang": "शुभ दिउँसो (Shubha diunsu)",
+        "sore": "शुभ साँझ (Shubha sanjh)",
+        "malam": "शुभ रात्री (Shubha ratri)",
+        "umum": "नमस्ते (Namaste)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-24-024",
+    "kategori": "sapaan",
+    "wilayah": "Sri Lanka",
+    "nama": "sapaan-24",
+    "tags": [
+      "sapaan",
+      "sri-lanka"
+    ],
+    "teks": "Bahasa Sinhala (Sri Lanka): සුභ උදෑසන (Subha udaesana), සුභ දවාලක් (Subha dawalak), සුභ සන්ධ්යාවක් (Subha sandhyawak), සුභ රාත්‍රියක් (Subha rathriyak).",
+    "meta": {
+      "type": "negara",
+      "country": "Sri Lanka",
+      "countryCode": "LK",
+      "greetings": {
+        "pagi": "සුභ උදෑසන (Subha udaesana)",
+        "siang": "සුභ දවාලක් (Subha dawalak)",
+        "sore": "සුභ සන්ධ්යාවක් (Subha sandhyawak)",
+        "malam": "සුභ රාත්‍රියක් (Subha rathriyak)",
+        "umum": "ආයුබෝවන් (Ayubowan)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-25-025",
+    "kategori": "sapaan",
+    "wilayah": "Arab Saudi",
+    "nama": "sapaan-25",
+    "tags": [
+      "sapaan",
+      "arab-saudi"
+    ],
+    "teks": "Bahasa Arab: صباح الخير (Sabah al-khair), مساء الخير (Masa' al-khair), تصبح على خير (Tusbih ala khair).",
+    "meta": {
+      "type": "negara",
+      "country": "Arab Saudi",
+      "countryCode": "SA",
+      "greetings": {
+        "pagi": "صباح الخير (Sabah al-khair)",
+        "siang": "مساء الخير (Masa' al-khair)",
+        "sore": "مساء الخير (Masa' al-khair)",
+        "malam": "تصبح على خير (Tusbih ala khair)",
+        "umum": "السلام عليكم (Assalamu'alaikum)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-26-026",
+    "kategori": "sapaan",
+    "wilayah": "Iran",
+    "nama": "sapaan-26",
+    "tags": [
+      "sapaan",
+      "iran"
+    ],
+    "teks": "Bahasa Persia (Iran): صبح بخیر (Sobh bekheir), ظهر بخیر (Zohr bekheir), عصر بخیر (Asr bekheir), شب بخیر (Shab bekheir).",
+    "meta": {
+      "type": "negara",
+      "country": "Iran",
+      "countryCode": "IR",
+      "greetings": {
+        "pagi": "صبح بخیر (Sobh bekheir)",
+        "siang": "ظهر بخیر (Zohr bekheir)",
+        "sore": "عصر بخیر (Asr bekheir)",
+        "malam": "شب بخیر (Shab bekheir)",
+        "umum": "سلام (Salam)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-27-027",
+    "kategori": "sapaan",
+    "wilayah": "Turki",
+    "nama": "sapaan-27",
+    "tags": [
+      "sapaan",
+      "turki"
+    ],
+    "teks": "Bahasa Turki: Günaydın, iyi günler, iyi akşamlar, iyi geceler.",
+    "meta": {
+      "type": "negara",
+      "country": "Turki",
+      "countryCode": "TR",
+      "greetings": {
+        "pagi": "Günaydın",
+        "siang": "İyi günler",
+        "sore": "İyi akşamlar",
+        "malam": "İyi geceler",
+        "umum": "Merhaba"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-28-028",
+    "kategori": "sapaan",
+    "wilayah": "Israel",
+    "nama": "sapaan-28",
+    "tags": [
+      "sapaan",
+      "israel"
+    ],
+    "teks": "Bahasa Ibrani (Israel): בוקר טוב (Boker tov), צהריים טובים (Tzohorayim tovim), ערב טוב (Erev tov), לילה טוב (Laila tov).",
+    "meta": {
+      "type": "negara",
+      "country": "Israel",
+      "countryCode": "IL",
+      "greetings": {
+        "pagi": "בוקר טוב (Boker tov)",
+        "siang": "צהריים טובים (Tzohorayim tovim)",
+        "sore": "ערב טוב (Erev tov)",
+        "malam": "לילה טוב (Laila tov)",
+        "umum": "שלום (Shalom)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-29-029",
+    "kategori": "sapaan",
+    "wilayah": "Irak",
+    "nama": "sapaan-29",
+    "tags": [
+      "sapaan",
+      "irak"
+    ],
+    "teks": "Bahasa Kurdi (Irak): Beyanî baş, roj baş, êvar baş, şev baş.",
+    "meta": {
+      "type": "negara",
+      "country": "Irak",
+      "countryCode": "IQ",
+      "greetings": {
+        "pagi": "Beyanî baş",
+        "siang": "Roj baş",
+        "sore": "Êvar baş",
+        "malam": "Şev baş",
+        "umum": "Silav"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-30-030",
+    "kategori": "sapaan",
+    "wilayah": "Amerika Serikat",
+    "nama": "sapaan-30",
+    "tags": [
+      "sapaan",
+      "amerika"
+    ],
+    "teks": "Bahasa Inggris (AS): Good morning, good afternoon, good evening, good night.",
+    "meta": {
+      "type": "negara",
+      "country": "Amerika Serikat",
+      "countryCode": "US",
+      "greetings": {
+        "pagi": "Good morning",
+        "siang": "Good afternoon",
+        "sore": "Good evening",
+        "malam": "Good night",
+        "umum": "Hello"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-31-031",
+    "kategori": "sapaan",
+    "wilayah": "Inggris",
+    "nama": "sapaan-31",
+    "tags": [
+      "sapaan",
+      "inggris"
+    ],
+    "teks": "Bahasa Inggris (British): Good morning, good afternoon, good evening, good night. Sering \"cheers\" atau \"hiya\".",
+    "meta": {
+      "type": "negara",
+      "country": "Inggris",
+      "countryCode": "GB",
+      "greetings": {
+        "pagi": "Good morning",
+        "siang": "Good afternoon",
+        "sore": "Good evening",
+        "malam": "Good night",
+        "umum": "Hello / Hiya"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-32-032",
+    "kategori": "sapaan",
+    "wilayah": "Jerman",
+    "nama": "sapaan-32",
+    "tags": [
+      "sapaan",
+      "jerman"
+    ],
+    "teks": "Bahasa Jerman: Guten Morgen, guten Tag, guten Abend, gute Nacht.",
+    "meta": {
+      "type": "negara",
+      "country": "Jerman",
+      "countryCode": "DE",
+      "greetings": {
+        "pagi": "Guten Morgen",
+        "siang": "Guten Tag",
+        "sore": "Guten Abend",
+        "malam": "Gute Nacht",
+        "umum": "Hallo"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-33-033",
+    "kategori": "sapaan",
+    "wilayah": "Prancis",
+    "nama": "sapaan-33",
+    "tags": [
+      "sapaan",
+      "prancis"
+    ],
+    "teks": "Bahasa Prancis: Bonjour, bon après-midi, bonsoir, bonne nuit.",
+    "meta": {
+      "type": "negara",
+      "country": "Prancis",
+      "countryCode": "FR",
+      "greetings": {
+        "pagi": "Bonjour",
+        "siang": "Bon après-midi",
+        "sore": "Bonsoir",
+        "malam": "Bonne nuit",
+        "umum": "Salut"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-34-034",
+    "kategori": "sapaan",
+    "wilayah": "Italia",
+    "nama": "sapaan-34",
+    "tags": [
+      "sapaan",
+      "italia"
+    ],
+    "teks": "Bahasa Italia: Buongiorno, buon pomeriggio, buonasera, buonanotte.",
+    "meta": {
+      "type": "negara",
+      "country": "Italia",
+      "countryCode": "IT",
+      "greetings": {
+        "pagi": "Buongiorno",
+        "siang": "Buon pomeriggio",
+        "sore": "Buonasera",
+        "malam": "Buonanotte",
+        "umum": "Ciao / Salve"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-35-035",
+    "kategori": "sapaan",
+    "wilayah": "Spanyol",
+    "nama": "sapaan-35",
+    "tags": [
+      "sapaan",
+      "spanyol"
+    ],
+    "teks": "Bahasa Spanyol (Spanyol): Buenos días, buenas tardes, buenas noches.",
+    "meta": {
+      "type": "negara",
+      "country": "Spanyol",
+      "countryCode": "ES",
+      "greetings": {
+        "pagi": "Buenos días",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-36-036",
+    "kategori": "sapaan",
+    "wilayah": "Belanda",
+    "nama": "sapaan-36",
+    "tags": [
+      "sapaan",
+      "belanda"
+    ],
+    "teks": "Bahasa Belanda: Goedemorgen, goedemiddag, goedenavond, goedenacht.",
+    "meta": {
+      "type": "negara",
+      "country": "Belanda",
+      "countryCode": "NL",
+      "greetings": {
+        "pagi": "Goedemorgen",
+        "siang": "Goedemiddag",
+        "sore": "Goedenavond",
+        "malam": "Goedenacht",
+        "umum": "Hallo / Hoi"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-37-037",
+    "kategori": "sapaan",
+    "wilayah": "Portugal",
+    "nama": "sapaan-37",
+    "tags": [],
+    "teks": "Bahasa Portugis (Portugal): Bom dia, boa tarde, boa noite.",
+    "meta": {
+      "type": "negara",
+      "country": "Portugal",
+      "countryCode": "PT",
+      "greetings": {
+        "pagi": "Bom dia",
+        "siang": "Boa tarde",
+        "sore": "Boa noite",
+        "malam": "Boa noite",
+        "umum": "Olá"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-38-038",
+    "kategori": "sapaan",
+    "wilayah": "Brazil",
+    "nama": "sapaan-38",
+    "tags": [
+      "sapaan",
+      "brazil"
+    ],
+    "teks": "Bahasa Portugis (Brazil): Bom dia, boa tarde, boa noite.",
+    "meta": {
+      "type": "negara",
+      "country": "Brazil",
+      "countryCode": "BR",
+      "greetings": {
+        "pagi": "Bom dia",
+        "siang": "Boa tarde",
+        "sore": "Boa noite",
+        "malam": "Boa noite",
+        "umum": "Olá"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-39-039",
+    "kategori": "sapaan",
+    "wilayah": "Rusia",
+    "nama": "sapaan-39",
+    "tags": [
+      "sapaan",
+      "rusia"
+    ],
+    "teks": "Bahasa Rusia: Доброе утро (Dobroye utro), Добрый день (Dobryy den'), Добрый вечер (Dobryy vecher), Спокойной ночи (Spokoynoy nochi).",
+    "meta": {
+      "type": "negara",
+      "country": "Rusia",
+      "countryCode": "RU",
+      "greetings": {
+        "pagi": "Доброе утро (Dobroye utro)",
+        "siang": "Добрый день (Dobryy den')",
+        "sore": "Добрый вечер (Dobryy vecher)",
+        "malam": "Спокойной ночи (Spokoynoy nochi)",
+        "umum": "Здравствуйте (Zdravstvuyte)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-40-040",
+    "kategori": "sapaan",
+    "wilayah": "Polandia",
+    "nama": "sapaan-40",
+    "tags": [
+      "sapaan",
+      "polandia"
+    ],
+    "teks": "Bahasa Polandia: Dzień dobry, dobry wieczór, dobranoc.",
+    "meta": {
+      "type": "negara",
+      "country": "Polandia",
+      "countryCode": "PL",
+      "greetings": {
+        "pagi": "Dzień dobry",
+        "siang": "Dzień dobry",
+        "sore": "Dobry wieczór",
+        "malam": "Dobranoc",
+        "umum": "Cześć"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-41-041",
+    "kategori": "sapaan",
+    "wilayah": "Ukraina",
+    "nama": "sapaan-41",
+    "tags": [
+      "sapaan",
+      "ukraina"
+    ],
+    "teks": "Bahasa Ukraina: Доброго ранку (Dobroho ranku), добрий день (dobryi den), добрий вечір (dobryi vechir), на добраніч (na dobranich).",
+    "meta": {
+      "type": "negara",
+      "country": "Ukraina",
+      "countryCode": "UA",
+      "greetings": {
+        "pagi": "Доброго ранку (Dobroho ranku)",
+        "siang": "Добрий день (Dobryi den)",
+        "sore": "Добрий вечір (Dobryi vechir)",
+        "malam": "На добраніч (Na dobranich)",
+        "umum": "Привіт (Pryvit)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-42-042",
+    "kategori": "sapaan",
+    "wilayah": "Yunani",
+    "nama": "sapaan-42",
+    "tags": [
+      "sapaan",
+      "yunani"
+    ],
+    "teks": "Bahasa Yunani: Καλημέρα (Kaliméra), καλησπέρα (Kalispéra), καληνύχτα (Kalinýchta).",
+    "meta": {
+      "type": "negara",
+      "country": "Yunani",
+      "countryCode": "GR",
+      "greetings": {
+        "pagi": "Καλημέρα (Kaliméra)",
+        "siang": "Καλημέρα (Kaliméra)",
+        "sore": "Καλησπέρα (Kalispéra)",
+        "malam": "Καληνύχτα (Kalinýchta)",
+        "umum": "Γεια σας (Geia sas)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-43-043",
+    "kategori": "sapaan",
+    "wilayah": "Swedia",
+    "nama": "sapaan-43",
+    "tags": [
+      "sapaan",
+      "swedia"
+    ],
+    "teks": "Bahasa Swedia: God morgon, god dag, god kväll, god natt.",
+    "meta": {
+      "type": "negara",
+      "country": "Swedia",
+      "countryCode": "SE",
+      "greetings": {
+        "pagi": "God morgon",
+        "siang": "God dag",
+        "sore": "God kväll",
+        "malam": "God natt",
+        "umum": "Hej"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-44-044",
+    "kategori": "sapaan",
+    "wilayah": "Norwegia",
+    "nama": "sapaan-44",
+    "tags": [
+      "sapaan",
+      "norwegia"
+    ],
+    "teks": "Bahasa Norwegia: God morgen, god dag, god kveld, god natt.",
+    "meta": {
+      "type": "negara",
+      "country": "Norwegia",
+      "countryCode": "NO",
+      "greetings": {
+        "pagi": "God morgen",
+        "siang": "God dag",
+        "sore": "God kveld",
+        "malam": "God natt",
+        "umum": "Hei"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-45-045",
+    "kategori": "sapaan",
+    "wilayah": "Denmark",
+    "nama": "sapaan-45",
+    "tags": [
+      "sapaan",
+      "denmark"
+    ],
+    "teks": "Bahasa Denmark: Godmorgen, goddag, godaften, godnat.",
+    "meta": {
+      "type": "negara",
+      "country": "Denmark",
+      "countryCode": "DK",
+      "greetings": {
+        "pagi": "Godmorgen",
+        "siang": "Goddag",
+        "sore": "Godaften",
+        "malam": "Godnat",
+        "umum": "Hej"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-46-046",
+    "kategori": "sapaan",
+    "wilayah": "Finlandia",
+    "nama": "sapaan-46",
+    "tags": [
+      "sapaan",
+      "finlandia"
+    ],
+    "teks": "Bahasa Finlandia: Hyvää huomenta, hyvää päivää, hyvää iltaa, hyvää yötä.",
+    "meta": {
+      "type": "negara",
+      "country": "Finlandia",
+      "countryCode": "FI",
+      "greetings": {
+        "pagi": "Hyvää huomenta",
+        "siang": "Hyvää päivää",
+        "sore": "Hyvää iltaa",
+        "malam": "Hyvää yötä",
+        "umum": "Hei / Moi"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-47-047",
+    "kategori": "sapaan",
+    "wilayah": "Hungaria",
+    "nama": "sapaan-47",
+    "tags": [
+      "sapaan",
+      "hungaria"
+    ],
+    "teks": "Bahasa Hungaria: Jó reggelt, jó napot, jó estét, jó éjszakát.",
+    "meta": {
+      "type": "negara",
+      "country": "Hungaria",
+      "countryCode": "HU",
+      "greetings": {
+        "pagi": "Jó reggelt",
+        "siang": "Jó napot",
+        "sore": "Jó estét",
+        "malam": "Jó éjszakát",
+        "umum": "Szia"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-48-048",
+    "kategori": "sapaan",
+    "wilayah": "Ceko",
+    "nama": "sapaan-48",
+    "tags": [
+      "sapaan",
+      "ceko"
+    ],
+    "teks": "Bahasa Ceko: Dobré ráno, dobré odpoledne, dobrý večer, dobrou noc.",
+    "meta": {
+      "type": "negara",
+      "country": "Ceko",
+      "countryCode": "CZ",
+      "greetings": {
+        "pagi": "Dobré ráno",
+        "siang": "Dobré odpoledne",
+        "sore": "Dobrý večer",
+        "malam": "Dobrou noc",
+        "umum": "Ahoj"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-49-049",
+    "kategori": "sapaan",
+    "wilayah": "Slowakia",
+    "nama": "sapaan-49",
+    "tags": [
+      "sapaan",
+      "slowakia"
+    ],
+    "teks": "Bahasa Slowakia: Dobré ráno, dobré popoludnie, dobrý večer, dobrú noc.",
+    "meta": {
+      "type": "negara",
+      "country": "Slowakia",
+      "countryCode": "SK",
+      "greetings": {
+        "pagi": "Dobré ráno",
+        "siang": "Dobré popoludnie",
+        "sore": "Dobrý večer",
+        "malam": "Dobrú noc",
+        "umum": "Ahoj"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-50-050",
+    "kategori": "sapaan",
+    "wilayah": "Rumania",
+    "nama": "sapaan-50",
+    "tags": [
+      "sapaan",
+      "rumania"
+    ],
+    "teks": "Bahasa Rumania: Bună dimineața, bună ziua, bună seara, noapte bună.",
+    "meta": {
+      "type": "negara",
+      "country": "Rumania",
+      "countryCode": "RO",
+      "greetings": {
+        "pagi": "Bună dimineața",
+        "siang": "Bună ziua",
+        "sore": "Bună seara",
+        "malam": "Noapte bună",
+        "umum": "Salut"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-51-051",
+    "kategori": "sapaan",
+    "wilayah": "Bulgaria",
+    "nama": "sapaan-51",
+    "tags": [
+      "sapaan",
+      "bulgaria"
+    ],
+    "teks": "Bahasa Bulgaria: Добро утро (Dobro utro), добър ден (dobǎr den), добър вечер (dobǎr vecher), лека нощ (leka nosht).",
+    "meta": {
+      "type": "negara",
+      "country": "Bulgaria",
+      "countryCode": "BG",
+      "greetings": {
+        "pagi": "Добро утро (Dobro utro)",
+        "siang": "Добър ден (dobǎr den)",
+        "sore": "Добър вечер (dobǎr vecher)",
+        "malam": "Лека нощ (leka nosht)",
+        "umum": "Здравей (Zdravey)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-52-052",
+    "kategori": "sapaan",
+    "wilayah": "Kanada",
+    "nama": "sapaan-52",
+    "tags": [
+      "sapaan",
+      "kanada"
+    ],
+    "teks": "Kanada (Inggris/Prancis): Good morning / Bonjour, good afternoon / bon après-midi, good evening / bonsoir, good night / bonne nuit.",
+    "meta": {
+      "type": "negara",
+      "country": "Kanada",
+      "countryCode": "CA",
+      "greetings": {
+        "pagi": "Good morning / Bonjour",
+        "siang": "Good afternoon / Bon après-midi",
+        "sore": "Good evening / Bonsoir",
+        "malam": "Good night / Bonne nuit",
+        "umum": "Hello / Bonjour"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-53-053",
+    "kategori": "sapaan",
+    "wilayah": "Meksiko",
+    "nama": "sapaan-53",
+    "tags": [
+      "sapaan",
+      "meksiko"
+    ],
+    "teks": "Bahasa Spanyol (Meksiko): Buenos días, buenas tardes, buenas noches.",
+    "meta": {
+      "type": "negara",
+      "country": "Meksiko",
+      "countryCode": "MX",
+      "greetings": {
+        "pagi": "Buenos días",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-54-054",
+    "kategori": "sapaan",
+    "wilayah": "Guatemala",
+    "nama": "sapaan-54",
+    "tags": [
+      "sapaan",
+      "guatemala"
+    ],
+    "teks": "Bahasa Spanyol (Guatemala): Buenos días, buenas tardes, buenas noches. Sering \"buen día\" di pagi hari.",
+    "meta": {
+      "type": "negara",
+      "country": "Guatemala",
+      "countryCode": "GT",
+      "greetings": {
+        "pagi": "Buen día / Buenos días",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-55-055",
+    "kategori": "sapaan",
+    "wilayah": "Kosta Rika",
+    "nama": "sapaan-55",
+    "tags": [
+      "sapaan",
+      "kosta-rika"
+    ],
+    "teks": "Bahasa Spanyol (Kosta Rika): Buenos días, buenas tardes, buenas noches. Sering \"pura vida\" sebagai sapaan kasual.",
+    "meta": {
+      "type": "negara",
+      "country": "Kosta Rika",
+      "countryCode": "CR",
+      "greetings": {
+        "pagi": "Buenos días",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola / Pura vida"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-56-056",
+    "kategori": "sapaan",
+    "wilayah": "Panama",
+    "nama": "sapaan-56",
+    "tags": [
+      "sapaan",
+      "panama"
+    ],
+    "teks": "Bahasa Spanyol (Panama): Buenos días, buenas tardes, buenas noches.",
+    "meta": {
+      "type": "negara",
+      "country": "Panama",
+      "countryCode": "PA",
+      "greetings": {
+        "pagi": "Buenos días",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-57-057",
+    "kategori": "sapaan",
+    "wilayah": "Kuba",
+    "nama": "sapaan-57",
+    "tags": [
+      "sapaan",
+      "kuba"
+    ],
+    "teks": "Bahasa Spanyol (Kuba): Buenos días, buenas tardes, buenas noches.",
+    "meta": {
+      "type": "negara",
+      "country": "Kuba",
+      "countryCode": "CU",
+      "greetings": {
+        "pagi": "Buenos días",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola / ¿Qué bolá?"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-58-058",
+    "kategori": "sapaan",
+    "wilayah": "Jamaika",
+    "nama": "sapaan-58",
+    "tags": [
+      "sapaan",
+      "jamaika"
+    ],
+    "teks": "Bahasa Inggris (Jamaika): Good morning, good afternoon, good evening, good night. Sering \"wa gwaan\" untuk sapaan kasual.",
+    "meta": {
+      "type": "negara",
+      "country": "Jamaika",
+      "countryCode": "JM",
+      "greetings": {
+        "pagi": "Good morning",
+        "siang": "Good afternoon",
+        "sore": "Good evening",
+        "malam": "Good night",
+        "umum": "Wa gwaan / Hello"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-59-059",
+    "kategori": "sapaan",
+    "wilayah": "Argentina",
+    "nama": "sapaan-59",
+    "tags": [
+      "sapaan",
+      "argentina"
+    ],
+    "teks": "Bahasa Spanyol (Argentina): Buen día, buenas tardes, buenas noches. (Menggunakan \"vos\" alih-alih \"tú\")",
+    "meta": {
+      "type": "negara",
+      "country": "Argentina",
+      "countryCode": "AR",
+      "greetings": {
+        "pagi": "Buen día",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola / Che"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-60-060",
+    "kategori": "sapaan",
+    "wilayah": "Kolombia",
+    "nama": "sapaan-60",
+    "tags": [
+      "sapaan",
+      "kolombia"
+    ],
+    "teks": "Bahasa Spanyol (Kolombia): Buenos días, buenas tardes, buenas noches. Sering menggunakan \"bien\" untuk sapaan kasual.",
+    "meta": {
+      "type": "negara",
+      "country": "Kolombia",
+      "countryCode": "CO",
+      "greetings": {
+        "pagi": "Buenos días",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola / ¡Qué más!"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-61-061",
+    "kategori": "sapaan",
+    "wilayah": "Chile",
+    "nama": "sapaan-61",
+    "tags": [
+      "sapaan",
+      "chile"
+    ],
+    "teks": "Bahasa Spanyol (Chile): Buenos días, buenas tardes, buenas noches. Sering \"buen día\" untuk pagi.",
+    "meta": {
+      "type": "negara",
+      "country": "Chile",
+      "countryCode": "CL",
+      "greetings": {
+        "pagi": "Buen día / Buenos días",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola / ¿Cómo estai?"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-62-062",
+    "kategori": "sapaan",
+    "wilayah": "Peru",
+    "nama": "sapaan-62",
+    "tags": [
+      "sapaan",
+      "peru"
+    ],
+    "teks": "Bahasa Spanyol (Peru): Buenos días, buenas tardes, buenas noches.",
+    "meta": {
+      "type": "negara",
+      "country": "Peru",
+      "countryCode": "PE",
+      "greetings": {
+        "pagi": "Buenos días",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-63-063",
+    "kategori": "sapaan",
+    "wilayah": "Venezuela",
+    "nama": "sapaan-63",
+    "tags": [
+      "sapaan",
+      "venezuela"
+    ],
+    "teks": "Bahasa Spanyol (Venezuela): Buenos días, buenas tardes, buenas noches.",
+    "meta": {
+      "type": "negara",
+      "country": "Venezuela",
+      "countryCode": "VE",
+      "greetings": {
+        "pagi": "Buenos días",
+        "siang": "Buenas tardes",
+        "sore": "Buenas tardes",
+        "malam": "Buenas noches",
+        "umum": "Hola / ¿Qué más?"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-64-064",
+    "kategori": "sapaan",
+    "wilayah": "Afrika Selatan",
+    "nama": "sapaan-64",
+    "tags": [
+      "sapaan",
+      "afrika-selatan"
+    ],
+    "teks": "Bahasa Afrikaans (Afrika Selatan): Goeie more, goeie middag, goeie naand, goeie nag.",
+    "meta": {
+      "type": "negara",
+      "country": "Afrika Selatan",
+      "countryCode": "ZA",
+      "greetings": {
+        "pagi": "Goeie more",
+        "siang": "Goeie middag",
+        "sore": "Goeie naand",
+        "malam": "Goeie nag",
+        "umum": "Hallo / Howzit"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-65-065",
+    "kategori": "sapaan",
+    "wilayah": "Tanzania",
+    "nama": "sapaan-65",
+    "tags": [
+      "sapaan",
+      "tanzania"
+    ],
+    "teks": "Bahasa Swahili (Tanzania/Kenya): Habari ya asubuhi, habari ya mchana, habari ya jioni, habari ya usiku.",
+    "meta": {
+      "type": "negara",
+      "country": "Tanzania",
+      "countryCode": "TZ",
+      "greetings": {
+        "pagi": "Habari ya asubuhi",
+        "siang": "Habari ya mchana",
+        "sore": "Habari ya jioni",
+        "malam": "Habari ya usiku",
+        "umum": "Habari / Hujambo"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-66-066",
+    "kategori": "sapaan",
+    "wilayah": "Ethiopia",
+    "nama": "sapaan-66",
+    "tags": [
+      "sapaan",
+      "ethiopia"
+    ],
+    "teks": "Bahasa Amharik (Ethiopia): ጠዋት እንደምን (Tewat ende minim), እንደምን አለህ (Ende minim aleh).",
+    "meta": {
+      "type": "negara",
+      "country": "Ethiopia",
+      "countryCode": "ET",
+      "greetings": {
+        "pagi": "ጠዋት እንደምን (Tewat ende minim)",
+        "siang": "እንደምን አለህ (Ende minim aleh)",
+        "sore": "እንደምን አለህ (Ende minim aleh)",
+        "malam": "መልካም ሌሊት (Melkam lelit)",
+        "umum": "ሰላም (Selam)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-67-067",
+    "kategori": "sapaan",
+    "wilayah": "Nigeria",
+    "nama": "sapaan-67",
+    "tags": [
+      "sapaan",
+      "nigeria"
+    ],
+    "teks": "Bahasa Hausa (Nigeria): Ina kwana? (pagi), Ina rana? (siang), Ina yamma? (sore), Ina dare? (malam).",
+    "meta": {
+      "type": "negara",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "greetings": {
+        "pagi": "Ina kwana?",
+        "siang": "Ina rana?",
+        "sore": "Ina yamma?",
+        "malam": "Ina dare?",
+        "umum": "Sannu"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-68-068",
+    "kategori": "sapaan",
+    "wilayah": "Mesir",
+    "nama": "sapaan-68",
+    "tags": [
+      "sapaan",
+      "mesir"
+    ],
+    "teks": "Bahasa Arab Mesir: صباح الخير (Sabah el-kheer), مساء الخير (Masa el-kheer).",
+    "meta": {
+      "type": "negara",
+      "country": "Mesir",
+      "countryCode": "EG",
+      "greetings": {
+        "pagi": "صباح الخير (Sabah el-kheer)",
+        "siang": "مساء الخير (Masa el-kheer)",
+        "sore": "مساء الخير (Masa el-kheer)",
+        "malam": "تصبح على خير (Tusbih ala khair)",
+        "umum": "السلام عليكم (Assalamu'alaikum)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-69-069",
+    "kategori": "sapaan",
+    "wilayah": "Maroko",
+    "nama": "sapaan-69",
+    "tags": [
+      "sapaan",
+      "maroko"
+    ],
+    "teks": "Bahasa Berber (Maroko): ⵜⵉⴼⴰⵡⵉⵏ (Tifawin) – pagi, ⵜⵉⴼⴰⵡⵉⵏ ⵏ ⵡⴰⵙⵙ (Tifawin n wass) – siang, ⵜⵉⴼⴰⵡⵉⵏ ⵏ ⵜⴰⴷⴳⴳⵯⴰⵜ (Tifawin n tadggwat) – malam.",
+    "meta": {
+      "type": "negara",
+      "country": "Maroko",
+      "countryCode": "MA",
+      "greetings": {
+        "pagi": "ⵜⵉⴼⴰⵡⵉⵏ (Tifawin)",
+        "siang": "ⵜⵉⴼⴰⵡⵉⵏ ⵏ ⵡⴰⵙⵙ (Tifawin n wass)",
+        "sore": "ⵜⵉⴼⴰⵡⵉⵏ ⵏ ⵜⴰⴷⴳⴳⵯⴰⵜ (Tifawin n tadggwat)",
+        "malam": "ⵜⵉⴼⴰⵡⵉⵏ ⵏ ⵜⴰⴷⴳⴳⵯⴰⵜ (Tifawin n tadggwat)",
+        "umum": "ⴰⵣⵓⵍ (Azul)"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-70-070",
+    "kategori": "sapaan",
+    "wilayah": "Afrika Selatan",
+    "nama": "sapaan-70",
+    "tags": [
+      "sapaan",
+      "zulu"
+    ],
+    "teks": "Bahasa Zulu (Afrika Selatan): Sawubona (umum), ekuseni (pagi), emini (siang), kusihlwa (sore), ebusuku (malam).",
+    "meta": {
+      "type": "negara",
+      "country": "Afrika Selatan",
+      "countryCode": "ZA",
+      "greetings": {
+        "pagi": "Ekuseni",
+        "siang": "Emini",
+        "sore": "Kusihlwa",
+        "malam": "Ebusuku",
+        "umum": "Sawubona"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-71-071",
+    "kategori": "sapaan",
+    "wilayah": "Australia",
+    "nama": "sapaan-71",
+    "tags": [
+      "sapaan",
+      "australia"
+    ],
+    "teks": "Bahasa Inggris (Australia): G'day, good morning, good afternoon, good evening, good night.",
+    "meta": {
+      "type": "negara",
+      "country": "Australia",
+      "countryCode": "AU",
+      "greetings": {
+        "pagi": "Good morning / G'day",
+        "siang": "Good afternoon / G'day",
+        "sore": "Good evening / G'day",
+        "malam": "Good night",
+        "umum": "G'day mate!"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-72-072",
+    "kategori": "sapaan",
+    "wilayah": "Selandia Baru",
+    "nama": "sapaan-72",
+    "tags": [
+      "sapaan",
+      "selandia-baru"
+    ],
+    "teks": "Bahasa Māori (Selandia Baru): Kia ora, ata mārie (pagi), ahiahi mārie (sore), pō mārie (malam).",
+    "meta": {
+      "type": "negara",
+      "country": "Selandia Baru",
+      "countryCode": "NZ",
+      "greetings": {
+        "pagi": "Ata mārie / Good morning",
+        "siang": "Kia ora / Good afternoon",
+        "sore": "Ahiahi mārie / Good evening",
+        "malam": "Pō mārie / Good night",
+        "umum": "Kia ora!"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-73-073",
+    "kategori": "sapaan",
+    "wilayah": "Fiji",
+    "nama": "sapaan-73",
+    "tags": [
+      "sapaan",
+      "fiji"
+    ],
+    "teks": "Bahasa Fiji: Ni sa bula vinaka (umum), ni sa yadra vinaka (pagi), ni sa moce (malam).",
+    "meta": {
+      "type": "negara",
+      "country": "Fiji",
+      "countryCode": "FJ",
+      "greetings": {
+        "pagi": "Ni sa yadra vinaka",
+        "siang": "Ni sa bula vinaka",
+        "sore": "Ni sa bula vinaka",
+        "malam": "Ni sa moce",
+        "umum": "Bula!"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-74-074",
+    "kategori": "sapaan",
+    "wilayah": "Papua Nugini",
+    "nama": "sapaan-74",
+    "tags": [
+      "sapaan",
+      "papua-nugini"
+    ],
+    "teks": "Bahasa Tok Pisin (Papua Nugini): Moning, belo, apinun, gut nait.",
+    "meta": {
+      "type": "negara",
+      "country": "Papua Nugini",
+      "countryCode": "PG",
+      "greetings": {
+        "pagi": "Moning",
+        "siang": "Belo",
+        "sore": "Apinun",
+        "malam": "Gut nait",
+        "umum": "Halo"
+      }
+    }
+  },
+  {
+    "id": "greetings-sapaan-75-075",
+    "kategori": "sapaan",
+    "wilayah": "Samoa",
+    "nama": "sapaan-75",
+    "tags": [
+      "sapaan",
+      "samoa"
+    ],
+    "teks": "Bahasa Samoa (Samoa): Manuia le taeao (pagi), manuia le aoauli (siang), manuia le afiafi (sore), manuia le po (malam).",
+    "meta": {
+      "type": "negara",
+      "country": "Samoa",
+      "countryCode": "WS",
+      "greetings": {
+        "pagi": "Manuia le taeao",
+        "siang": "Manuia le aoauli",
+        "sore": "Manuia le afiafi",
+        "malam": "Manuia le po",
+        "umum": "Talofa"
+      }
+    }
+  },
+  {
+    "id": "greetings-formal-pagi-076",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Formal Pagi",
+    "tags": [
+      "sapaan",
+      "formal",
+      "pagi"
+    ],
+    "teks": "Selamat pagi, Bapak/Ibu! Semoga hari Anda menyenangkan.",
+    "meta": {
+      "type": "situasi",
+      "code": "FORMAL_PAGI",
+      "formalitas": "formal"
+    }
+  },
+  {
+    "id": "greetings-kasual-grup-077",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kasual Grup",
+    "tags": [
+      "sapaan",
+      "casual",
+      "grup"
+    ],
+    "teks": "Hai, teman-teman! Apa kabar kalian semua?",
+    "meta": {
+      "type": "situasi",
+      "code": "KASUAL_GRUP",
+      "formalitas": "casual"
+    }
+  },
+  {
+    "id": "greetings-damai-078",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Damai",
+    "tags": [
+      "sapaan",
+      "damai",
+      "formal"
+    ],
+    "teks": "Salam sejahtera untuk Anda semua. Semoga hari ini damai.",
+    "meta": {
+      "type": "situasi",
+      "code": "DAMAI"
+    }
+  },
+  {
+    "id": "greetings-acara-079",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Acara",
+    "tags": [
+      "sapaan",
+      "acara",
+      "formal"
+    ],
+    "teks": "Selamat pagi, para hadirin! Terima kasih atas kehadirannya.",
+    "meta": {
+      "type": "situasi",
+      "code": "ACARA"
+    }
+  },
+  {
+    "id": "greetings-acara-kasual-080",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Acara Kasual",
+    "tags": [
+      "sapaan",
+      "acara",
+      "casual"
+    ],
+    "teks": "Hai, selamat datang di acara kita hari ini!",
+    "meta": {
+      "type": "situasi",
+      "code": "ACARA_KASUAL",
+      "formalitas": "casual"
+    }
+  },
+  {
+    "id": "greetings-rekan-kerja-081",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Rekan Kerja",
+    "tags": [
+      "sapaan",
+      "kerja",
+      "formal"
+    ],
+    "teks": "Selamat sore, rekan-rekan! Semoga kerja sama kita selalu baik.",
+    "meta": {
+      "type": "situasi",
+      "code": "REKAN_KERJA"
+    }
+  },
+  {
+    "id": "greetings-idul-fitri-082",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Idul Fitri",
+    "tags": [
+      "sapaan",
+      "lebaran",
+      "islam"
+    ],
+    "teks": "Selamat Idul Fitri, mohon maaf lahir dan batin!",
+    "meta": {
+      "type": "hari-raya",
+      "code": "LEBARAN"
+    }
+  },
+  {
+    "id": "greetings-tahun-baru-masehi-083",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Tahun Baru Masehi",
+    "tags": [
+      "sapaan",
+      "tahun-baru"
+    ],
+    "teks": "Selamat Tahun Baru! Semoga tahun ini penuh berkah dan kebahagiaan.",
+    "meta": {
+      "type": "hari-raya",
+      "code": "NEW_YEAR"
+    }
+  },
+  {
+    "id": "greetings-natal-084",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Natal",
+    "tags": [
+      "sapaan",
+      "natal",
+      "kristen"
+    ],
+    "teks": "Selamat Natal! Damai sejahtera bagi kita semua.",
+    "meta": {
+      "type": "hari-raya",
+      "code": "CHRISTMAS"
+    }
+  },
+  {
+    "id": "greetings-galungan-085",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Galungan",
+    "tags": [
+      "sapaan",
+      "galungan",
+      "hindu"
+    ],
+    "teks": "Selamat Hari Raya Galungan! Semoga kebaikan selalu menyertai.",
+    "meta": {
+      "type": "hari-raya",
+      "code": "GALUNGAN"
+    }
+  },
+  {
+    "id": "greetings-waisak-086",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Waisak",
+    "tags": [
+      "sapaan",
+      "waisak",
+      "buddha"
+    ],
+    "teks": "Selamat Waisak! Semoga kedamaian menyertai kita semua.",
+    "meta": {
+      "type": "hari-raya",
+      "code": "WAISAK"
+    }
+  },
+  {
+    "id": "greetings-imlek-087",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Imlek",
+    "tags": [
+      "sapaan",
+      "imlek",
+      "tionghoa"
+    ],
+    "teks": "Selamat Tahun Baru Imlek! Gong xi fa cai, semoga rezeki melimpah.",
+    "meta": {
+      "type": "hari-raya",
+      "code": "IMLEK"
+    }
+  },
+  {
+    "id": "greetings-nyepi-088",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Nyepi",
+    "tags": [
+      "sapaan",
+      "nyepi",
+      "hindu"
+    ],
+    "teks": "Selamat Hari Raya Nyepi! Semoga tahun baru Saka membawa kedamaian.",
+    "meta": {
+      "type": "hari-raya",
+      "code": "NYEPI"
+    }
+  },
+  {
+    "id": "greetings-isra-miraj-089",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Isra Miraj",
+    "tags": [
+      "sapaan",
+      "isra-miraj",
+      "islam"
+    ],
+    "teks": "Selamat Isra Mi'raj! Semoga perjalanan spiritual kita diberkahi.",
+    "meta": {
+      "type": "hari-raya",
+      "code": "ISRA_MIRAJ"
+    }
+  },
+  {
+    "id": "greetings-cuaca-cerah-pagi-090",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "CUACA_CERAH_PAGI",
+    "tags": [
+      "sapaan",
+      "cuaca",
+      "cerah"
+    ],
+    "teks": "Selamat pagi! Hari ini cerah, semangat menjalani aktivitas!",
+    "meta": {
+      "type": "cuaca",
+      "cuaca": "cerah",
+      "code": "CUACA_CERAH_PAGI"
+    }
+  },
+  {
+    "id": "greetings-cuaca-panas-siang-091",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "CUACA_PANAS_SIANG",
+    "tags": [
+      "sapaan",
+      "cuaca",
+      "panas"
+    ],
+    "teks": "Selamat siang! Cuaca panas, jangan lupa minum air putih yang cukup.",
+    "meta": {
+      "type": "cuaca",
+      "cuaca": "panas",
+      "code": "CUACA_PANAS_SIANG"
+    }
+  },
+  {
+    "id": "greetings-cuaca-hujan-sore-092",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "CUACA_HUJAN_SORE",
+    "tags": [
+      "sapaan",
+      "cuaca",
+      "hujan"
+    ],
+    "teks": "Selamat sore! Hujan turun, jangan lupa bawa payung jika ke luar.",
+    "meta": {
+      "type": "cuaca",
+      "cuaca": "hujan",
+      "code": "CUACA_HUJAN_SORE"
+    }
+  },
+  {
+    "id": "greetings-cuaca-dingin-malam-093",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "CUACA_DINGIN_MALAM",
+    "tags": [
+      "sapaan",
+      "cuaca",
+      "dingin"
+    ],
+    "teks": "Selamat malam! Udara dingin, selimuti diri Anda dengan hangat.",
+    "meta": {
+      "type": "cuaca",
+      "cuaca": "dingin",
+      "code": "CUACA_DINGIN_MALAM"
+    }
+  },
+  {
+    "id": "greetings-jawa-pagi-094",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "JAWA_PAGI",
+    "tags": [
+      "sapaan",
+      "jawa",
+      "daerah"
+    ],
+    "teks": "Sugeng enjing! (Selamat pagi dalam bahasa Jawa)",
+    "meta": {
+      "type": "daerah",
+      "language": "Jawa",
+      "code": "JAWA_PAGI"
+    }
+  },
+  {
+    "id": "greetings-sunda-pagi-095",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "SUNDA_PAGI",
+    "tags": [
+      "sapaan",
+      "sunda",
+      "daerah"
+    ],
+    "teks": "Wilujeng enjing! (Selamat pagi dalam bahasa Sunda)",
+    "meta": {
+      "type": "daerah",
+      "language": "Sunda",
+      "code": "SUNDA_PAGI"
+    }
+  },
+  {
+    "id": "greetings-batak-096",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "BATAK",
+    "tags": [
+      "sapaan",
+      "batak",
+      "daerah"
+    ],
+    "teks": "Horas! (Salam khas Batak)",
+    "meta": {
+      "type": "daerah",
+      "language": "Batak",
+      "code": "BATAK"
+    }
+  },
+  {
+    "id": "greetings-sunda-rahayu-097",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "SUNDA_RAHAYU",
+    "tags": [
+      "sapaan",
+      "sunda",
+      "daerah"
+    ],
+    "teks": "Rahayu! (Salam khas Sunda untuk selamat sejahtera)",
+    "meta": {
+      "type": "daerah",
+      "language": "Sunda",
+      "code": "SUNDA_RAHAYU"
+    }
+  },
+  {
+    "id": "greetings-bali-swastiastu-098",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "BALI_SWASTIASTU",
+    "tags": [
+      "sapaan",
+      "bali",
+      "daerah"
+    ],
+    "teks": "Om Swastiastu! (Salam khas Bali)",
+    "meta": {
+      "type": "daerah",
+      "language": "Bali",
+      "code": "BALI_SWASTIASTU"
+    }
+  },
+  {
+    "id": "greetings-jawa-siang-099",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "JAWA_SIANG",
+    "tags": [
+      "sapaan",
+      "jawa",
+      "siang"
+    ],
+    "teks": "Sugeng siang! (Selamat siang dalam bahasa Jawa)",
+    "meta": {
+      "type": "daerah",
+      "language": "Jawa",
+      "code": "JAWA_SIANG"
+    }
+  },
+  {
+    "id": "greetings-sunda-sore-100",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "SUNDA_SORE",
+    "tags": [
+      "sapaan",
+      "sunda",
+      "sore"
+    ],
+    "teks": "Wilujeng sonten! (Selamat sore dalam bahasa Sunda)",
+    "meta": {
+      "type": "daerah",
+      "language": "Sunda",
+      "code": "SUNDA_SORE"
+    }
+  },
+  {
+    "id": "greetings-sapa-semua-101",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sapa Semua",
+    "tags": [
+      "sapaan",
+      "umum",
+      "interaksi"
+    ],
+    "teks": "Mari kita sapa semua! (Sapaan umum untuk memulai interaksi)",
+    "meta": {
+      "type": "umum",
+      "code": "SAPA_SEMUA"
+    }
+  }
+]

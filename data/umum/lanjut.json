@@ -1,8 +1,8 @@
 [
   {
-    "id": "fb-santai",
+    "id": "lanjut-santai",
     "kategori": "umum",
-    "teks": "Oke, aku dengerin. Mau bahas yang mana?",
+    "teks": "Hmm, boleh diperjelas dikit biar aku bantu pas.",
     "tags": [
       "umum",
       "lanjut"
@@ -14,9 +14,9 @@
     }
   },
   {
-    "id": "fb-toko",
+    "id": "lanjut-toko",
     "kategori": "umum",
-    "teks": "Siap. Ceritakan keperluannya.",
+    "teks": "Boleh dilanjut. Maksudnya tentang apa?",
     "tags": [
       "umum",
       "lanjut"
@@ -28,9 +28,9 @@
     }
   },
   {
-    "id": "fb-formal",
+    "id": "lanjut-formal",
     "kategori": "umum",
-    "teks": "Silakan sampaikan keperluannya.",
+    "teks": "Mohon ditambahkan konteksnya agar dapat kami bantu.",
     "tags": [
       "umum",
       "lanjut"

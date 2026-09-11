@@ -1,0 +1,42 @@
+[
+  {
+    "id": "uc-ultah",
+    "kategori": "ucapan",
+    "teks": "Selamat ulang tahun. Semoga harinya menyenangkan.",
+    "tags": [
+      "ulang_tahun"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "ulang_tahun",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "uc-lebaran",
+    "kategori": "ucapan",
+    "teks": "Selamat hari raya. Mohon maaf lahir dan batin.",
+    "tags": [
+      "lebaran"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "lebaran",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "uc-natal",
+    "kategori": "ucapan",
+    "teks": "Terima kasih atas ucapannya. Semoga selalu sehat.",
+    "tags": [
+      "natal",
+      "tahun_baru"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "natal",
+      "gaya": "toko"
+    }
+  }
+]

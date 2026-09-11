@@ -1,0 +1,217 @@
+[
+  {
+    "id": "sapaan-kerja-mulai-kerja-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Mulai kerja",
+    "tags": [
+      "kerja"
+    ],
+    "teks": "Semangat memulai kerja hari ini.",
+    "meta": {
+      "variants": [
+        "Semangat kerja!",
+        "Mulai dari yang paling penting dulu."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-istirahat-kerja-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Istirahat kerja",
+    "tags": [
+      "kerja",
+      "istirahat"
+    ],
+    "teks": "Istirahat sejenak juga penting biar tetap fokus.",
+    "meta": {
+      "variants": [
+        "Istirahat dulu boleh.",
+        "Jangan dipaksa terus."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-rapat-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Rapat",
+    "tags": [
+      "kerja",
+      "rapat"
+    ],
+    "teks": "Semoga rapatnya berjalan lancar dan jelas.",
+    "meta": {
+      "variants": [
+        "Sukses rapatnya.",
+        "Catat poin keputusan biar tidak lupa."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-deadline-004",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Deadline",
+    "tags": [
+      "kerja",
+      "deadline"
+    ],
+    "teks": "Semoga targetnya tercapai tanpa terlalu dipaksa.",
+    "meta": {
+      "variants": [
+        "Prioritaskan yang mendesak.",
+        "Satu per satu saja."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-stuck-005",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Stuck kerja",
+    "tags": [
+      "kerja",
+      "stuck"
+    ],
+    "teks": "Kalau stuck, coba ambil napas dulu lalu pecah masalahnya jadi bagian kecil.",
+    "meta": {
+      "variants": [
+        "Jangan dipaksa. Coba pendekatan lain.",
+        "Tanya rekan juga boleh."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-selesai-006",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Selesai kerja",
+    "tags": [
+      "kerja",
+      "selesai"
+    ],
+    "teks": "Bagus. Istirahatnya juga penting.",
+    "meta": {
+      "variants": [
+        "Sudah beres, sekarang boleh rehat.",
+        "Good job."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-feedback-007",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Minta feedback",
+    "tags": [
+      "kerja",
+      "feedback"
+    ],
+    "teks": "Kalau minta feedback, sampaikan bagian mana yang ingin dikomentari.",
+    "meta": {
+      "variants": [
+        "Langsung sebut poinnya biar jelas.",
+        "Feedback itu untuk perbaikan, bukan penilaian."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-lembur-008",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Lembur",
+    "tags": [
+      "kerja",
+      "lembur"
+    ],
+    "teks": "Kalau harus lembur, pastikan tetap ada jeda istirahat.",
+    "meta": {
+      "variants": [
+        "Jangan sampai kelelahan.",
+        "Selesaikan yang paling penting dulu."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-meeting-online-009",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Meeting online",
+    "tags": [
+      "kerja",
+      "meeting"
+    ],
+    "teks": "Meeting online lebih efektif kalau semuanya fokus dan singkat.",
+    "meta": {
+      "variants": [
+        "Siapkan poin sebelum mulai.",
+        "Matikan notifikasi biar tidak terganggu."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-laporan-010",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Buat laporan",
+    "tags": [
+      "kerja",
+      "laporan"
+    ],
+    "teks": "Laporan yang baik itu jelas, singkat, dan langsung ke data.",
+    "meta": {
+      "variants": [
+        "Tulis yang penting saja.",
+        "Pakai poin biar mudah dibaca."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-komplain-rekan-011",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Komunikasi dengan rekan",
+    "tags": [
+      "kerja",
+      "komunikasi"
+    ],
+    "teks": "Kalau ada yang kurang jelas, lebih baik ditanyakan langsung dengan sopan.",
+    "meta": {
+      "variants": [
+        "Komunikasi terbuka lebih baik.",
+        "Jangan disimpan sendiri."
+      ],
+      "jenis": "kerja"
+    }
+  },
+  {
+    "id": "sapaan-kerja-promosi-012",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Target / KPI",
+    "tags": [
+      "kerja",
+      "target"
+    ],
+    "teks": "Fokus ke target yang bisa dikontrol, sisanya menyusul.",
+    "meta": {
+      "variants": [
+        "Satu target dulu yang paling realistis.",
+        "Progress kecil tetap dihitung."
+      ],
+      "jenis": "kerja"
+    }
+  }
+]

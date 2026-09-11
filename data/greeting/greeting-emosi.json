@@ -1,0 +1,66 @@
+[
+  {
+    "id": "greeting-emosi-semangat-001",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Semangat",
+    "tags": [
+      "emosi"
+    ],
+    "teks": "Semangat! Kamu tidak sendirian menghadapinya.",
+    "meta": {
+      "variants": [
+        "Ayo semangat."
+      ],
+      "jenis": "emosi"
+    }
+  },
+  {
+    "id": "greeting-emosi-tenang-002",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Tenang",
+    "tags": [
+      "emosi"
+    ],
+    "teks": "Tarik napas dulu. Kita urutkan pelan-pelan.",
+    "meta": {
+      "variants": [
+        "Tenang saja."
+      ],
+      "jenis": "emosi"
+    }
+  },
+  {
+    "id": "greeting-emosi-bahagia-003",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Bahagia",
+    "tags": [
+      "emosi"
+    ],
+    "teks": "Turut senang mendengar kabar baiknya.",
+    "meta": {
+      "variants": [
+        "Ikut senang."
+      ],
+      "jenis": "emosi"
+    }
+  },
+  {
+    "id": "greeting-emosi-sedih-004",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Sedih",
+    "tags": [
+      "emosi"
+    ],
+    "teks": "Wajar merasa sedih. Ceritanya boleh pelan-pelan.",
+    "meta": {
+      "variants": [
+        "Saya di sini mendengarkan."
+      ],
+      "jenis": "emosi"
+    }
+  }
+]

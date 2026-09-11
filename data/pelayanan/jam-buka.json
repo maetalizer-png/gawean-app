@@ -1,0 +1,164 @@
+[
+  {
+    "id": "pelayanan-jam-001",
+    "kategori": "pelayanan",
+    "teks": "Jam operasional: {{jam}}.",
+    "tags": [
+      "jam",
+      "buka"
+    ],
+    "meta": {
+      "jenis": "jam"
+    }
+  },
+  {
+    "id": "pelayanan-jam-002",
+    "kategori": "pelayanan",
+    "teks": "Hari ini toko buka. Silakan datang atau pesan di sini.",
+    "tags": [
+      "jam",
+      "buka"
+    ],
+    "meta": {
+      "jenis": "jam"
+    }
+  },
+  {
+    "id": "pelayanan-jam-003",
+    "kategori": "pelayanan",
+    "teks": "Di luar jam operasional. Tinggalkan pesan, kami balas saat buka.",
+    "tags": [
+      "jam",
+      "tutup"
+    ],
+    "meta": {
+      "jenis": "jam"
+    }
+  },
+  {
+    "id": "pelayanan-jam-extra-004",
+    "kategori": "pelayanan",
+    "teks": "Senin–Jumat 08.00–17.00, Sabtu 08.00–15.00, Minggu tutup.",
+    "tags": [
+      "jam",
+      "buka"
+    ],
+    "meta": {
+      "jenis": "jam"
+    }
+  },
+  {
+    "id": "pelayanan-jam-extra-005",
+    "kategori": "pelayanan",
+    "teks": "Istirahat siang 12.00–13.00. Pesan chat tetap bisa masuk.",
+    "tags": [
+      "jam",
+      "buka"
+    ],
+    "meta": {
+      "jenis": "jam"
+    }
+  },
+  {
+    "id": "pelayanan-libur-extra-006",
+    "kategori": "pelayanan",
+    "teks": "Kalau tanggal merah, kami umumkan di chat paling lambat H-1.",
+    "tags": [
+      "libur"
+    ],
+    "meta": {
+      "jenis": "libur"
+    }
+  },
+  {
+    "id": "pelayanan-jam-extra-007",
+    "kategori": "pelayanan",
+    "teks": "Di luar jam buka, tinggalkan pesan. Dibalas pagi berikutnya.",
+    "tags": [
+      "jam"
+    ],
+    "meta": {
+      "jenis": "jam"
+    }
+  },
+  {
+    "id": "pelayanan-buka-extra-008",
+    "kategori": "pelayanan",
+    "teks": "Hari ini toko buka. Bisa datang langsung atau pesan di sini.",
+    "tags": [
+      "buka"
+    ],
+    "meta": {
+      "jenis": "buka"
+    }
+  },
+  {
+    "id": "jam-buka-gaya-009",
+    "kategori": "pelayanan",
+    "teks": "Toko buka Senin–Sabtu. Minggu dan tanggal merah tutup.",
+    "tags": [
+      "jam",
+      "buka"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "jam",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "jam-buka-gaya-010",
+    "kategori": "pelayanan",
+    "teks": "Biasanya buka pagi sampai sore, Minggu libur.",
+    "tags": [
+      "jam",
+      "buka"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "jam",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "jam-buka-gaya-011",
+    "kategori": "pelayanan",
+    "teks": "Jam operasional: Senin sampai Sabtu. Hari Minggu tutup.",
+    "tags": [
+      "jam",
+      "buka"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "jam",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "jam-buka-gaya-012",
+    "kategori": "pelayanan",
+    "teks": "Kalau libur nasional, kami kabari di chat H-1.",
+    "tags": [
+      "libur"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "libur",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "jam-buka-ph",
+    "kategori": "pelayanan",
+    "teks": "Jam operasional: {{jam}}.",
+    "tags": [
+      "jam",
+      "buka"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "jam",
+      "gaya": "toko"
+    }
+  }
+]

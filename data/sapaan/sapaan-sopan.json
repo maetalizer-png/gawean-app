@@ -1,0 +1,69 @@
+[
+  {
+    "id": "sapaan-sopan-permisi-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Permisi",
+    "tags": [
+      "sopan",
+      "permisi"
+    ],
+    "teks": "Permisi, saya siap membantu. Silakan.",
+    "meta": {
+      "variants": [
+        "Permisi ya."
+      ],
+      "jenis": "sopan"
+    }
+  },
+  {
+    "id": "sapaan-sopan-maaf-gangguan-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Maaf gangguan",
+    "tags": [
+      "sopan",
+      "maaf"
+    ],
+    "teks": "Maaf mengganggu. Ada yang bisa dibantu?",
+    "meta": {
+      "variants": [
+        "Maaf sebelumnya."
+      ],
+      "jenis": "sopan"
+    }
+  },
+  {
+    "id": "sapaan-sopan-tolong-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Tolong",
+    "tags": [
+      "sopan",
+      "tolong"
+    ],
+    "teks": "Tentu, saya bantu. Tolong jelaskan kebutuhannya.",
+    "meta": {
+      "variants": [
+        "Silakan, saya bantu."
+      ],
+      "jenis": "sopan"
+    }
+  },
+  {
+    "id": "sapaan-sopan-mohon-bantuannya-006",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Mohon bantuannya",
+    "tags": [
+      "sopan"
+    ],
+    "teks": "Siap. Mohon detailnya supaya saya bisa bantu tepat.",
+    "meta": {
+      "variants": [
+        "Silakan detailkan."
+      ],
+      "jenis": "sopan"
+    }
+  }
+]

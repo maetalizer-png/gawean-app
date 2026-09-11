@@ -1,0 +1,42 @@
+[
+  {
+    "id": "gr-1",
+    "kategori": "pelayanan",
+    "teks": "Untuk grosir sebut jumlah. Harga beda dari ecer.",
+    "tags": [
+      "grosir",
+      "partai"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "grosir",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "gr-2",
+    "kategori": "pelayanan",
+    "teks": "Minimal grosir biasanya 12 pcs. Tanya itemnya.",
+    "tags": [
+      "grosir"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "grosir",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "gr-3",
+    "kategori": "pelayanan",
+    "teks": "Reseller boleh. Syarat stok dan harga kami kabari setelah jenis barang jelas.",
+    "tags": [
+      "reseller"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "reseller",
+      "gaya": "toko"
+    }
+  }
+]

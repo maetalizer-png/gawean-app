@@ -1,0 +1,142 @@
+[
+  {
+    "id": "pelayanan-harga-001",
+    "kategori": "pelayanan",
+    "teks": "Untuk harga, sebut nama produknya. Nanti kami kirim daftar tarif.",
+    "tags": [
+      "harga"
+    ],
+    "meta": {
+      "jenis": "harga"
+    }
+  },
+  {
+    "id": "pelayanan-harga-002",
+    "kategori": "pelayanan",
+    "teks": "Harga bisa berubah sesuai stok. Konfirmasi dulu sebelum transfer.",
+    "tags": [
+      "harga"
+    ],
+    "meta": {
+      "jenis": "harga"
+    }
+  },
+  {
+    "id": "pelayanan-diskon-003",
+    "kategori": "pelayanan",
+    "teks": "Promo berlaku selama stok masih ada. Tanya paket yang sedang jalan.",
+    "tags": [
+      "diskon"
+    ],
+    "meta": {
+      "jenis": "diskon"
+    }
+  },
+  {
+    "id": "pelayanan-harga-extra-004",
+    "kategori": "pelayanan",
+    "teks": "Harga satuan tertulis di katalog. Grosir beda, tanya jumlahnya.",
+    "tags": [
+      "harga"
+    ],
+    "meta": {
+      "jenis": "harga"
+    }
+  },
+  {
+    "id": "pelayanan-harga-extra-005",
+    "kategori": "pelayanan",
+    "teks": "Ongkir belum termasuk harga barang, dihitung setelah alamat jelas.",
+    "tags": [
+      "harga"
+    ],
+    "meta": {
+      "jenis": "harga"
+    }
+  },
+  {
+    "id": "pelayanan-diskon-extra-006",
+    "kategori": "pelayanan",
+    "teks": "Diskon member 5% untuk belanja di atas Rp150.000.",
+    "tags": [
+      "diskon"
+    ],
+    "meta": {
+      "jenis": "diskon"
+    }
+  },
+  {
+    "id": "pelayanan-promo-extra-007",
+    "kategori": "pelayanan",
+    "teks": "Paket hemat berubah tiap minggu. Tanya paket yang sedang jalan.",
+    "tags": [
+      "promo"
+    ],
+    "meta": {
+      "jenis": "promo"
+    }
+  },
+  {
+    "id": "pelayanan-harga-extra-008",
+    "kategori": "pelayanan",
+    "teks": "Transfer sesuai total yang kami kirim. Jangan bayar ke rekening lain.",
+    "tags": [
+      "harga"
+    ],
+    "meta": {
+      "jenis": "harga"
+    }
+  },
+  {
+    "id": "harga-gaya-009",
+    "kategori": "pelayanan",
+    "teks": "Sebut nama produknya, kami kirim harganya.",
+    "tags": [
+      "harga"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "harga",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "harga-gaya-010",
+    "kategori": "pelayanan",
+    "teks": "Produknya yang mana? Nanti dikasih harganya.",
+    "tags": [
+      "harga"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "harga",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "harga-gaya-011",
+    "kategori": "pelayanan",
+    "teks": "Mohon sebutkan nama produk agar harga dapat kami sampaikan.",
+    "tags": [
+      "harga"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "harga",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "harga-gaya-012",
+    "kategori": "pelayanan",
+    "teks": "Promo berlaku selama stok ada. Tanya paket yang sedang jalan.",
+    "tags": [
+      "diskon"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "diskon",
+      "gaya": "toko"
+    }
+  }
+]

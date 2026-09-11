@@ -1,0 +1,42 @@
+[
+  {
+    "id": "fu-1",
+    "kategori": "pelayanan",
+    "teks": "Bukti sudah kami terima. Pesanan diproses.",
+    "tags": [
+      "transfer",
+      "bukti"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "transfer",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "fu-2",
+    "kategori": "pelayanan",
+    "teks": "Pesanan sedang disiapkan. Resi menyusul setelah pickup.",
+    "tags": [
+      "status"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "status",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "fu-3",
+    "kategori": "pelayanan",
+    "teks": "Masih antri packing. Kami kabari jika berangkat.",
+    "tags": [
+      "menunggu"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "menunggu",
+      "gaya": "santai"
+    }
+  }
+]

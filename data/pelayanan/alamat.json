@@ -1,0 +1,123 @@
+[
+  {
+    "id": "pelayanan-alamat-001",
+    "kategori": "pelayanan",
+    "teks": "Alamat: {{alamat}}.",
+    "tags": [
+      "alamat",
+      "lokasi"
+    ],
+    "meta": {
+      "jenis": "alamat"
+    }
+  },
+  {
+    "id": "pelayanan-maps-002",
+    "kategori": "pelayanan",
+    "teks": "Kalau butuh peta, kirim nama daerahnya.",
+    "tags": [
+      "maps"
+    ],
+    "meta": {
+      "jenis": "maps"
+    }
+  },
+  {
+    "id": "pelayanan-alamat-extra-003",
+    "kategori": "pelayanan",
+    "teks": "Kami di pusat kota. Parkir motor ada di depan toko.",
+    "tags": [
+      "alamat"
+    ],
+    "meta": {
+      "jenis": "alamat"
+    }
+  },
+  {
+    "id": "pelayanan-lokasi-extra-004",
+    "kategori": "pelayanan",
+    "teks": "Kirim share location biar akurat.",
+    "tags": [
+      "lokasi"
+    ],
+    "meta": {
+      "jenis": "lokasi"
+    }
+  },
+  {
+    "id": "pelayanan-maps-extra-005",
+    "kategori": "pelayanan",
+    "teks": "Cari nama toko di maps, pin berwarna hijau.",
+    "tags": [
+      "maps"
+    ],
+    "meta": {
+      "jenis": "maps"
+    }
+  },
+  {
+    "id": "pelayanan-alamat-extra-006",
+    "kategori": "pelayanan",
+    "teks": "Kalau antar, tulis patokan: dekat masjid / seberang Indomaret.",
+    "tags": [
+      "alamat"
+    ],
+    "meta": {
+      "jenis": "alamat"
+    }
+  },
+  {
+    "id": "alamat-gaya-007",
+    "kategori": "pelayanan",
+    "teks": "Kirim nama jalan atau pin lokasi. Kami bantu arah ke toko.",
+    "tags": [
+      "alamat",
+      "lokasi"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "alamat",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "alamat-gaya-008",
+    "kategori": "pelayanan",
+    "teks": "Share loc aja biar gampang.",
+    "tags": [
+      "alamat"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "alamat",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "alamat-gaya-009",
+    "kategori": "pelayanan",
+    "teks": "Mohon kirimkan alamat atau tautan peta.",
+    "tags": [
+      "alamat"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "alamat",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "alamat-ph",
+    "kategori": "pelayanan",
+    "teks": "Alamat: {{alamat}}.",
+    "tags": [
+      "alamat",
+      "lokasi"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "alamat",
+      "gaya": "toko"
+    }
+  }
+]

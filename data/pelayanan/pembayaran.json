@@ -1,0 +1,96 @@
+[
+  {
+    "id": "byr-1",
+    "kategori": "pelayanan",
+    "teks": "Transfer ke {{rekening}}. Kirim bukti setelahnya.",
+    "tags": [
+      "bayar",
+      "transfer"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "bayar",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "byr-2",
+    "kategori": "pelayanan",
+    "teks": "Kirim bukti transfer biar langsung diproses.",
+    "tags": [
+      "bayar",
+      "transfer"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "bayar",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "byr-3",
+    "kategori": "pelayanan",
+    "teks": "Pembayaran hanya ke rekening resmi yang tercantum.",
+    "tags": [
+      "bayar"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "bayar",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "byr-4",
+    "kategori": "pelayanan",
+    "teks": "COD hanya untuk area tertentu. Konfirmasi dulu alamatnya.",
+    "tags": [
+      "cod"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "cod",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "byr-5",
+    "kategori": "pelayanan",
+    "teks": "DP 50% untuk pre-order. Pelunasan sebelum barang dikirim.",
+    "tags": [
+      "dp"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "dp",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "byr-6",
+    "kategori": "pelayanan",
+    "teks": "Bisa QRIS. Kami kirim kode setelah total fix.",
+    "tags": [
+      "qris"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "qris",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "pembayaran-ph",
+    "kategori": "pelayanan",
+    "teks": "Transfer ke {{rekening}}. Kirim bukti setelahnya.",
+    "tags": [
+      "bayar",
+      "transfer"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "bayar",
+      "gaya": "toko"
+    }
+  }
+]

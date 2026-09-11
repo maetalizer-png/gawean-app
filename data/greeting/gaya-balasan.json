@@ -1,0 +1,266 @@
+[
+  {
+    "id": "gr-pagi-toko-001",
+    "kategori": "greeting",
+    "teks": "Selamat pagi. Ada yang bisa dibantu?",
+    "tags": [
+      "pagi",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "pagi",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "gr-pagi-santai-002",
+    "kategori": "greeting",
+    "teks": "Pagi. Mau tanya apa nih?",
+    "tags": [
+      "pagi",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "pagi",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "gr-pagi-formal-003",
+    "kategori": "greeting",
+    "teks": "Selamat pagi. Silakan sampaikan keperluan Anda.",
+    "tags": [
+      "pagi",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "pagi",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "gr-siang-toko-004",
+    "kategori": "greeting",
+    "teks": "Selamat siang. Ada yang bisa dibantu?",
+    "tags": [
+      "siang",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "siang",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "gr-siang-santai-005",
+    "kategori": "greeting",
+    "teks": "Siang. Langsung aja keperluannya.",
+    "tags": [
+      "siang",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "siang",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "gr-siang-formal-006",
+    "kategori": "greeting",
+    "teks": "Selamat siang. Kami siap membantu.",
+    "tags": [
+      "siang",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "siang",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "gr-sore-toko-007",
+    "kategori": "greeting",
+    "teks": "Selamat sore. Ada yang ingin ditanyakan?",
+    "tags": [
+      "sore",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "sore",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "gr-sore-santai-008",
+    "kategori": "greeting",
+    "teks": "Sore. Ada yang perlu dicek?",
+    "tags": [
+      "sore",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "sore",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "gr-sore-formal-009",
+    "kategori": "greeting",
+    "teks": "Selamat sore. Silakan disampaikan keperluannya.",
+    "tags": [
+      "sore",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "sore",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "gr-malam-toko-010",
+    "kategori": "greeting",
+    "teks": "Selamat malam. Ada yang bisa dibantu?",
+    "tags": [
+      "malam",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "malam",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "gr-malam-santai-011",
+    "kategori": "greeting",
+    "teks": "Malam. Masih buka chat, silakan.",
+    "tags": [
+      "malam",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "malam",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "gr-malam-formal-012",
+    "kategori": "greeting",
+    "teks": "Selamat malam. Kami siap menerima pertanyaan.",
+    "tags": [
+      "malam",
+      "greeting",
+      "waktu"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "malam",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "hai-toko",
+    "kategori": "greeting",
+    "teks": "Halo. Silakan sampaikan keperluannya.",
+    "tags": [
+      "hai",
+      "halo",
+      "buka"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "hai",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "hai-santai",
+    "kategori": "greeting",
+    "teks": "Halo. Tinggal tulis aja.",
+    "tags": [
+      "hai",
+      "halo",
+      "buka"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "hai",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "hai-formal",
+    "kategori": "greeting",
+    "teks": "Selamat datang. Silakan disampaikan keperluannya.",
+    "tags": [
+      "hai",
+      "halo",
+      "buka"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "hai",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "kabar-toko",
+    "kategori": "greeting",
+    "teks": "Baik. Kamu sendiri bagaimana?",
+    "tags": [
+      "kabar"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "kabar",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "kabar-santai",
+    "kategori": "greeting",
+    "teks": "Alhamdulillah baik. Kamu gimana?",
+    "tags": [
+      "kabar"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "kabar",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "kabar-formal",
+    "kategori": "greeting",
+    "teks": "Baik. Bagaimana kabar Anda?",
+    "tags": [
+      "kabar"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "kabar",
+      "gaya": "formal"
+    }
+  }
+]

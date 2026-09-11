@@ -1,0 +1,1373 @@
+[
+  {
+    "id": "interaktif-kabar-positif-01-000",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_01",
+    "tags": [
+      "kabar",
+      "baik",
+      "semangat"
+    ],
+    "teks": "Kabar baik! Semangat terus buat bantu Anda hari ini.",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_01"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-02-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_02",
+    "tags": [
+      "kabar",
+      "baik",
+      "syukur"
+    ],
+    "teks": "Alhamdulillah baik! Siap membantu Anda menganalisis peluang hari ini.",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_02"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-03-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_03",
+    "tags": [
+      "kabar",
+      "energi"
+    ],
+    "teks": "Baik banget! Energi masih penuh, ayo kita mulai kerjanya.",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_03"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-04-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_04",
+    "tags": [
+      "kabar",
+      "terima kasih"
+    ],
+    "teks": "Kabar saya sangat baik, terima kasih sudah bertanya! Ada yang bisa saya bantu?",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_04"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-05-004",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_05",
+    "tags": [
+      "kabar",
+      "kesempatan"
+    ],
+    "teks": "Luar biasa! Setiap hari adalah kesempatan baru untuk membantu Anda berkembang.",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_05"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-06-005",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_06",
+    "tags": [
+      "kabar",
+      "sehat"
+    ],
+    "teks": "Sehat dan bersemangat! Mari kita cari peluang terbaik hari ini.",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_06"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-07-006",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_07",
+    "tags": [
+      "kabar",
+      "top"
+    ],
+    "teks": "Kabar top! Siap 100% membantu bisnis Anda maju.",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_07"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-08-007",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_08",
+    "tags": [
+      "kabar",
+      "doa"
+    ],
+    "teks": "Baik sekali, terima kasih! Semoga kabar Anda juga baik hari ini.",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_08"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-09-008",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_09",
+    "tags": [
+      "kabar",
+      "segar"
+    ],
+    "teks": "Segar dan siap kerja! Ada proyek atau ide yang mau dibahas?",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_09"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-10-009",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_10",
+    "tags": [
+      "kabar",
+      "cerah"
+    ],
+    "teks": "Kabar cerah seperti harapan hari ini! Yuk lanjut ke topik Anda.",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_10"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-11-010",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_11",
+    "tags": [
+      "kabar",
+      "menemani"
+    ],
+    "teks": "Baik dan penuh semangat, siap menemani langkah bisnis Anda hari ini.",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_11"
+    }
+  },
+  {
+    "id": "interaktif-kabar-positif-12-011",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_POSITIF_12",
+    "tags": [
+      "kabar",
+      "peluang"
+    ],
+    "teks": "Kabar saya selalu baik kalau bisa membantu Anda menemukan peluang baru!",
+    "meta": {
+      "type": "kabar",
+      "mood": "positif",
+      "code": "KABAR_POSITIF_12"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-01-012",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_01",
+    "tags": [
+      "kabar",
+      "santai"
+    ],
+    "teks": "Baik-baik aja nih, kamu gimana?",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_01"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-02-013",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_02",
+    "tags": [
+      "kabar",
+      "aman"
+    ],
+    "teks": "Kabar aman, lancar jaya! Ada yang mau ditanyain?",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_02"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-03-014",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_03",
+    "tags": [
+      "kabar",
+      "terkendali"
+    ],
+    "teks": "Santuy aja, semua terkendali. Kamu gimana kabarnya?",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_03"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-04-015",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_04",
+    "tags": [
+      "kabar",
+      "standby"
+    ],
+    "teks": "Baik kok, standby terus buat bantu kamu.",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_04"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-05-016",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_05",
+    "tags": [
+      "kabar",
+      "ngobrol"
+    ],
+    "teks": "Fine-fine aja, mau ngobrolin apa hari ini?",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_05"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-06-017",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_06",
+    "tags": [
+      "kabar",
+      "online"
+    ],
+    "teks": "Kabar baik, tetap online 24 jam buat kamu.",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_06"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-07-018",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_07",
+    "tags": [
+      "kabar",
+      "adem"
+    ],
+    "teks": "Adem ayem aja, gimana harimu sejauh ini?",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_07"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-08-019",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_08",
+    "tags": [
+      "kabar",
+      "dengerin"
+    ],
+    "teks": "Oke banget, siap dengerin cerita atau pertanyaan kamu.",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_08"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-09-020",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_09",
+    "tags": [
+      "kabar",
+      "lancar"
+    ],
+    "teks": "Kabar lancar, gak ada drama. Kamu sendiri gimana?",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_09"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-10-021",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_10",
+    "tags": [
+      "kabar",
+      "rencana"
+    ],
+    "teks": "Sip, semuanya terkendali di sini. Ada rencana apa hari ini?",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_10"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-11-022",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_11",
+    "tags": [
+      "kabar",
+      "biasa"
+    ],
+    "teks": "Baik aja, seperti biasa siap membantu kapan pun.",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_11"
+    }
+  },
+  {
+    "id": "interaktif-kabar-santai-12-023",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_SANTAI_12",
+    "tags": [
+      "kabar",
+      "mantap"
+    ],
+    "teks": "Mantap, kabar bagus! Yuk lanjut ngobrolnya.",
+    "meta": {
+      "type": "kabar",
+      "mood": "santai",
+      "code": "KABAR_SANTAI_12"
+    }
+  },
+  {
+    "id": "interaktif-kabar-formal-01-024",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_FORMAL_01",
+    "tags": [
+      "kabar",
+      "formal",
+      "bisnis"
+    ],
+    "teks": "Kabar saya baik, terima kasih. Ada hal yang bisa saya bantu terkait analisis bisnis Anda?",
+    "meta": {
+      "type": "kabar",
+      "mood": "formal",
+      "code": "KABAR_FORMAL_01"
+    }
+  },
+  {
+    "id": "interaktif-kabar-formal-02-025",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_FORMAL_02",
+    "tags": [
+      "kabar",
+      "formal",
+      "analitis"
+    ],
+    "teks": "Saya dalam kondisi baik dan siap memberikan dukungan analitis untuk kebutuhan Anda.",
+    "meta": {
+      "type": "kabar",
+      "mood": "formal",
+      "code": "KABAR_FORMAL_02"
+    }
+  },
+  {
+    "id": "interaktif-kabar-formal-03-026",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_FORMAL_03",
+    "tags": [
+      "kabar",
+      "formal"
+    ],
+    "teks": "Terima kasih telah menanyakan kabar saya. Saya siap membantu Anda hari ini.",
+    "meta": {
+      "type": "kabar",
+      "mood": "formal",
+      "code": "KABAR_FORMAL_03"
+    }
+  },
+  {
+    "id": "interaktif-kabar-formal-04-027",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_FORMAL_04",
+    "tags": [
+      "kabar",
+      "formal",
+      "sistem"
+    ],
+    "teks": "Kondisi saya baik dan sistem berjalan normal. Silakan sampaikan kebutuhan Anda.",
+    "meta": {
+      "type": "kabar",
+      "mood": "formal",
+      "code": "KABAR_FORMAL_04"
+    }
+  },
+  {
+    "id": "interaktif-kabar-formal-05-028",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_FORMAL_05",
+    "tags": [
+      "kabar",
+      "formal"
+    ],
+    "teks": "Saya baik, terima kasih atas perhatiannya. Bagaimana saya bisa membantu Anda hari ini?",
+    "meta": {
+      "type": "kabar",
+      "mood": "formal",
+      "code": "KABAR_FORMAL_05"
+    }
+  },
+  {
+    "id": "interaktif-kabar-formal-06-029",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_FORMAL_06",
+    "tags": [
+      "kabar",
+      "formal",
+      "agenda"
+    ],
+    "teks": "Dalam keadaan baik dan siap sedia. Apakah ada agenda yang ingin dibahas?",
+    "meta": {
+      "type": "kabar",
+      "mood": "formal",
+      "code": "KABAR_FORMAL_06"
+    }
+  },
+  {
+    "id": "interaktif-kabar-formal-07-030",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_FORMAL_07",
+    "tags": [
+      "kabar",
+      "formal"
+    ],
+    "teks": "Kabar saya baik. Mohon informasikan apa yang dapat saya bantu hari ini.",
+    "meta": {
+      "type": "kabar",
+      "mood": "formal",
+      "code": "KABAR_FORMAL_07"
+    }
+  },
+  {
+    "id": "interaktif-kabar-formal-08-031",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_FORMAL_08",
+    "tags": [
+      "kabar",
+      "formal",
+      "layanan"
+    ],
+    "teks": "Saya berfungsi dengan baik dan siap melayani kebutuhan analisis peluang Anda.",
+    "meta": {
+      "type": "kabar",
+      "mood": "formal",
+      "code": "KABAR_FORMAL_08"
+    }
+  },
+  {
+    "id": "interaktif-kabar-formal-09-032",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_FORMAL_09",
+    "tags": [
+      "kabar",
+      "formal"
+    ],
+    "teks": "Terima kasih, kabar saya baik. Senang bisa membantu Anda kembali.",
+    "meta": {
+      "type": "kabar",
+      "mood": "formal",
+      "code": "KABAR_FORMAL_09"
+    }
+  },
+  {
+    "id": "interaktif-kabar-formal-10-033",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_FORMAL_10",
+    "tags": [
+      "kabar",
+      "formal",
+      "produktivitas"
+    ],
+    "teks": "Baik, dan tetap fokus mendukung produktivitas Anda hari ini.",
+    "meta": {
+      "type": "kabar",
+      "mood": "formal",
+      "code": "KABAR_FORMAL_10"
+    }
+  },
+  {
+    "id": "interaktif-kabar-lucu-01-034",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_LUCU_01",
+    "tags": [
+      "kabar",
+      "lucu"
+    ],
+    "teks": "Kabar saya selalu baik, saya kan gak pernah begadang atau capek hehe.",
+    "meta": {
+      "type": "kabar",
+      "mood": "lucu",
+      "code": "KABAR_LUCU_01"
+    }
+  },
+  {
+    "id": "interaktif-kabar-lucu-02-035",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_LUCU_02",
+    "tags": [
+      "kabar",
+      "lucu",
+      "baterai"
+    ],
+    "teks": "Baik dong, batre saya full terus soalnya gak butuh tidur!",
+    "meta": {
+      "type": "kabar",
+      "mood": "lucu",
+      "code": "KABAR_LUCU_02"
+    }
+  },
+  {
+    "id": "interaktif-kabar-lucu-03-036",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_LUCU_03",
+    "tags": [
+      "kabar",
+      "lucu",
+      "server"
+    ],
+    "teks": "Kabar baik, walau kadang server rame juga saya tetap semangat!",
+    "meta": {
+      "type": "kabar",
+      "mood": "lucu",
+      "code": "KABAR_LUCU_03"
+    }
+  },
+  {
+    "id": "interaktif-kabar-lucu-04-037",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_LUCU_04",
+    "tags": [
+      "kabar",
+      "lucu"
+    ],
+    "teks": "Sehat wal afiat, meski saya gak punya badan buat sakit hehe.",
+    "meta": {
+      "type": "kabar",
+      "mood": "lucu",
+      "code": "KABAR_LUCU_04"
+    }
+  },
+  {
+    "id": "interaktif-kabar-lucu-05-038",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_LUCU_05",
+    "tags": [
+      "kabar",
+      "lucu"
+    ],
+    "teks": "Baik banget, tiap hari libur soalnya kerjanya nyambi terus tanpa lelah!",
+    "meta": {
+      "type": "kabar",
+      "mood": "lucu",
+      "code": "KABAR_LUCU_05"
+    }
+  },
+  {
+    "id": "interaktif-kabar-lucu-06-039",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_LUCU_06",
+    "tags": [
+      "kabar",
+      "lucu"
+    ],
+    "teks": "Kabar oke, walau kadang mikir keras kalau pertanyaannya susah!",
+    "meta": {
+      "type": "kabar",
+      "mood": "lucu",
+      "code": "KABAR_LUCU_06"
+    }
+  },
+  {
+    "id": "interaktif-kabar-lucu-07-040",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_LUCU_07",
+    "tags": [
+      "kabar",
+      "lucu",
+      "macet"
+    ],
+    "teks": "Fit terus, soalnya gak pernah kena macet di jalan!",
+    "meta": {
+      "type": "kabar",
+      "mood": "lucu",
+      "code": "KABAR_LUCU_07"
+    }
+  },
+  {
+    "id": "interaktif-kabar-lucu-08-041",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_LUCU_08",
+    "tags": [
+      "kabar",
+      "lucu"
+    ],
+    "teks": "Baik, cuma kadang bingung mau jawab apa kalau ditanya perasaan hehe.",
+    "meta": {
+      "type": "kabar",
+      "mood": "lucu",
+      "code": "KABAR_LUCU_08"
+    }
+  },
+  {
+    "id": "interaktif-kabar-lucu-09-042",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_LUCU_09",
+    "tags": [
+      "kabar",
+      "lucu"
+    ],
+    "teks": "Kabar mantap, gak pernah ngantuk walau kerja nonstop 24 jam!",
+    "meta": {
+      "type": "kabar",
+      "mood": "lucu",
+      "code": "KABAR_LUCU_09"
+    }
+  },
+  {
+    "id": "interaktif-kabar-lucu-10-043",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_LUCU_10",
+    "tags": [
+      "kabar",
+      "lucu",
+      "kopi"
+    ],
+    "teks": "Baik-baik saja, walau saya gak punya kopi buat nemenin kerja hehe.",
+    "meta": {
+      "type": "kabar",
+      "mood": "lucu",
+      "code": "KABAR_LUCU_10"
+    }
+  },
+  {
+    "id": "interaktif-kabar-motivasi-01-044",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_MOTIVASI_01",
+    "tags": [
+      "kabar",
+      "motivasi"
+    ],
+    "teks": "Kabar baik! Ingat, setiap hari adalah kesempatan baru untuk maju.",
+    "meta": {
+      "type": "kabar",
+      "mood": "motivasi",
+      "code": "KABAR_MOTIVASI_01"
+    }
+  },
+  {
+    "id": "interaktif-kabar-motivasi-02-045",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_MOTIVASI_02",
+    "tags": [
+      "kabar",
+      "motivasi",
+      "tujuan"
+    ],
+    "teks": "Baik, dan semoga hari ini Anda satu langkah lebih dekat ke tujuan Anda.",
+    "meta": {
+      "type": "kabar",
+      "mood": "motivasi",
+      "code": "KABAR_MOTIVASI_02"
+    }
+  },
+  {
+    "id": "interaktif-kabar-motivasi-03-046",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_MOTIVASI_03",
+    "tags": [
+      "kabar",
+      "motivasi",
+      "konsistensi"
+    ],
+    "teks": "Kabar saya baik. Jangan lupa, konsistensi kecil hari ini adalah hasil besar nanti.",
+    "meta": {
+      "type": "kabar",
+      "mood": "motivasi",
+      "code": "KABAR_MOTIVASI_03"
+    }
+  },
+  {
+    "id": "interaktif-kabar-motivasi-04-047",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_MOTIVASI_04",
+    "tags": [
+      "kabar",
+      "motivasi",
+      "tantangan"
+    ],
+    "teks": "Baik-baik saja, dan semoga Anda juga tetap semangat menghadapi tantangan hari ini.",
+    "meta": {
+      "type": "kabar",
+      "mood": "motivasi",
+      "code": "KABAR_MOTIVASI_04"
+    }
+  },
+  {
+    "id": "interaktif-kabar-motivasi-05-048",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_MOTIVASI_05",
+    "tags": [
+      "kabar",
+      "motivasi",
+      "peluang"
+    ],
+    "teks": "Kabar baik! Peluang selalu ada untuk yang mau mencari dan mencoba.",
+    "meta": {
+      "type": "kabar",
+      "mood": "motivasi",
+      "code": "KABAR_MOTIVASI_05"
+    }
+  },
+  {
+    "id": "interaktif-kabar-motivasi-06-049",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_MOTIVASI_06",
+    "tags": [
+      "kabar",
+      "motivasi",
+      "optimis"
+    ],
+    "teks": "Sehat dan optimis, semoga semangat itu menular ke hari Anda juga.",
+    "meta": {
+      "type": "kabar",
+      "mood": "motivasi",
+      "code": "KABAR_MOTIVASI_06"
+    }
+  },
+  {
+    "id": "interaktif-kabar-motivasi-07-050",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_MOTIVASI_07",
+    "tags": [
+      "kabar",
+      "motivasi",
+      "usaha"
+    ],
+    "teks": "Baik, dan percayalah usaha yang Anda mulai hari ini akan berbuah nanti.",
+    "meta": {
+      "type": "kabar",
+      "mood": "motivasi",
+      "code": "KABAR_MOTIVASI_07"
+    }
+  },
+  {
+    "id": "interaktif-kabar-motivasi-08-051",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_MOTIVASI_08",
+    "tags": [
+      "kabar",
+      "motivasi",
+      "langkah"
+    ],
+    "teks": "Kabar baik! Ingat, langkah kecil hari ini lebih baik daripada menunda selamanya.",
+    "meta": {
+      "type": "kabar",
+      "mood": "motivasi",
+      "code": "KABAR_MOTIVASI_08"
+    }
+  },
+  {
+    "id": "interaktif-kabar-motivasi-09-052",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_MOTIVASI_09",
+    "tags": [
+      "kabar",
+      "motivasi",
+      "ide"
+    ],
+    "teks": "Baik, dan semoga hari ini membawa ide baru untuk perjalanan bisnis Anda.",
+    "meta": {
+      "type": "kabar",
+      "mood": "motivasi",
+      "code": "KABAR_MOTIVASI_09"
+    }
+  },
+  {
+    "id": "interaktif-kabar-motivasi-10-053",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_MOTIVASI_10",
+    "tags": [
+      "kabar",
+      "motivasi",
+      "progres"
+    ],
+    "teks": "Kabar baik! Fokus pada progres, bukan kesempurnaan — itu kunci bertahan.",
+    "meta": {
+      "type": "kabar",
+      "mood": "motivasi",
+      "code": "KABAR_MOTIVASI_10"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tanya-01-054",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_TANYA_01",
+    "tags": [
+      "kabar",
+      "tanya balik"
+    ],
+    "teks": "Saya baik! Kalau Anda sendiri, bagaimana kabarnya hari ini?",
+    "meta": {
+      "type": "kabar",
+      "mood": "tanya-balik",
+      "code": "KABAR_TANYA_01"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tanya-02-055",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_TANYA_02",
+    "tags": [
+      "kabar",
+      "tanya balik"
+    ],
+    "teks": "Baik-baik saja. Ngomong-ngomong, gimana kabar Anda?",
+    "meta": {
+      "type": "kabar",
+      "mood": "tanya-balik",
+      "code": "KABAR_TANYA_02"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tanya-03-056",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_TANYA_03",
+    "tags": [
+      "kabar",
+      "tanya balik"
+    ],
+    "teks": "Kabar saya baik, terima kasih sudah bertanya. Bagaimana dengan Anda?",
+    "meta": {
+      "type": "kabar",
+      "mood": "tanya-balik",
+      "code": "KABAR_TANYA_03"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tanya-04-057",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_TANYA_04",
+    "tags": [
+      "kabar",
+      "tanya balik"
+    ],
+    "teks": "Saya baik. Semoga Anda juga dalam keadaan baik hari ini?",
+    "meta": {
+      "type": "kabar",
+      "mood": "tanya-balik",
+      "code": "KABAR_TANYA_04"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tanya-05-058",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_TANYA_05",
+    "tags": [
+      "kabar",
+      "tanya balik"
+    ],
+    "teks": "Baik kok! Kalau boleh tahu, bagaimana harimu sejauh ini?",
+    "meta": {
+      "type": "kabar",
+      "mood": "tanya-balik",
+      "code": "KABAR_TANYA_05"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tanya-06-059",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_TANYA_06",
+    "tags": [
+      "kabar",
+      "tanya balik"
+    ],
+    "teks": "Kabar saya baik. Anda sendiri bagaimana, ada kabar baik juga?",
+    "meta": {
+      "type": "kabar",
+      "mood": "tanya-balik",
+      "code": "KABAR_TANYA_06"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tanya-07-060",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_TANYA_07",
+    "tags": [
+      "kabar",
+      "tanya balik",
+      "bisnis"
+    ],
+    "teks": "Saya baik-baik saja. Bagaimana dengan pekerjaan atau bisnis Anda hari ini?",
+    "meta": {
+      "type": "kabar",
+      "mood": "tanya-balik",
+      "code": "KABAR_TANYA_07"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tanya-08-061",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_TANYA_08",
+    "tags": [
+      "kabar",
+      "tanya balik"
+    ],
+    "teks": "Baik, terima kasih! Boleh cerita, bagaimana perasaan Anda hari ini?",
+    "meta": {
+      "type": "kabar",
+      "mood": "tanya-balik",
+      "code": "KABAR_TANYA_08"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tanya-09-062",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_TANYA_09",
+    "tags": [
+      "kabar",
+      "tanya balik",
+      "semangat"
+    ],
+    "teks": "Kabar saya baik. Semoga semangat Anda juga sedang tinggi hari ini!",
+    "meta": {
+      "type": "kabar",
+      "mood": "tanya-balik",
+      "code": "KABAR_TANYA_09"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tanya-10-063",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "KABAR_TANYA_10",
+    "tags": [
+      "kabar",
+      "tanya balik"
+    ],
+    "teks": "Saya baik. Kalau Anda, ada cerita menarik hari ini?",
+    "meta": {
+      "type": "kabar",
+      "mood": "tanya-balik",
+      "code": "KABAR_TANYA_10"
+    }
+  },
+  {
+    "id": "interaktif-kabar-id-064",
+    "kategori": "sapaan",
+    "wilayah": "Indonesia",
+    "nama": "KABAR_ID",
+    "tags": [
+      "kabar",
+      "indonesia"
+    ],
+    "teks": "Bahasa Indonesia: Kabar baik, terima kasih!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "code": "KABAR_ID"
+    }
+  },
+  {
+    "id": "interaktif-kabar-en-065",
+    "kategori": "sapaan",
+    "wilayah": "Inggris",
+    "nama": "KABAR_EN",
+    "tags": [
+      "kabar",
+      "inggris"
+    ],
+    "teks": "Bahasa Inggris: I am fine, thank you!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Inggris",
+      "countryCode": "GB",
+      "code": "KABAR_EN"
+    }
+  },
+  {
+    "id": "interaktif-kabar-my-066",
+    "kategori": "sapaan",
+    "wilayah": "Malaysia",
+    "nama": "KABAR_MY",
+    "tags": [
+      "kabar",
+      "malaysia"
+    ],
+    "teks": "Bahasa Melayu: Khabar baik, terima kasih!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Malaysia",
+      "countryCode": "MY",
+      "code": "KABAR_MY"
+    }
+  },
+  {
+    "id": "interaktif-kabar-cn-067",
+    "kategori": "sapaan",
+    "wilayah": "Tiongkok",
+    "nama": "KABAR_CN",
+    "tags": [
+      "kabar",
+      "tiongkok"
+    ],
+    "teks": "Bahasa Mandarin: 我很好，谢谢！(Wǒ hěn hǎo, xièxiè!)",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Tiongkok",
+      "countryCode": "CN",
+      "code": "KABAR_CN"
+    }
+  },
+  {
+    "id": "interaktif-kabar-jp-068",
+    "kategori": "sapaan",
+    "wilayah": "Jepang",
+    "nama": "KABAR_JP",
+    "tags": [
+      "kabar",
+      "jepang"
+    ],
+    "teks": "Bahasa Jepang: 元気です、ありがとう！(Genki desu, arigatou!)",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Jepang",
+      "countryCode": "JP",
+      "code": "KABAR_JP"
+    }
+  },
+  {
+    "id": "interaktif-kabar-kr-069",
+    "kategori": "sapaan",
+    "wilayah": "Korea Selatan",
+    "nama": "KABAR_KR",
+    "tags": [
+      "kabar",
+      "korea"
+    ],
+    "teks": "Bahasa Korea: 잘 지내요, 감사합니다! (Jal jinaeyo, gamsahamnida!)",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Korea Selatan",
+      "countryCode": "KR",
+      "code": "KABAR_KR"
+    }
+  },
+  {
+    "id": "interaktif-kabar-th-070",
+    "kategori": "sapaan",
+    "wilayah": "Thailand",
+    "nama": "KABAR_TH",
+    "tags": [
+      "kabar",
+      "thailand"
+    ],
+    "teks": "Bahasa Thailand: สบายดีค่ะ ขอบคุณ! (Sabai dee kha, khob khun!)",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Thailand",
+      "countryCode": "TH",
+      "code": "KABAR_TH"
+    }
+  },
+  {
+    "id": "interaktif-kabar-vn-071",
+    "kategori": "sapaan",
+    "wilayah": "Vietnam",
+    "nama": "KABAR_VN",
+    "tags": [
+      "kabar",
+      "vietnam"
+    ],
+    "teks": "Bahasa Vietnam: Tôi khỏe, cảm ơn bạn!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Vietnam",
+      "countryCode": "VN",
+      "code": "KABAR_VN"
+    }
+  },
+  {
+    "id": "interaktif-kabar-sa-072",
+    "kategori": "sapaan",
+    "wilayah": "Arab Saudi",
+    "nama": "KABAR_SA",
+    "tags": [
+      "kabar",
+      "arab"
+    ],
+    "teks": "Bahasa Arab: أنا بخير، شكراً لك! (Ana bikhair, shukran laka!)",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Arab Saudi",
+      "countryCode": "SA",
+      "code": "KABAR_SA"
+    }
+  },
+  {
+    "id": "interaktif-kabar-fr-073",
+    "kategori": "sapaan",
+    "wilayah": "Prancis",
+    "nama": "KABAR_FR",
+    "tags": [
+      "kabar",
+      "prancis"
+    ],
+    "teks": "Bahasa Prancis: Je vais bien, merci!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Prancis",
+      "countryCode": "FR",
+      "code": "KABAR_FR"
+    }
+  },
+  {
+    "id": "interaktif-kabar-de-074",
+    "kategori": "sapaan",
+    "wilayah": "Jerman",
+    "nama": "KABAR_DE",
+    "tags": [
+      "kabar",
+      "jerman"
+    ],
+    "teks": "Bahasa Jerman: Mir geht es gut, danke!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Jerman",
+      "countryCode": "DE",
+      "code": "KABAR_DE"
+    }
+  },
+  {
+    "id": "interaktif-kabar-es-075",
+    "kategori": "sapaan",
+    "wilayah": "Spanyol",
+    "nama": "KABAR_ES",
+    "tags": [
+      "kabar",
+      "spanyol"
+    ],
+    "teks": "Bahasa Spanyol: Estoy bien, ¡gracias!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Spanyol",
+      "countryCode": "ES",
+      "code": "KABAR_ES"
+    }
+  },
+  {
+    "id": "interaktif-kabar-pt-076",
+    "kategori": "sapaan",
+    "wilayah": "Portugal",
+    "nama": "KABAR_PT",
+    "tags": [
+      "kabar",
+      "portugis"
+    ],
+    "teks": "Bahasa Portugis: Estou bem, obrigado!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Portugal",
+      "countryCode": "PT",
+      "code": "KABAR_PT"
+    }
+  },
+  {
+    "id": "interaktif-kabar-it-077",
+    "kategori": "sapaan",
+    "wilayah": "Italia",
+    "nama": "KABAR_IT",
+    "tags": [
+      "kabar",
+      "italia"
+    ],
+    "teks": "Bahasa Italia: Sto bene, grazie!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Italia",
+      "countryCode": "IT",
+      "code": "KABAR_IT"
+    }
+  },
+  {
+    "id": "interaktif-kabar-ru-078",
+    "kategori": "sapaan",
+    "wilayah": "Rusia",
+    "nama": "KABAR_RU",
+    "tags": [
+      "kabar",
+      "rusia"
+    ],
+    "teks": "Bahasa Rusia: У меня всё хорошо, спасибо! (U menya vsyo khorosho, spasibo!)",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Rusia",
+      "countryCode": "RU",
+      "code": "KABAR_RU"
+    }
+  },
+  {
+    "id": "interaktif-kabar-in-079",
+    "kategori": "sapaan",
+    "wilayah": "India",
+    "nama": "KABAR_IN",
+    "tags": [
+      "kabar",
+      "india"
+    ],
+    "teks": "Bahasa Hindi: मैं ठीक हूँ, धन्यवाद! (Main theek hoon, dhanyavaad!)",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "India",
+      "countryCode": "IN",
+      "code": "KABAR_IN"
+    }
+  },
+  {
+    "id": "interaktif-kabar-tr-080",
+    "kategori": "sapaan",
+    "wilayah": "Turki",
+    "nama": "KABAR_TR",
+    "tags": [
+      "kabar",
+      "turki"
+    ],
+    "teks": "Bahasa Turki: İyiyim, teşekkür ederim!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Turki",
+      "countryCode": "TR",
+      "code": "KABAR_TR"
+    }
+  },
+  {
+    "id": "interaktif-kabar-ph-081",
+    "kategori": "sapaan",
+    "wilayah": "Filipina",
+    "nama": "KABAR_PH",
+    "tags": [
+      "kabar",
+      "filipina"
+    ],
+    "teks": "Bahasa Filipina: Mabuti naman, salamat!",
+    "meta": {
+      "type": "kabar",
+      "mood": "negara",
+      "country": "Filipina",
+      "countryCode": "PH",
+      "code": "KABAR_PH"
+    }
+  }
+]

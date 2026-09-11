@@ -1,0 +1,42 @@
+[
+  {
+    "id": "wn-toko",
+    "kategori": "waktu_now",
+    "teks": "Waktu perangkat saat ini bisa dilihat di jam HP. Kalau maksudnya jam toko, tanya jam buka.",
+    "tags": [
+      "waktu_now",
+      "jam_sekarang"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "waktu_now",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "wn-santai",
+    "kategori": "waktu_now",
+    "teks": "Kalau nanya jam toko, ketik jam buka ya.",
+    "tags": [
+      "waktu_now"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "waktu_now",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "wn-formal",
+    "kategori": "waktu_now",
+    "teks": "Untuk jam operasional toko, silakan tanyakan jam buka.",
+    "tags": [
+      "waktu_now"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "waktu_now",
+      "gaya": "formal"
+    }
+  }
+]

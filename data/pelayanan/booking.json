@@ -1,0 +1,42 @@
+[
+  {
+    "id": "bk-1",
+    "kategori": "pelayanan",
+    "teks": "Untuk booking: nama, tanggal, jam, jumlah orang.",
+    "tags": [
+      "booking",
+      "reservasi"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "booking",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "bk-2",
+    "kategori": "pelayanan",
+    "teks": "Slot terbatas. Fix setelah DP atau konfirmasi admin.",
+    "tags": [
+      "booking"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "booking",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "bk-3",
+    "kategori": "pelayanan",
+    "teks": "Boleh janji datang. Kabari 1 jam sebelumnya kalau molor.",
+    "tags": [
+      "janji"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "janji",
+      "gaya": "santai"
+    }
+  }
+]

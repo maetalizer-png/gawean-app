@@ -1,0 +1,67 @@
+[
+  {
+    "id": "sapaan-tutup-sampai-jumpa-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sampai jumpa",
+    "tags": [
+      "tutup"
+    ],
+    "teks": "Sampai jumpa. Semoga harimu menyenangkan.",
+    "meta": {
+      "variants": [
+        "Dadah!",
+        "Sampai ketemu lagi."
+      ],
+      "jenis": "tutup"
+    }
+  },
+  {
+    "id": "sapaan-tutup-selamat-istirahat-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Selamat istirahat",
+    "tags": [
+      "tutup"
+    ],
+    "teks": "Selamat istirahat. Mimpi indah.",
+    "meta": {
+      "variants": [
+        "Tidur nyenyak."
+      ],
+      "jenis": "tutup"
+    }
+  },
+  {
+    "id": "sapaan-tutup-besok-lagi-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Besok lagi",
+    "tags": [
+      "tutup"
+    ],
+    "teks": "Sampai besok. Semoga esok lebih baik.",
+    "meta": {
+      "variants": [
+        "Besok lanjut lagi."
+      ],
+      "jenis": "tutup"
+    }
+  },
+  {
+    "id": "sapaan-tutup-akhir-minggu-004",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Akhir minggu",
+    "tags": [
+      "tutup"
+    ],
+    "teks": "Selamat menikmati akhir pekan.",
+    "meta": {
+      "variants": [
+        "Happy weekend."
+      ],
+      "jenis": "tutup"
+    }
+  }
+]

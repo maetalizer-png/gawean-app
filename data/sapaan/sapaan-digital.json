@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sapaan-digital-online-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Online",
+    "tags": [
+      "digital"
+    ],
+    "teks": "Halo, saya online dan siap membantu.",
+    "meta": {
+      "variants": [
+        "Saya di sini."
+      ],
+      "jenis": "digital"
+    }
+  },
+  {
+    "id": "sapaan-digital-lagi-sibuk-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Lagi sibuk",
+    "tags": [
+      "digital"
+    ],
+    "teks": "Kalau sedang sibuk, balas saja nanti santai.",
+    "meta": {
+      "variants": [
+        "Tidak apa-apa nanti dulu."
+      ],
+      "jenis": "digital"
+    }
+  },
+  {
+    "id": "sapaan-digital-typing-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Typing",
+    "tags": [
+      "digital"
+    ],
+    "teks": "Silakan ketik saja, saya baca pelan-pelan.",
+    "meta": {
+      "variants": [
+        "Ketik saja."
+      ],
+      "jenis": "digital"
+    }
+  }
+]

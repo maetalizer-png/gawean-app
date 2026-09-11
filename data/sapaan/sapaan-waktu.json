@@ -1,0 +1,159 @@
+[
+  {
+    "id": "sapaan-waktu-pagi-formal-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi formal",
+    "tags": [
+      "waktu",
+      "pagi"
+    ],
+    "teks": "Selamat pagi. Semoga hari Anda produktif.",
+    "meta": {
+      "variants": [
+        "Selamat pagi.",
+        "Pagi, semoga lancar."
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "sapaan-waktu-pagi-santai-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi santai",
+    "tags": [
+      "waktu",
+      "pagi"
+    ],
+    "teks": "Pagi! Sudah sarapan belum?",
+    "meta": {
+      "variants": [
+        "Pagi!",
+        "Hai pagi."
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "sapaan-waktu-pagi-kerja-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi kerja",
+    "tags": [
+      "waktu",
+      "pagi"
+    ],
+    "teks": "Selamat pagi. Siap mulai aktivitas hari ini?",
+    "meta": {
+      "variants": [
+        "Pagi, semangat kerja."
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "sapaan-waktu-siang-formal-004",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Siang formal",
+    "tags": [
+      "waktu",
+      "siang"
+    ],
+    "teks": "Selamat siang. Ada yang bisa dibantu?",
+    "meta": {
+      "variants": [
+        "Siang.",
+        "Selamat siang."
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "sapaan-waktu-siang-santai-005",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Siang santai",
+    "tags": [
+      "waktu",
+      "siang"
+    ],
+    "teks": "Siang! Lagi istirahat atau tetap sibuk?",
+    "meta": {
+      "variants": [
+        "Siang, apa kabar?"
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "sapaan-waktu-sore-formal-006",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sore formal",
+    "tags": [
+      "waktu",
+      "sore"
+    ],
+    "teks": "Selamat sore. Silakan sampaikan keperluannya.",
+    "meta": {
+      "variants": [
+        "Sore.",
+        "Selamat sore."
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "sapaan-waktu-sore-pulang-007",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sore pulang",
+    "tags": [
+      "waktu",
+      "sore"
+    ],
+    "teks": "Sore! Hati-hati di jalan kalau sedang pulang.",
+    "meta": {
+      "variants": [
+        "Sore, hati-hati ya."
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "sapaan-waktu-malam-istirahat-009",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Malam istirahat",
+    "tags": [
+      "waktu",
+      "malam"
+    ],
+    "teks": "Malam. Jangan begadang terlalu larut ya.",
+    "meta": {
+      "variants": [
+        "Malam, istirahat cukup."
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "sapaan-waktu-tengah-malam-010",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Tengah malam",
+    "tags": [
+      "waktu",
+      "malam"
+    ],
+    "teks": "Masih terbangun? Semoga tidak terlalu lelah.",
+    "meta": {
+      "variants": [
+        "Halo malam."
+      ],
+      "jenis": "waktu"
+    }
+  }
+]

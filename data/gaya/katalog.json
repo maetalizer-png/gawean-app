@@ -1,0 +1,17 @@
+[
+  {
+    "id": "toko",
+    "nama": "Toko",
+    "deskripsi": "Ramah, ringkas, siap jual"
+  },
+  {
+    "id": "santai",
+    "nama": "Santai",
+    "deskripsi": "Ngobrol ringan"
+  },
+  {
+    "id": "formal",
+    "nama": "Formal",
+    "deskripsi": "Sopan untuk instansi"
+  }
+]

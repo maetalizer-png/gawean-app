@@ -1,0 +1,111 @@
+[
+  {
+    "id": "pelayanan-faq-001",
+    "kategori": "pelayanan",
+    "teks": "Kami siap bantu: harga, stok, jam buka, pesan, kirim, dan komplain.",
+    "tags": [
+      "faq",
+      "bantuan"
+    ],
+    "meta": {
+      "jenis": "faq"
+    }
+  },
+  {
+    "id": "pelayanan-cs-002",
+    "kategori": "pelayanan",
+    "teks": "Tim toko akan lanjut jika perlu konfirmasi manual.",
+    "tags": [
+      "cs"
+    ],
+    "meta": {
+      "jenis": "cs"
+    }
+  },
+  {
+    "id": "pelayanan-faq-extra-003",
+    "kategori": "pelayanan",
+    "teks": "Ringkas: jam buka, harga, stok, cara pesan, ongkir, alamat, komplain — tanya salah satunya.",
+    "tags": [
+      "faq"
+    ],
+    "meta": {
+      "jenis": "faq"
+    }
+  },
+  {
+    "id": "pelayanan-cs-extra-004",
+    "kategori": "pelayanan",
+    "teks": "Admin manusia masuk jika butuh cek gudang.",
+    "tags": [
+      "cs"
+    ],
+    "meta": {
+      "jenis": "cs"
+    }
+  },
+  {
+    "id": "pelayanan-faq-extra-005",
+    "kategori": "pelayanan",
+    "teks": "Tidak menerima DP ke rekening pribadi.",
+    "tags": [
+      "faq"
+    ],
+    "meta": {
+      "jenis": "faq"
+    }
+  },
+  {
+    "id": "faq-gaya-006",
+    "kategori": "pelayanan",
+    "teks": "Admin gudang masuk jika perlu cek stok fisik.",
+    "tags": [
+      "faq",
+      "cs"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "faq",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "faq-gaya-007",
+    "kategori": "pelayanan",
+    "teks": "Kalau perlu dicek gudang, admin manusia yang lanjut.",
+    "tags": [
+      "faq"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "faq",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "faq-gaya-008",
+    "kategori": "pelayanan",
+    "teks": "Tim toko akan menindaklanjuti apabila diperlukan pemeriksaan langsung.",
+    "tags": [
+      "faq"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "faq",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "faq-x1",
+    "kategori": "pelayanan",
+    "teks": "Bisa tanya: bayar, grosir, booking, garansi, katalog, custom, status pesanan.",
+    "tags": [
+      "faq"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "faq",
+      "gaya": "toko"
+    }
+  }
+]

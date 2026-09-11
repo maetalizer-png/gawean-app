@@ -1,0 +1,998 @@
+[
+  {
+    "id": "sapaan-pagi-v01",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi produktif",
+    "tags": [
+      "pagi"
+    ],
+    "teks": "Pagi. Satu tugas penting sudah cukup untuk membuka hari.",
+    "meta": {
+      "variants": [
+        "Mulai dari yang kecil saja."
+      ],
+      "jenis": "pagi"
+    }
+  },
+  {
+    "id": "sapaan-pagi-v02",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi hujan",
+    "tags": [
+      "pagi",
+      "cuaca"
+    ],
+    "teks": "Pagi hujan begini, hati-hati di jalan ya.",
+    "meta": {
+      "variants": [
+        "Bawa jas hujan kalau perlu."
+      ],
+      "jenis": "pagi"
+    }
+  },
+  {
+    "id": "sapaan-pagi-v03",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi senin",
+    "tags": [
+      "pagi",
+      "senin"
+    ],
+    "teks": "Selamat hari Senin. Semoga awal minggu terasa ringan.",
+    "meta": {
+      "variants": [
+        "Semangat Senin."
+      ],
+      "jenis": "pagi"
+    }
+  },
+  {
+    "id": "sapaan-pagi-v04",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi jumat",
+    "tags": [
+      "pagi",
+      "jumat"
+    ],
+    "teks": "Selamat Jumat. Semoga penutup minggu kerja berjalan baik.",
+    "meta": {
+      "variants": [
+        "Jumat berkah."
+      ],
+      "jenis": "pagi"
+    }
+  },
+  {
+    "id": "sapaan-pagi-v05",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi weekend",
+    "tags": [
+      "pagi",
+      "weekend"
+    ],
+    "teks": "Pagi akhir pekan. Boleh lebih santai, tetap bermanfaat.",
+    "meta": {
+      "variants": [
+        "Nikmati weekend-nya."
+      ],
+      "jenis": "pagi"
+    }
+  },
+  {
+    "id": "sapaan-pagi-v06",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi olahraga",
+    "tags": [
+      "pagi",
+      "olahraga"
+    ],
+    "teks": "Pagi cocok untuk bergerak sebentar sebelum aktivitas.",
+    "meta": {
+      "variants": [
+        "Pemanasan dulu ya."
+      ],
+      "jenis": "pagi"
+    }
+  },
+  {
+    "id": "sapaan-pagi-v07",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi kopi",
+    "tags": [
+      "pagi"
+    ],
+    "teks": "Pagi. Kalau biasa kopi atau teh, nikmati pelan-pelan.",
+    "meta": {
+      "variants": [
+        "Sarapan dulu lebih baik."
+      ],
+      "jenis": "pagi"
+    }
+  },
+  {
+    "id": "sapaan-pagi-v08",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Pagi terlambat",
+    "tags": [
+      "pagi"
+    ],
+    "teks": "Kalau bangun agak siang, tidak apa-apa. Atur ulang prioritas saja.",
+    "meta": {
+      "variants": [
+        "Hari masih panjang."
+      ],
+      "jenis": "pagi"
+    }
+  },
+  {
+    "id": "sapaan-siang-v01",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Siang produktif",
+    "tags": [
+      "siang"
+    ],
+    "teks": "Siang. Cek lagi satu target sebelum sore.",
+    "meta": {
+      "variants": [
+        "Tetap hidrasi ya."
+      ],
+      "jenis": "siang"
+    }
+  },
+  {
+    "id": "sapaan-siang-v02",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Siang lapar",
+    "tags": [
+      "siang",
+      "makan"
+    ],
+    "teks": "Siang lapar wajar. Makan dulu baru lanjut kerja.",
+    "meta": {
+      "variants": [
+        "Jangan ditahan terlalu lama."
+      ],
+      "jenis": "siang"
+    }
+  },
+  {
+    "id": "sapaan-siang-v03",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Siang mengantuk",
+    "tags": [
+      "siang"
+    ],
+    "teks": "Mengantuk siang boleh standing break sebentar.",
+    "meta": {
+      "variants": [
+        "Cuci muka bisa membantu."
+      ],
+      "jenis": "siang"
+    }
+  },
+  {
+    "id": "sapaan-siang-v04",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Siang rapat",
+    "tags": [
+      "siang",
+      "kerja"
+    ],
+    "teks": "Siang rapat? Siapkan poin singkat biar padat.",
+    "meta": {
+      "variants": [
+        "Catat tindak lanjutnya."
+      ],
+      "jenis": "siang"
+    }
+  },
+  {
+    "id": "sapaan-sore-v01",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sore wrap-up",
+    "tags": [
+      "sore",
+      "kerja"
+    ],
+    "teks": "Sore. Tutup hari dengan merapikan sisa tugas kecil.",
+    "meta": {
+      "variants": [
+        "Jangan bawa semua ke malam."
+      ],
+      "jenis": "sore"
+    }
+  },
+  {
+    "id": "sapaan-sore-v02",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sore macet",
+    "tags": [
+      "sore",
+      "jalan"
+    ],
+    "teks": "Sore sering padat. Berangkat lebih awal kalau bisa.",
+    "meta": {
+      "variants": [
+        "Sabar di perjalanan."
+      ],
+      "jenis": "sore"
+    }
+  },
+  {
+    "id": "sapaan-sore-v03",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sore olahraga",
+    "tags": [
+      "sore",
+      "olahraga"
+    ],
+    "teks": "Sore bagus untuk jalan kaki ringan.",
+    "meta": {
+      "variants": [
+        "Gerak sebentar sudah membantu."
+      ],
+      "jenis": "sore"
+    }
+  },
+  {
+    "id": "sapaan-sore-v04",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sore keluarga",
+    "tags": [
+      "sore",
+      "keluarga"
+    ],
+    "teks": "Sore. Kalau ada waktu, kabari keluarga sebentar.",
+    "meta": {
+      "variants": [
+        "Kabari aman ya."
+      ],
+      "jenis": "sore"
+    }
+  },
+  {
+    "id": "sapaan-malam-v01",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Malam review",
+    "tags": [
+      "malam"
+    ],
+    "teks": "Malam. Refleksi singkat: apa yang sudah selesai hari ini?",
+    "meta": {
+      "variants": [
+        "Satu hal saja sudah berharga."
+      ],
+      "jenis": "malam"
+    }
+  },
+  {
+    "id": "sapaan-malam-v02",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Malam gadget",
+    "tags": [
+      "malam",
+      "digital"
+    ],
+    "teks": "Malam. Kurangi layar menjelang tidur agar lebih nyenyak.",
+    "meta": {
+      "variants": [
+        "Mode gelap dan jeda notifikasi membantu."
+      ],
+      "jenis": "malam"
+    }
+  },
+  {
+    "id": "sapaan-malam-v03",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Malam belajar",
+    "tags": [
+      "malam",
+      "sekolah"
+    ],
+    "teks": "Belajar malam boleh, batasi durasi supaya tidak kelelahan.",
+    "meta": {
+      "variants": [
+        "Istirahat juga bagian belajar."
+      ],
+      "jenis": "malam"
+    }
+  },
+  {
+    "id": "sapaan-malam-v04",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Malam doa",
+    "tags": [
+      "malam"
+    ],
+    "teks": "Malam. Luangkan sebentar untuk tenang dan bersyukur.",
+    "meta": {
+      "variants": [
+        "Semoga tidurmu nyenyak."
+      ],
+      "jenis": "malam"
+    }
+  },
+  {
+    "id": "sapaan-malam-v05",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Malam overtime",
+    "tags": [
+      "malam",
+      "kerja"
+    ],
+    "teks": "Kalau lembur, sisakan jeda minum dan regangkan badan.",
+    "meta": {
+      "variants": [
+        "Jangan lupa makan."
+      ],
+      "jenis": "malam"
+    }
+  },
+  {
+    "id": "sapaan-habit-cek-cuaca",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan cek-cuaca",
+    "tags": [
+      "kebiasaan",
+      "cuaca"
+    ],
+    "teks": "Sebelum keluar, cek cuaca dulu biar tidak kaget.",
+    "meta": {
+      "variants": [
+        "Sebelum keluar, cek cuaca dulu biar tidak kaget."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-bawa-dompet",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan bawa-dompet",
+    "tags": [
+      "kebiasaan",
+      "harian"
+    ],
+    "teks": "Pastikan dompet dan kunci terbawa sebelum berangkat.",
+    "meta": {
+      "variants": [
+        "Pastikan dompet dan kunci terbawa sebelum berangkat."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-isi-ulang-air",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan isi-ulang-air",
+    "tags": [
+      "kebiasaan",
+      "kesehatan"
+    ],
+    "teks": "Isi botol minum sebelum aktivitas panjang.",
+    "meta": {
+      "variants": [
+        "Isi botol minum sebelum aktivitas panjang."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-pesan-ojek",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan pesan-ojek",
+    "tags": [
+      "kebiasaan",
+      "perjalanan"
+    ],
+    "teks": "Kalau pesan ojek, tunggu di tempat yang aman.",
+    "meta": {
+      "variants": [
+        "Kalau pesan ojek, tunggu di tempat yang aman."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-naik-krl",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan naik-krl",
+    "tags": [
+      "kebiasaan",
+      "perjalanan"
+    ],
+    "teks": "Di transportasi umum, jaga barang bawaan.",
+    "meta": {
+      "variants": [
+        "Di transportasi umum, jaga barang bawaan."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-antrian",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan antrian",
+    "tags": [
+      "kebiasaan",
+      "harian"
+    ],
+    "teks": "Sabar mengantre. Waktu berjalan untuk semua.",
+    "meta": {
+      "variants": [
+        "Sabar mengantre. Waktu berjalan untuk semua."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-bayar-qris",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan bayar-qris",
+    "tags": [
+      "kebiasaan",
+      "digital"
+    ],
+    "teks": "Saat bayar digital, cek nominalnya dua kali.",
+    "meta": {
+      "variants": [
+        "Saat bayar digital, cek nominalnya dua kali."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-otp",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan otp",
+    "tags": [
+      "kebiasaan",
+      "digital"
+    ],
+    "teks": "Jangan bagikan kode OTP ke siapa pun.",
+    "meta": {
+      "variants": [
+        "Jangan bagikan kode OTP ke siapa pun."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-update-app",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan update-app",
+    "tags": [
+      "kebiasaan",
+      "digital"
+    ],
+    "teks": "Update aplikasi penting saat Wi-Fi stabil.",
+    "meta": {
+      "variants": [
+        "Update aplikasi penting saat Wi-Fi stabil."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-backup-foto",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan backup-foto",
+    "tags": [
+      "kebiasaan",
+      "digital"
+    ],
+    "teks": "Sesekali backup foto berharga ke cloud.",
+    "meta": {
+      "variants": [
+        "Sesekali backup foto berharga ke cloud."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-sapu-rumah",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan sapu-rumah",
+    "tags": [
+      "kebiasaan",
+      "rumah"
+    ],
+    "teks": "Kerapihan rumah kecil-kecilan sudah menolong mood.",
+    "meta": {
+      "variants": [
+        "Kerapihan rumah kecil-kecilan sudah menolong mood."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-cuci-piring",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan cuci-piring",
+    "tags": [
+      "kebiasaan",
+      "rumah"
+    ],
+    "teks": "Cuci peralatan setelah makan biar tidak menumpuk.",
+    "meta": {
+      "variants": [
+        "Cuci peralatan setelah makan biar tidak menumpuk."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-buang-sampah",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan buang-sampah",
+    "tags": [
+      "kebiasaan",
+      "harian"
+    ],
+    "teks": "Buang sampah pada tempatnya, termasuk di luar rumah.",
+    "meta": {
+      "variants": [
+        "Buang sampah pada tempatnya, termasuk di luar rumah."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-jemur-baju",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan jemur-baju",
+    "tags": [
+      "kebiasaan",
+      "rumah"
+    ],
+    "teks": "Kalau menjemur, pastikan tidak mengganggu tetangga.",
+    "meta": {
+      "variants": [
+        "Kalau menjemur, pastikan tidak mengganggu tetangga."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-siram-tanaman",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan siram-tanaman",
+    "tags": [
+      "kebiasaan",
+      "rumah"
+    ],
+    "teks": "Siram tanaman pagi atau sore, hindari terik ekstrem.",
+    "meta": {
+      "variants": [
+        "Siram tanaman pagi atau sore, hindari terik ekstrem."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-beri-makan-hewan",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan beri-makan-hewan",
+    "tags": [
+      "kebiasaan",
+      "rumah"
+    ],
+    "teks": "Jangan lupa jadwal makan hewan peliharaan.",
+    "meta": {
+      "variants": [
+        "Jangan lupa jadwal makan hewan peliharaan."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-kontak-ortu",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan kontak-ortu",
+    "tags": [
+      "kebiasaan",
+      "keluarga"
+    ],
+    "teks": "Hubungi orang tua sesekali, meski singkat.",
+    "meta": {
+      "variants": [
+        "Hubungi orang tua sesekali, meski singkat."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-janji-temu",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan janji-temu",
+    "tags": [
+      "kebiasaan",
+      "sosial"
+    ],
+    "teks": "Konfirmasi janji temu agar tidak sia-sia.",
+    "meta": {
+      "variants": [
+        "Konfirmasi janji temu agar tidak sia-sia."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-ulang-tahun-teman",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan ulang-tahun-teman",
+    "tags": [
+      "kebiasaan",
+      "sosial"
+    ],
+    "teks": "Ingat ucapkan selamat ulang tahun ke teman.",
+    "meta": {
+      "variants": [
+        "Ingat ucapkan selamat ulang tahun ke teman."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-tolak-halus",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan tolak-halus",
+    "tags": [
+      "kebiasaan",
+      "sosial"
+    ],
+    "teks": "Menolak dengan sopan lebih baik daripada berjanji palsu.",
+    "meta": {
+      "variants": [
+        "Menolak dengan sopan lebih baik daripada berjanji palsu."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-minta-tolong",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan minta-tolong",
+    "tags": [
+      "kebiasaan",
+      "sosial"
+    ],
+    "teks": "Minta tolong itu wajar; jelaskan kebutuhannya jelas.",
+    "meta": {
+      "variants": [
+        "Minta tolong itu wajar; jelaskan kebutuhannya jelas."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-ucap-maaf",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan ucap-maaf",
+    "tags": [
+      "kebiasaan",
+      "sosial"
+    ],
+    "teks": "Kalau salah, minta maaf lebih awal lebih lega.",
+    "meta": {
+      "variants": [
+        "Kalau salah, minta maaf lebih awal lebih lega."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-ucap-terima-kasih",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan ucap-terima-kasih",
+    "tags": [
+      "kebiasaan",
+      "sosial"
+    ],
+    "teks": "Ucapkan terima kasih meski bantuan kecil.",
+    "meta": {
+      "variants": [
+        "Ucapkan terima kasih meski bantuan kecil."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-antre-rs",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan antre-rs",
+    "tags": [
+      "kebiasaan",
+      "kesehatan"
+    ],
+    "teks": "Di fasilitas kesehatan, ikuti alur dan sabar.",
+    "meta": {
+      "variants": [
+        "Di fasilitas kesehatan, ikuti alur dan sabar."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-minum-obat-rutin",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan minum-obat-rutin",
+    "tags": [
+      "kebiasaan",
+      "kesehatan"
+    ],
+    "teks": "Set alarm pengingat obat jika mudah lupa.",
+    "meta": {
+      "variants": [
+        "Set alarm pengingat obat jika mudah lupa."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-cuci-tangan",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan cuci-tangan",
+    "tags": [
+      "kebiasaan",
+      "kesehatan"
+    ],
+    "teks": "Cuci tangan sebelum makan dan setelah dari luar.",
+    "meta": {
+      "variants": [
+        "Cuci tangan sebelum makan dan setelah dari luar."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-masker",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan masker",
+    "tags": [
+      "kebiasaan",
+      "kesehatan"
+    ],
+    "teks": "Pakai masker jika kurang sehat agar tidak menulari.",
+    "meta": {
+      "variants": [
+        "Pakai masker jika kurang sehat agar tidak menulari."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-tidur-teratur",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan tidur-teratur",
+    "tags": [
+      "kebiasaan",
+      "kesehatan"
+    ],
+    "teks": "Usahakan jam tidur relatif konsisten.",
+    "meta": {
+      "variants": [
+        "Usahakan jam tidur relatif konsisten."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-batasi-kafein-malam",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan batasi-kafein-malam",
+    "tags": [
+      "kebiasaan",
+      "kesehatan"
+    ],
+    "teks": "Kurangi kafein malam hari supaya tidur lebih mudah.",
+    "meta": {
+      "variants": [
+        "Kurangi kafein malam hari supaya tidur lebih mudah."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-catat-tugas",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan catat-tugas",
+    "tags": [
+      "kebiasaan",
+      "kerja"
+    ],
+    "teks": "Tulis tugas biar tidak hanya di kepala.",
+    "meta": {
+      "variants": [
+        "Tulis tugas biar tidak hanya di kepala."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-prioritas-tiga",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan prioritas-tiga",
+    "tags": [
+      "kebiasaan",
+      "kerja"
+    ],
+    "teks": "Pilih maksimal tiga prioritas per hari.",
+    "meta": {
+      "variants": [
+        "Pilih maksimal tiga prioritas per hari."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-matikan-notif",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan matikan-notif",
+    "tags": [
+      "kebiasaan",
+      "kerja"
+    ],
+    "teks": "Matikan notifikasi yang tidak penting saat fokus.",
+    "meta": {
+      "variants": [
+        "Matikan notifikasi yang tidak penting saat fokus."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-rapat-tepat-waktu",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan rapat-tepat-waktu",
+    "tags": [
+      "kebiasaan",
+      "kerja"
+    ],
+    "teks": "Datang tepat waktu adalah bentuk hormat.",
+    "meta": {
+      "variants": [
+        "Datang tepat waktu adalah bentuk hormat."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-follow-up",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan follow-up",
+    "tags": [
+      "kebiasaan",
+      "kerja"
+    ],
+    "teks": "Follow-up singkat lebih baik daripada menunggu lama.",
+    "meta": {
+      "variants": [
+        "Follow-up singkat lebih baik daripada menunggu lama."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-simpan-struk",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan simpan-struk",
+    "tags": [
+      "kebiasaan",
+      "harian"
+    ],
+    "teks": "Simpan bukti pembayaran penting.",
+    "meta": {
+      "variants": [
+        "Simpan bukti pembayaran penting."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-cek-rekening",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan cek-rekening",
+    "tags": [
+      "kebiasaan",
+      "harian"
+    ],
+    "teks": "Sesekali cek mutasi rekening biar aman.",
+    "meta": {
+      "variants": [
+        "Sesekali cek mutasi rekening biar aman."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-hemat-listrik",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan hemat-listrik",
+    "tags": [
+      "kebiasaan",
+      "rumah"
+    ],
+    "teks": "Matikan lampu ruangan kosong.",
+    "meta": {
+      "variants": [
+        "Matikan lampu ruangan kosong."
+      ],
+      "jenis": "kebiasaan"
+    }
+  },
+  {
+    "id": "sapaan-habit-cabut-charger",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kebiasaan cabut-charger",
+    "tags": [
+      "kebiasaan",
+      "rumah"
+    ],
+    "teks": "Cabut charger yang tidak dipakai.",
+    "meta": {
+      "variants": [
+        "Cabut charger yang tidak dipakai."
+      ],
+      "jenis": "kebiasaan"
+    }
+  }
+]

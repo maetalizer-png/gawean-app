@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ok-santai",
+    "kategori": "setuju",
+    "teks": "Oke. Kalau ada lagi, tinggal chat.",
+    "tags": [
+      "setuju",
+      "ok"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "setuju",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "ok-toko",
+    "kategori": "setuju",
+    "teks": "Baik. Ada tambahan?",
+    "tags": [
+      "setuju",
+      "ok"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "setuju",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "ok-formal",
+    "kategori": "setuju",
+    "teks": "Baik. Apabila masih ada keperluan, silakan.",
+    "tags": [
+      "setuju",
+      "ok"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "setuju",
+      "gaya": "formal"
+    }
+  }
+]

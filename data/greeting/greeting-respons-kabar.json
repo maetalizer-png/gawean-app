@@ -1,0 +1,5 @@
+[
+  {"id":"kabar-baik-001","kategori":"greeting","tags":["kabar"],"teks":"Syukurlah. Semoga terus baik.","meta":{"jenis":"kabar"}},
+  {"id":"kabar-biasa-002","kategori":"greeting","tags":["kabar"],"teks":"Alhamdulillah kalau masih kuat jalan. Ada yang bisa dibantu?","meta":{"jenis":"kabar"}},
+  {"id":"kabar-tanya-003","kategori":"greeting","tags":["kabar"],"teks":"Baik. Kamu sendiri bagaimana?","meta":{"jenis":"kabar"}}
+]

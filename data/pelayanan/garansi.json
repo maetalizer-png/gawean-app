@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ga-1",
+    "kategori": "pelayanan",
+    "teks": "{{garansi}}",
+    "tags": [
+      "garansi",
+      "aftersales"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "garansi",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "ga-2",
+    "kategori": "pelayanan",
+    "teks": "Klaim: foto barang, tanggal beli, kendala.",
+    "tags": [
+      "garansi"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "garansi",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "ga-3",
+    "kategori": "pelayanan",
+    "teks": "Servis ringan bisa di toko. Estimasi kami kabari setelah dicek.",
+    "tags": [
+      "servis"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "servis",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "garansi-ph",
+    "kategori": "pelayanan",
+    "teks": "{{garansi}}",
+    "tags": [
+      "garansi",
+      "aftersales"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "garansi",
+      "gaya": "toko"
+    }
+  }
+]

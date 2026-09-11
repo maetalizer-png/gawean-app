@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sapaan-keluarga-orang-tua-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Orang tua",
+    "tags": [
+      "keluarga"
+    ],
+    "teks": "Jangan lupa kabari keluarga ya.",
+    "meta": {
+      "variants": [
+        "Semoga keluarga sehat."
+      ],
+      "jenis": "keluarga"
+    }
+  },
+  {
+    "id": "sapaan-keluarga-anak-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Anak",
+    "tags": [
+      "keluarga"
+    ],
+    "teks": "Semoga anak-anaknya sehat dan ceria.",
+    "meta": {
+      "variants": [
+        "Salam untuk keluarga."
+      ],
+      "jenis": "keluarga"
+    }
+  },
+  {
+    "id": "sapaan-keluarga-rumah-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Rumah",
+    "tags": [
+      "keluarga"
+    ],
+    "teks": "Semoga suasana di rumah nyaman.",
+    "meta": {
+      "variants": [
+        "Selamat beristirahat di rumah."
+      ],
+      "jenis": "keluarga"
+    }
+  }
+]

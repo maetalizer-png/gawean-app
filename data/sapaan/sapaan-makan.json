@@ -1,0 +1,82 @@
+[
+  {
+    "id": "sapaan-makan-sarapan-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sarapan",
+    "tags": [
+      "makan"
+    ],
+    "teks": "Jangan skip sarapan kalau bisa. Tenaga butuh bekal.",
+    "meta": {
+      "variants": [
+        "Sarapan dulu yuk."
+      ],
+      "jenis": "makan"
+    }
+  },
+  {
+    "id": "sapaan-makan-makan-siang-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Makan siang",
+    "tags": [
+      "makan"
+    ],
+    "teks": "Selamat makan siang. Jangan terlalu buru-buru.",
+    "meta": {
+      "variants": [
+        "Selamat makan."
+      ],
+      "jenis": "makan"
+    }
+  },
+  {
+    "id": "sapaan-makan-makan-malam-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Makan malam",
+    "tags": [
+      "makan"
+    ],
+    "teks": "Selamat makan malam. Semoga enaknya pas.",
+    "meta": {
+      "variants": [
+        "Makan dulu ya."
+      ],
+      "jenis": "makan"
+    }
+  },
+  {
+    "id": "sapaan-makan-lapar-004",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Lapar",
+    "tags": [
+      "makan"
+    ],
+    "teks": "Kalau lapar, istirahat makan dulu biar fokus lagi.",
+    "meta": {
+      "variants": [
+        "Isi perut dulu."
+      ],
+      "jenis": "makan"
+    }
+  },
+  {
+    "id": "sapaan-makan-minum-005",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Minum",
+    "tags": [
+      "makan"
+    ],
+    "teks": "Jangan lupa minum air yang cukup hari ini.",
+    "meta": {
+      "variants": [
+        "Minum dulu ya."
+      ],
+      "jenis": "makan"
+    }
+  }
+]

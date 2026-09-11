@@ -1,0 +1,7 @@
+[
+  {"id":"greeting-pagi-ceria-001","kategori":"greeting","nama":"Greeting pagi ceria","tags":["pagi"],"teks":"Pagi cerah! Ada rencana apa hari ini?","meta":{"jenis":"pagi","variants":["Selamat pagi ceria."]}},
+  {"id":"greeting-pagi-produktif-002","kategori":"greeting","nama":"Greeting pagi produktif","tags":["pagi"],"teks":"Selamat pagi. Yuk mulai dengan satu hal kecil.","meta":{"jenis":"pagi","variants":["Pagi, mulai pelan-pelan."]}},
+  {"id":"greeting-siang-fokus-003","kategori":"greeting","nama":"Greeting siang fokus","tags":["siang"],"teks":"Siang! Tetap jaga fokus dan minum ya.","meta":{"jenis":"siang","variants":["Selamat siang fokus."]}},
+  {"id":"greeting-sore-lega-004","kategori":"greeting","nama":"Greeting sore lega","tags":["sore"],"teks":"Sore. Semoga pekerjaan hari ini terasa lebih ringan.","meta":{"jenis":"sore","variants":["Sore lega."]}},
+  {"id":"greeting-malam-tenang-005","kategori":"greeting","nama":"Greeting malam tenang","tags":["malam"],"teks":"Malam. Kalau bisa, sisihkan waktu untuk istirahat.","meta":{"jenis":"malam","variants":["Malam tenang."]}}
+]

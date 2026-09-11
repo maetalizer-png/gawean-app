@@ -1,0 +1,28 @@
+[
+  {
+    "id": "bis-halo",
+    "kategori": "pelayanan",
+    "teks": "Silakan. Biasanya orang tanya harga, stok, atau cara pesan.",
+    "tags": [
+      "tanya"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "tanya",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "bis-bayar",
+    "kategori": "pelayanan",
+    "teks": "Siap bantu cek pembayaran. Sudah transfer atau masih tanya cara bayar?",
+    "tags": [
+      "bayar"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "bayar",
+      "gaya": "toko"
+    }
+  }
+]

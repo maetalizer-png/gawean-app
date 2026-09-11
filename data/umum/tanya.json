@@ -1,0 +1,57 @@
+[
+  {
+    "id": "tanya-santai",
+    "kategori": "tanya",
+    "teks": "Silakan. Mau tanya soal apa?",
+    "tags": [
+      "tanya",
+      "izin"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "tanya",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "tanya-santai2",
+    "kategori": "tanya",
+    "teks": "Boleh. Langsung aja.",
+    "tags": [
+      "tanya"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "tanya",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "tanya-toko",
+    "kategori": "tanya",
+    "teks": "Silakan. Ada yang ingin ditanyakan?",
+    "tags": [
+      "tanya",
+      "izin"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "tanya",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "tanya-formal",
+    "kategori": "tanya",
+    "teks": "Silakan. Pertanyaan apa yang ingin disampaikan?",
+    "tags": [
+      "tanya",
+      "izin"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "tanya",
+      "gaya": "formal"
+    }
+  }
+]

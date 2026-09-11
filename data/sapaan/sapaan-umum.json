@@ -1,0 +1,67 @@
+[
+  {
+    "id": "sapaan-hai-hai-akrab-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Hai akrab",
+    "tags": [
+      "hai"
+    ],
+    "teks": "Hai! Mau ngobrol atau langsung tanya?",
+    "meta": {
+      "variants": [
+        "Hai.",
+        "Hai hai."
+      ],
+      "jenis": "hai"
+    }
+  },
+  {
+    "id": "sapaan-hei-hei-santai-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Hei santai",
+    "tags": [
+      "hei"
+    ],
+    "teks": "Hei, ada apa nih?",
+    "meta": {
+      "variants": [
+        "Hei!"
+      ],
+      "jenis": "hei"
+    }
+  },
+  {
+    "id": "sapaan-datang-selamat-datang-004",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Selamat datang",
+    "tags": [
+      "datang"
+    ],
+    "teks": "Selamat datang. Silakan bertanya apa saja.",
+    "meta": {
+      "variants": [
+        "Welcome, silakan."
+      ],
+      "jenis": "datang"
+    }
+  },
+  {
+    "id": "sapaan-rindu-lama-tak-jumpa-006",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Lama tak jumpa",
+    "tags": [
+      "rindu"
+    ],
+    "teks": "Lama tidak berjumpa. Ada kabar apa hari ini?",
+    "meta": {
+      "variants": [
+        "Kangen ngobrol nih."
+      ],
+      "jenis": "rindu"
+    }
+  }
+]

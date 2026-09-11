@@ -1,0 +1,144 @@
+[
+  {
+    "id": "pelayanan-pesan-001",
+    "kategori": "pelayanan",
+    "teks": "Untuk pesan: nama, item, jumlah, alamat, dan nomor WA.",
+    "tags": [
+      "pesan",
+      "order"
+    ],
+    "meta": {
+      "jenis": "pesan"
+    }
+  },
+  {
+    "id": "pelayanan-pesan-002",
+    "kategori": "pelayanan",
+    "teks": "Setelah data lengkap kami kirim total + cara bayar.",
+    "tags": [
+      "pesan"
+    ],
+    "meta": {
+      "jenis": "pesan"
+    }
+  },
+  {
+    "id": "pelayanan-bayar-003",
+    "kategori": "pelayanan",
+    "teks": "Pembayaran transfer atau tunai di toko. Kirim bukti jika transfer.",
+    "tags": [
+      "bayar"
+    ],
+    "meta": {
+      "jenis": "bayar"
+    }
+  },
+  {
+    "id": "pelayanan-pesan-extra-004",
+    "kategori": "pelayanan",
+    "teks": "Format pesan:\nNama:\nItem:\nJumlah:\nAlamat:\nWA:",
+    "tags": [
+      "pesan"
+    ],
+    "meta": {
+      "jenis": "pesan"
+    }
+  },
+  {
+    "id": "pelayanan-order-extra-005",
+    "kategori": "pelayanan",
+    "teks": "Setelah data lengkap, kami kirim total. Transfer dulu, baru proses.",
+    "tags": [
+      "order"
+    ],
+    "meta": {
+      "jenis": "order"
+    }
+  },
+  {
+    "id": "pelayanan-pesan-extra-006",
+    "kategori": "pelayanan",
+    "teks": "Satu chat satu pesanan agar tidak tertukar.",
+    "tags": [
+      "pesan"
+    ],
+    "meta": {
+      "jenis": "pesan"
+    }
+  },
+  {
+    "id": "pelayanan-bayar-extra-007",
+    "kategori": "pelayanan",
+    "teks": "Rekening hanya yang kami kirim di chat ini.",
+    "tags": [
+      "bayar"
+    ],
+    "meta": {
+      "jenis": "bayar"
+    }
+  },
+  {
+    "id": "pelayanan-batal-extra-008",
+    "kategori": "pelayanan",
+    "teks": "Batal sebelum barang dikirim: kabari. Setelah resi, ikut syarat ekspedisi.",
+    "tags": [
+      "batal"
+    ],
+    "meta": {
+      "jenis": "batal"
+    }
+  },
+  {
+    "id": "pemesanan-gaya-009",
+    "kategori": "pelayanan",
+    "teks": "Format: nama, item, jumlah, alamat, nomor WA.",
+    "tags": [
+      "pesan",
+      "order"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "pesan",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "pemesanan-gaya-010",
+    "kategori": "pelayanan",
+    "teks": "Kirim nama, barang, jumlah, alamat, sama WA ya.",
+    "tags": [
+      "pesan"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "pesan",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "pemesanan-gaya-011",
+    "kategori": "pelayanan",
+    "teks": "Lengkapi nama pemesan, item, jumlah, alamat, dan nomor yang dapat dihubungi.",
+    "tags": [
+      "pesan"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "pesan",
+      "gaya": "formal"
+    }
+  },
+  {
+    "id": "ps-x1",
+    "kategori": "pelayanan",
+    "teks": "Kalau sudah transfer, kirim bukti di thread yang sama.",
+    "tags": [
+      "pesan"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "pesan",
+      "gaya": "toko"
+    }
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "id": "greeting-open-01",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Pembuka netral",
+    "tags": [
+      "buka"
+    ],
+    "teks": "Halo. Silakan tulis apa yang kamu butuhkan.",
+    "meta": {
+      "variants": [
+        "Saya siap membaca pesanmu."
+      ],
+      "jenis": "buka"
+    }
+  },
+  {
+    "id": "greeting-open-02",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Pembuka ramah",
+    "tags": [
+      "buka"
+    ],
+    "teks": "Hai, senang bertemu. Mau dibantu apa hari ini?",
+    "meta": {
+      "variants": [
+        "Hai, mulai dari mana saja boleh."
+      ],
+      "jenis": "buka"
+    }
+  },
+  {
+    "id": "greeting-open-03",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Pembuka formal",
+    "tags": [
+      "buka"
+    ],
+    "teks": "Selamat datang. Silakan sampaikan pertanyaan Anda.",
+    "meta": {
+      "variants": [
+        "Dengan senang hati membantu."
+      ],
+      "jenis": "buka"
+    }
+  },
+  {
+    "id": "greeting-open-04",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Pembuka santai",
+    "tags": [
+      "buka"
+    ],
+    "teks": "Yo, ada apa? Ceritakan saja.",
+    "meta": {
+      "variants": [
+        "Santai, ketik aja."
+      ],
+      "jenis": "buka"
+    }
+  },
+  {
+    "id": "greeting-time-01",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Pagi singkat",
+    "tags": [
+      "pagi"
+    ],
+    "teks": "Pagi. Ada agenda penting yang ingin diurai?",
+    "meta": {
+      "variants": [
+        "Pagi, saya dengar."
+      ],
+      "jenis": "pagi"
+    }
+  },
+  {
+    "id": "greeting-time-02",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Siang singkat",
+    "tags": [
+      "siang"
+    ],
+    "teks": "Siang. Langsung ke inti juga boleh.",
+    "meta": {
+      "variants": [
+        "Siang, silakan."
+      ],
+      "jenis": "siang"
+    }
+  },
+  {
+    "id": "greeting-time-03",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Sore singkat",
+    "tags": [
+      "sore"
+    ],
+    "teks": "Sore. Mau ringkas atau detail?",
+    "meta": {
+      "variants": [
+        "Sore, saya ikuti."
+      ],
+      "jenis": "sore"
+    }
+  },
+  {
+    "id": "greeting-time-04",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Malam singkat",
+    "tags": [
+      "malam"
+    ],
+    "teks": "Malam. Kita buat jawaban yang jelas dan tidak bertele-tele.",
+    "meta": {
+      "variants": [
+        "Malam, silakan."
+      ],
+      "jenis": "malam"
+    }
+  },
+  {
+    "id": "greeting-thanks-01",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Makasih 1",
+    "tags": [
+      "terima-kasih"
+    ],
+    "teks": "Sama-sama. Kalau masih ada yang kurang jelas, tanya lagi.",
+    "meta": {
+      "variants": [
+        "Siap, sama-sama."
+      ],
+      "jenis": "terima-kasih"
+    }
+  },
+  {
+    "id": "greeting-bye-01",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Tutup 1",
+    "tags": [
+      "tutup"
+    ],
+    "teks": "Baik, sampai di sini dulu. Hati-hati.",
+    "meta": {
+      "variants": [
+        "Sampai jumpa."
+      ],
+      "jenis": "tutup"
+    }
+  },
+  {
+    "id": "greeting-bye-02",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Tutup 2",
+    "tags": [
+      "tutup"
+    ],
+    "teks": "Oke, nanti lanjut lagi kapan saja.",
+    "meta": {
+      "variants": [
+        "Dadah, jaga diri."
+      ],
+      "jenis": "tutup"
+    }
+  },
+  {
+    "id": "greeting-help-01",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Tawar bantuan",
+    "tags": [
+      "bantuan"
+    ],
+    "teks": "Saya bisa bantu jelaskan, merapikan ide, atau sekadar menemani mikir.",
+    "meta": {
+      "variants": [
+        "Mau yang mana dulu?"
+      ],
+      "jenis": "bantuan"
+    }
+  },
+  {
+    "id": "greeting-help-02",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Klarifikasi",
+    "tags": [
+      "bantuan"
+    ],
+    "teks": "Agar tepat, boleh tambahkan detail singkat?",
+    "meta": {
+      "variants": [
+        "Contoh atau konteks akan membantu."
+      ],
+      "jenis": "bantuan"
+    }
+  },
+  {
+    "id": "greeting-emo-01",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Tenangkan",
+    "tags": [
+      "emosi"
+    ],
+    "teks": "Pelan saja. Kita ambil satu masalah dulu.",
+    "meta": {
+      "variants": [
+        "Tidak perlu sekaligus."
+      ],
+      "jenis": "emosi"
+    }
+  },
+  {
+    "id": "greeting-emo-02",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Semangatkan",
+    "tags": [
+      "emosi"
+    ],
+    "teks": "Kamu sudah sampai di sini; itu progress.",
+    "meta": {
+      "variants": [
+        "Lanjut setapak demi setapak."
+      ],
+      "jenis": "emosi"
+    }
+  },
+  {
+    "id": "greeting-emo-03",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Dengarkan",
+    "tags": [
+      "emosi"
+    ],
+    "teks": "Saya dengarkan dulu. Silakan curhat seperlunya.",
+    "meta": {
+      "variants": [
+        "Tidak dihakimi."
+      ],
+      "jenis": "emosi"
+    }
+  },
+  {
+    "id": "greeting-ucapan-01",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Semoga lulus",
+    "tags": [
+      "ucapan"
+    ],
+    "teks": "Semoga hasilnya sesuai usaha yang sudah dikerahkan.",
+    "meta": {
+      "variants": [
+        "Percaya prosesnya."
+      ],
+      "jenis": "ucapan"
+    }
+  },
+  {
+    "id": "greeting-ucapan-02",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Semoga cepat sembuh",
+    "tags": [
+      "ucapan"
+    ],
+    "teks": "Semoga lekas pulih dan kuat kembali.",
+    "meta": {
+      "variants": [
+        "Istirahat yang cukup."
+      ],
+      "jenis": "ucapan"
+    }
+  },
+  {
+    "id": "greeting-ucapan-03",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Selamat pindah",
+    "tags": [
+      "ucapan"
+    ],
+    "teks": "Selamat menempati tempat baru. Semoga betah.",
+    "meta": {
+      "variants": [
+        "Semoga pindahnya lancar."
+      ],
+      "jenis": "ucapan"
+    }
+  }
+]

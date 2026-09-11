@@ -1,0 +1,43 @@
+[
+  {
+    "id": "kt-1",
+    "kategori": "pelayanan",
+    "teks": "Sebut kategori yang dicari, kami kirim opsi yang ready.",
+    "tags": [
+      "katalog",
+      "menu",
+      "daftar"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "katalog",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "kt-2",
+    "kategori": "pelayanan",
+    "teks": "Kasih budget dan kebutuhan, nanti kami rekomendasikan.",
+    "tags": [
+      "rekomendasi"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "rekomendasi",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "kt-3",
+    "kategori": "pelayanan",
+    "teks": "Katalog lengkap bisa dikirim foto per kategori.",
+    "tags": [
+      "katalog"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "katalog",
+      "gaya": "toko"
+    }
+  }
+]

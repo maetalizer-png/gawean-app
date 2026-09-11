@@ -1,0 +1,45 @@
+[
+  {
+    "id": "ban-toko",
+    "kategori": "bantuan",
+    "teks": "Bisa dibantu: sapaan, jam buka, harga, stok, cara pesan, ongkir, alamat, dan komplain. Tulis saja keperluannya.",
+    "tags": [
+      "bantuan",
+      "fitur",
+      "menu"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "bantuan",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "ban-santai",
+    "kategori": "bantuan",
+    "teks": "Bisa nanya jam buka, harga, stok, cara order, ongkir, alamat, atau komplain.",
+    "tags": [
+      "bantuan",
+      "fitur"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "bantuan",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "ban-formal",
+    "kategori": "bantuan",
+    "teks": "Layanan meliputi informasi operasional, harga, ketersediaan, pemesanan, pengiriman, lokasi, dan penanganan keluhan.",
+    "tags": [
+      "bantuan",
+      "fitur"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "bantuan",
+      "gaya": "formal"
+    }
+  }
+]

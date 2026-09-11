@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pelayanan-stok-001",
+    "kategori": "pelayanan",
+    "teks": "Sebut item yang dicari, kami cek ketersediaan.",
+    "tags": [
+      "stok"
+    ],
+    "meta": {
+      "jenis": "stok"
+    }
+  },
+  {
+    "id": "pelayanan-stok-002",
+    "kategori": "pelayanan",
+    "teks": "Jika habis, kami tawarkan pengganti atau pre-order.",
+    "tags": [
+      "stok"
+    ],
+    "meta": {
+      "jenis": "stok"
+    }
+  },
+  {
+    "id": "pelayanan-stok-extra-003",
+    "kategori": "pelayanan",
+    "teks": "Stok live berubah cepat. Konfirmasi dulu sebelum transfer.",
+    "tags": [
+      "stok"
+    ],
+    "meta": {
+      "jenis": "stok"
+    }
+  },
+  {
+    "id": "pelayanan-stok-extra-004",
+    "kategori": "pelayanan",
+    "teks": "Pre-order 3–7 hari kalau item habis. Kami kabari estimasi.",
+    "tags": [
+      "stok"
+    ],
+    "meta": {
+      "jenis": "stok"
+    }
+  },
+  {
+    "id": "pelayanan-stok-extra-005",
+    "kategori": "pelayanan",
+    "teks": "Warna/ukuran tertentu bisa kosong. Sebut varian yang diinginkan.",
+    "tags": [
+      "stok"
+    ],
+    "meta": {
+      "jenis": "stok"
+    }
+  },
+  {
+    "id": "pelayanan-ready-extra-006",
+    "kategori": "pelayanan",
+    "teks": "Kalau ready, bisa dikirim hari ini sebelum jam 15.00.",
+    "tags": [
+      "ready"
+    ],
+    "meta": {
+      "jenis": "ready"
+    }
+  },
+  {
+    "id": "stok-gaya-007",
+    "kategori": "pelayanan",
+    "teks": "Sebut item dan varian, kami cek ketersediaan.",
+    "tags": [
+      "stok"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "stok",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "stok-gaya-008",
+    "kategori": "pelayanan",
+    "teks": "Barangnya apa? Nanti dicek masih ada atau pre-order.",
+    "tags": [
+      "stok"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "stok",
+      "gaya": "santai"
+    }
+  },
+  {
+    "id": "stok-gaya-009",
+    "kategori": "pelayanan",
+    "teks": "Mohon nama item dan varian untuk pengecekan stok.",
+    "tags": [
+      "stok"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "stok",
+      "gaya": "formal"
+    }
+  }
+]

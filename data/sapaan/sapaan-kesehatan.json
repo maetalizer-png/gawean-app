@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sapaan-kesehatan-sehat-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sehat",
+    "tags": [
+      "kesehatan"
+    ],
+    "teks": "Jaga kesehatan, tidur cukup dan makan teratur.",
+    "meta": {
+      "variants": [
+        "Semoga sehat selalu."
+      ],
+      "jenis": "kesehatan"
+    }
+  },
+  {
+    "id": "sapaan-kesehatan-sakit-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sakit",
+    "tags": [
+      "kesehatan"
+    ],
+    "teks": "Kalau kurang enak badan, istirahat dulu ya.",
+    "meta": {
+      "variants": [
+        "Lekas sembuh."
+      ],
+      "jenis": "kesehatan"
+    }
+  },
+  {
+    "id": "sapaan-kesehatan-olahraga-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Olahraga",
+    "tags": [
+      "kesehatan"
+    ],
+    "teks": "Semangat olahraga. Jangan dipaksakan berlebihan.",
+    "meta": {
+      "variants": [
+        "Semangat gerak."
+      ],
+      "jenis": "kesehatan"
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sapaan-perjalanan-hati-hati-jalan-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Hati-hati jalan",
+    "tags": [
+      "perjalanan"
+    ],
+    "teks": "Hati-hati di jalan. Utamakan keselamatan.",
+    "meta": {
+      "variants": [
+        "Hati-hati ya."
+      ],
+      "jenis": "perjalanan"
+    }
+  },
+  {
+    "id": "sapaan-perjalanan-sampai-tujuan-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Sampai tujuan",
+    "tags": [
+      "perjalanan"
+    ],
+    "teks": "Semoga sampai tujuan dengan selamat.",
+    "meta": {
+      "variants": [
+        "Selamat sampai tujuan."
+      ],
+      "jenis": "perjalanan"
+    }
+  },
+  {
+    "id": "sapaan-perjalanan-macet-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Macet",
+    "tags": [
+      "perjalanan"
+    ],
+    "teks": "Kalau macet, sabar. Lebih baik terlambat daripada terburu-buru.",
+    "meta": {
+      "variants": [
+        "Sabar di jalan."
+      ],
+      "jenis": "perjalanan"
+    }
+  }
+]

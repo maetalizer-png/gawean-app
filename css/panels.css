@@ -70,6 +70,3 @@
 #camera-overlay[hidden] { display: none !important; }
 #camera-video { flex: 1; width: 100%; object-fit: cover; }
 .camera-actions { display: flex; gap: 8px; padding: 12px 12px calc(16px + env(safe-area-inset-bottom)); }
-.model-list { display:flex; flex-direction:column; gap:8px; max-height:40vh; overflow:auto; margin-bottom:12px; }
-.model-row { width:100%; text-align:left; padding:12px 12px; border:1px solid var(--line); border-radius:14px; font-size:14px; font-weight:650; background:var(--bg); }
-.model-row.active { border-color:var(--accent); color:var(--accent); }

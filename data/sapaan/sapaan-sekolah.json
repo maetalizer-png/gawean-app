@@ -1,0 +1,271 @@
+[
+  {
+    "id": "sapaan-sekolah-berangkat-sekolah-001",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Berangkat sekolah",
+    "tags": [
+      "sekolah"
+    ],
+    "teks": "Semangat berangkat sekolah. Hati-hati di jalan.",
+    "meta": {
+      "variants": [
+        "Semangat sekolah!",
+        "Hati-hati ya di perjalanan."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-belajar-002",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Belajar",
+    "tags": [
+      "sekolah",
+      "belajar"
+    ],
+    "teks": "Semoga belajarnya nyaman dan mudah dipahami.",
+    "meta": {
+      "variants": [
+        "Semangat belajar.",
+        "Pelan-pelan saja, yang penting paham."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-ujian-003",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Ujian",
+    "tags": [
+      "sekolah",
+      "ujian"
+    ],
+    "teks": "Semoga ujiannya lancar. Kerjakan yang paling dikuasai dulu.",
+    "meta": {
+      "variants": [
+        "Semangat ujian!",
+        "Tarik napas dulu, lalu kerjakan yang mudah."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-pr-004",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "PR",
+    "tags": [
+      "sekolah",
+      "tugas"
+    ],
+    "teks": "Kalau mengerjakan tugas, pecah jadi langkah kecil saja.",
+    "meta": {
+      "variants": [
+        "Satu per satu saja kerjakannya.",
+        "Jangan ditumpuk semua sekaligus."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-kuliah-pagi-005",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kuliah pagi",
+    "tags": [
+      "sekolah",
+      "kuliah"
+    ],
+    "teks": "Semangat kuliah paginya. Semoga materinya nyantol.",
+    "meta": {
+      "variants": [
+        "Paginya tetap semangat ya.",
+        "Semoga dosennya menjelaskan dengan jelas."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-presentasi-006",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Presentasi",
+    "tags": [
+      "sekolah",
+      "presentasi"
+    ],
+    "teks": "Semoga presentasinya lancar. Yang penting tenang dan sampaikan intinya.",
+    "meta": {
+      "variants": [
+        "Tarik napas, lalu mulai.",
+        "Kamu sudah siap, tinggal sampaikan."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-kelompok-007",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kerja kelompok",
+    "tags": [
+      "sekolah",
+      "kelompok"
+    ],
+    "teks": "Kerja kelompok memang butuh sabar. Bagi tugasnya biar adil.",
+    "meta": {
+      "variants": [
+        "Komunikasi dulu biar tidak saling nunggu.",
+        "Catat siapa kerjakan apa."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-bingung-materi-008",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Bingung materi",
+    "tags": [
+      "sekolah",
+      "bingung"
+    ],
+    "teks": "Kalau materi terasa sulit, coba tanya ulang atau cari contoh yang lebih sederhana.",
+    "meta": {
+      "variants": [
+        "Tidak apa-apa bingung dulu.",
+        "Pecah materinya per bagian kecil."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-revisi-009",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Revisi tugas",
+    "tags": [
+      "sekolah",
+      "revisi"
+    ],
+    "teks": "Revisi itu biasa. Fokus ke poin yang diminta dosen saja.",
+    "meta": {
+      "variants": [
+        "Perbaiki satu per satu.",
+        "Jangan langsung putus asa."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-deadline-tugas-010",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Deadline tugas",
+    "tags": [
+      "sekolah",
+      "deadline"
+    ],
+    "teks": "Deadline dekat? Kerjakan yang paling penting dulu, sisanya menyusul.",
+    "meta": {
+      "variants": [
+        "Prioritaskan yang wajib dikumpul.",
+        "Jangan panik, atur waktunya."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-dosen-011",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Bicara dengan dosen",
+    "tags": [
+      "sekolah",
+      "dosen"
+    ],
+    "teks": "Kalau mau tanya dosen, siapkan pertanyaan singkat dan jelas.",
+    "meta": {
+      "variants": [
+        "Langsung ke intinya saja.",
+        "Catat dulu apa yang mau ditanyakan."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-nilai-012",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Menunggu nilai",
+    "tags": [
+      "sekolah",
+      "nilai"
+    ],
+    "teks": "Menunggu nilai memang bikin deg-degan. Semoga hasilnya sesuai usaha.",
+    "meta": {
+      "variants": [
+        "Yang penting sudah berusaha.",
+        "Apapun hasilnya, bisa dievaluasi lagi."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-libur-013",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Libur sekolah",
+    "tags": [
+      "sekolah",
+      "libur"
+    ],
+    "teks": "Libur dimanfaatkan untuk istirahat juga, bukan hanya kejar tugas.",
+    "meta": {
+      "variants": [
+        "Istirahat yang cukup ya.",
+        "Boleh santai, tapi jangan lupa sedikit review."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-online-014",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Kuliah online",
+    "tags": [
+      "sekolah",
+      "online"
+    ],
+    "teks": "Kuliah online butuh fokus ekstra. Coba cari tempat yang tenang.",
+    "meta": {
+      "variants": [
+        "Matikan notifikasi dulu biar tidak terganggu.",
+        "Catat poin penting biar tidak ketinggalan."
+      ],
+      "jenis": "sekolah"
+    }
+  },
+  {
+    "id": "sapaan-sekolah-skripsi-015",
+    "kategori": "sapaan",
+    "wilayah": null,
+    "nama": "Skripsi / tugas akhir",
+    "tags": [
+      "sekolah",
+      "skripsi"
+    ],
+    "teks": "Skripsi dikerjakan bertahap. Jangan ditumpuk sampai mendadak.",
+    "meta": {
+      "variants": [
+        "Satu bab dulu, lalu lanjut.",
+        "Konsultasi rutin biar tidak salah arah."
+      ],
+      "jenis": "sekolah"
+    }
+  }
+]

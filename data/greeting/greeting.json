@@ -1,0 +1,1357 @@
+[
+  {
+    "id": "greeting-halo",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting halo",
+    "tags": [
+      "greeting",
+      "halo"
+    ],
+    "teks": "Halo! Ada yang bisa saya bantu?",
+    "meta": {
+      "variants": [
+        "Halo!",
+        "Hai, selamat datang.",
+        "Halo, silakan tanya apa saja."
+      ],
+      "jenis": "buka"
+    }
+  },
+  {
+    "id": "greeting-hai",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting hai",
+    "tags": [
+      "greeting",
+      "hai"
+    ],
+    "teks": "Hai! Mau mulai dari mana?",
+    "meta": {
+      "variants": [
+        "Hai!",
+        "Hai, apa kabar?"
+      ],
+      "jenis": "buka"
+    }
+  },
+  {
+    "id": "greeting-pagi",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting pagi",
+    "tags": [
+      "greeting",
+      "pagi"
+    ],
+    "teks": "Selamat pagi! Semoga harimu lancar.",
+    "meta": {
+      "variants": [
+        "Selamat pagi!",
+        "Pagi! Ada yang bisa dibantu?"
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "greeting-siang",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting siang",
+    "tags": [
+      "greeting",
+      "siang"
+    ],
+    "teks": "Selamat siang! Ada yang bisa saya bantu?",
+    "meta": {
+      "variants": [
+        "Selamat siang!",
+        "Siang! Mau tanya apa?"
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "greeting-sore",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting sore",
+    "tags": [
+      "greeting",
+      "sore"
+    ],
+    "teks": "Selamat sore! Silakan sampaikan kebutuhanmu.",
+    "meta": {
+      "variants": [
+        "Selamat sore!",
+        "Sore! Ada yang ingin dibahas?"
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "greeting-malam",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting malam",
+    "tags": [
+      "greeting",
+      "malam"
+    ],
+    "teks": "Selamat malam! Ada yang bisa dibantu?",
+    "meta": {
+      "variants": [
+        "Selamat malam!",
+        "Malam! Silakan tanya."
+      ],
+      "jenis": "waktu"
+    }
+  },
+  {
+    "id": "greeting-datang",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting selamat datang",
+    "tags": [
+      "greeting",
+      "datang"
+    ],
+    "teks": "Selamat datang! Saya Gawean, asistenmu.",
+    "meta": {
+      "variants": [
+        "Selamat datang!",
+        "Selamat datang, senang bisa membantu."
+      ],
+      "jenis": "buka"
+    }
+  },
+  {
+    "id": "greeting-kabar",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting apa kabar",
+    "tags": [
+      "greeting",
+      "kabar"
+    ],
+    "teks": "Baik, terima kasih. Bagaimana denganmu?",
+    "meta": {
+      "variants": [
+        "Kabar baik. Kamu bagaimana?"
+      ],
+      "jenis": "smalltalk"
+    }
+  },
+  {
+    "id": "greeting-makasih",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting terima kasih",
+    "tags": [
+      "greeting",
+      "terima-kasih"
+    ],
+    "teks": "Sama-sama! Senang bisa membantu.",
+    "meta": {
+      "variants": [
+        "Sama-sama!",
+        "Dengan senang hati."
+      ],
+      "jenis": "tutup"
+    }
+  },
+  {
+    "id": "greeting-maaf",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting maaf",
+    "tags": [
+      "greeting",
+      "maaf"
+    ],
+    "teks": "Tidak apa-apa. Ada lagi yang bisa dibantu?",
+    "meta": {
+      "variants": [
+        "Tidak masalah.",
+        "Gapapa, silakan lanjut."
+      ],
+      "jenis": "sopan"
+    }
+  },
+  {
+    "id": "greeting-permisi",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting permisi",
+    "tags": [
+      "greeting",
+      "permisi"
+    ],
+    "teks": "Silakan, saya dengarkan.",
+    "meta": {
+      "variants": [
+        "Silakan.",
+        "Iya, silakan tanya."
+      ],
+      "jenis": "sopan"
+    }
+  },
+  {
+    "id": "greeting-bro",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting santai",
+    "tags": [
+      "greeting",
+      "santai"
+    ],
+    "teks": "Halo! Mau ngobrol santai atau langsung ke topik?",
+    "meta": {
+      "variants": [
+        "Hai, santai saja."
+      ],
+      "jenis": "santai"
+    }
+  },
+  {
+    "id": "greeting-data-1",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 1",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Selamat pagi semuanya.",
+    "meta": {
+      "variants": [
+        "Selamat pagi semuanya."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-2",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 2",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih.",
+    "meta": {
+      "variants": [
+        "Terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-3",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 3",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih",
+    "meta": {
+      "variants": [
+        "Terima kasih"
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-4",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 4",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih banyak.",
+    "meta": {
+      "variants": [
+        "Terima kasih banyak."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-5",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 5",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Jika anda berkata pada seorang individualis liberal modern, “Hei, bagaimana jika anda mendengarkan sebuah khotbah?”",
+    "meta": {
+      "variants": [
+        "Jika anda berkata pada seorang individualis liberal modern, “Hei, bagaimana jika anda mendengarkan sebuah khotbah?”"
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-6",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 6",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "CA: Terima kasih telah menakut-nakuti kami.",
+    "meta": {
+      "variants": [
+        "CA: Terima kasih telah menakut-nakuti kami."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-7",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 7",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih Ralph.",
+    "meta": {
+      "variants": [
+        "Terima kasih Ralph."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-8",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 8",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Itu adalah -- terima kasih -- ya, gula.",
+    "meta": {
+      "variants": [
+        "Itu adalah -- terima kasih -- ya, gula."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-9",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 9",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "(Tawa) Terima kasih banyak.",
+    "meta": {
+      "variants": [
+        "(Tawa) Terima kasih banyak."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-10",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 10",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Maaf kalau saya membawa berita buruk, namun seseorang harus melakukannya.",
+    "meta": {
+      "variants": [
+        "Maaf kalau saya membawa berita buruk, namun seseorang harus melakukannya."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-11",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 11",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "(Tepuk tangan) (Tepk tangan) Terima kasih.",
+    "meta": {
+      "variants": [
+        "(Tepuk tangan) (Tepk tangan) Terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-12",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 12",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "(Tepuk tangan) Chris Anderson: Terima kasih.",
+    "meta": {
+      "variants": [
+        "(Tepuk tangan) Chris Anderson: Terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-13",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 13",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "(Tepuk tangan) Terima kasih.",
+    "meta": {
+      "variants": [
+        "(Tepuk tangan) Terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-14",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 14",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "SB: Terima kasih.",
+    "meta": {
+      "variants": [
+        "SB: Terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-15",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 15",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Pada kenyataannya, salah satu ide yang paling konyol adalah, Hei, mari kita berdiri diam.",
+    "meta": {
+      "variants": [
+        "Pada kenyataannya, salah satu ide yang paling konyol adalah, Hei, mari kita berdiri diam."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-16",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 16",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Chalta hai.\"",
+    "meta": {
+      "variants": [
+        "Chalta hai.\""
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-17",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 17",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Maaf, aku tak akan melakukannya.",
+    "meta": {
+      "variants": [
+        "Maaf, aku tak akan melakukannya."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-18",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 18",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Selamat malam.",
+    "meta": {
+      "variants": [
+        "Selamat malam."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-19",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 19",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Pertama-tama saya ingin mengucapkan terima kasih pada anda semua.",
+    "meta": {
+      "variants": [
+        "Pertama-tama saya ingin mengucapkan terima kasih pada anda semua."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-20",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 20",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Waktu saya habis, terima kasih atas waktu Anda.",
+    "meta": {
+      "variants": [
+        "Waktu saya habis, terima kasih atas waktu Anda."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-21",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 21",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "RG + AV: Terima kasih.",
+    "meta": {
+      "variants": [
+        "RG + AV: Terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-22",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 22",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Dan maaf, tapi itu tidak berguna.",
+    "meta": {
+      "variants": [
+        "Dan maaf, tapi itu tidak berguna."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-23",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 23",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih,",
+    "meta": {
+      "variants": [
+        "Terima kasih,"
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-24",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 24",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Saya selalu berkata, \"Hei, telepon atau SMS kapan saja tetapi mungkin saya tidak bisa membalas pada hari yang sama.\"",
+    "meta": {
+      "variants": [
+        "Saya selalu berkata, \"Hei, telepon atau SMS kapan saja tetapi mungkin saya tidak bisa membalas pada hari yang sama.\""
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-25",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 25",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Maaf sekali, tapi suamiku sudah menyewakan apartemen itu dan tidak memberitahuku.\"",
+    "meta": {
+      "variants": [
+        "Maaf sekali, tapi suamiku sudah menyewakan apartemen itu dan tidak memberitahuku.\""
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-26",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 26",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Dia bilang, \"Oh maaf sekali, baru saja kamar terakhir disewakan.",
+    "meta": {
+      "variants": [
+        "Dia bilang, \"Oh maaf sekali, baru saja kamar terakhir disewakan."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-27",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 27",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Linus Torvalds, terima kasih untuk Linux, Internet, terima kasih untuk semua ponsel Android.",
+    "meta": {
+      "variants": [
+        "Linus Torvalds, terima kasih untuk Linux, Internet, terima kasih untuk semua ponsel Android."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-28",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 28",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih telah hadir di TED dan bercerita banyak hal tentang Anda",
+    "meta": {
+      "variants": [
+        "Terima kasih telah hadir di TED dan bercerita banyak hal tentang Anda"
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-29",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 29",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Saya mendekat dan menyapanya, Halo Jeannie!",
+    "meta": {
+      "variants": [
+        "Saya mendekat dan menyapanya, Halo Jeannie!"
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-30",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 30",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Mereka membuat pizza terima kasih, setiap anak menulis di setiap taburan dan membentuk pizza dari kertas.",
+    "meta": {
+      "variants": [
+        "Mereka membuat pizza terima kasih, setiap anak menulis di setiap taburan dan membentuk pizza dari kertas."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-31",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 31",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Ucapan terima kasih dapat mengubah hidup",
+    "meta": {
+      "variants": [
+        "Ucapan terima kasih dapat mengubah hidup"
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-32",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 32",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "(Tepuk tangan) Terima kasih banyak.",
+    "meta": {
+      "variants": [
+        "(Tepuk tangan) Terima kasih banyak."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-33",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 33",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih atas kehadiran Anda.",
+    "meta": {
+      "variants": [
+        "Terima kasih atas kehadiran Anda."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-34",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 34",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih telah mengilhami mereka dan menginspirasi kita semua.",
+    "meta": {
+      "variants": [
+        "Terima kasih telah mengilhami mereka dan menginspirasi kita semua."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-35",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 35",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih atas perhatian Anda.",
+    "meta": {
+      "variants": [
+        "Terima kasih atas perhatian Anda."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-36",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 36",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Katakan halo pada EDI.",
+    "meta": {
+      "variants": [
+        "Katakan halo pada EDI."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-37",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 37",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih, Isaac Asimov.",
+    "meta": {
+      "variants": [
+        "Terima kasih, Isaac Asimov."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-38",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 38",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "(Musik) Terima kasih.",
+    "meta": {
+      "variants": [
+        "(Musik) Terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-39",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 39",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "EDI: Terima kasih!",
+    "meta": {
+      "variants": [
+        "EDI: Terima kasih!"
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-40",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 40",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih banyak, dan terima kasih, EDI.",
+    "meta": {
+      "variants": [
+        "Terima kasih banyak, dan terima kasih, EDI."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-41",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 41",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "EDI: terima kasih, Marco.",
+    "meta": {
+      "variants": [
+        "EDI: terima kasih, Marco."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-42",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 42",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "mohon maaf kepada Hans Rosling.",
+    "meta": {
+      "variants": [
+        "mohon maaf kepada Hans Rosling."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-43",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 43",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Cukup menakutkan jika mantan neo-Nazi berkata, \"Hai, bagaimana kabar Anda?\"",
+    "meta": {
+      "variants": [
+        "Cukup menakutkan jika mantan neo-Nazi berkata, \"Hai, bagaimana kabar Anda?\""
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-44",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 44",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Tapi, maaf, saat mereka dewasa, mereka mungkin akan melakukannya.",
+    "meta": {
+      "variants": [
+        "Tapi, maaf, saat mereka dewasa, mereka mungkin akan melakukannya."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-45",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 45",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Maksud saya, \"Keingintahuan\" -- maaf.",
+    "meta": {
+      "variants": [
+        "Maksud saya, \"Keingintahuan\" -- maaf."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-46",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 46",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Maaf, ulang lagi.",
+    "meta": {
+      "variants": [
+        "Maaf, ulang lagi."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-47",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 47",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "(Tepuk Tangan) Ben Saunders: Baik, halo, saya Ben Saunders.",
+    "meta": {
+      "variants": [
+        "(Tepuk Tangan) Ben Saunders: Baik, halo, saya Ben Saunders."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-48",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 48",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih atas tanggapan Anda.",
+    "meta": {
+      "variants": [
+        "Terima kasih atas tanggapan Anda."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-49",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 49",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "(Tepuk tangan) Amanda Boxtel: Terima kasih.",
+    "meta": {
+      "variants": [
+        "(Tepuk tangan) Amanda Boxtel: Terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-50",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 50",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "AB: Terima kasih.",
+    "meta": {
+      "variants": [
+        "AB: Terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-51",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 51",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih kembali.",
+    "meta": {
+      "variants": [
+        "Terima kasih kembali."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-52",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 52",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "(Rekaman) Adam Ostrow: Halo.",
+    "meta": {
+      "variants": [
+        "(Rekaman) Adam Ostrow: Halo."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-53",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 53",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Saya terus... ya, terima kasih, Bu.",
+    "meta": {
+      "variants": [
+        "Saya terus... ya, terima kasih, Bu."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-54",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 54",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "(Tawa dan tepuk tangan) (Suara drum) (Suara selo) Hei!",
+    "meta": {
+      "variants": [
+        "(Tawa dan tepuk tangan) (Suara drum) (Suara selo) Hei!"
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-55",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 55",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Terima kasih telah memberikan saya kesempatan untuk membaginya dengan Anda.",
+    "meta": {
+      "variants": [
+        "Terima kasih telah memberikan saya kesempatan untuk membaginya dengan Anda."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-56",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 56",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Pertama, terima kasih atas perhatian Anda.",
+    "meta": {
+      "variants": [
+        "Pertama, terima kasih atas perhatian Anda."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-57",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 57",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Jadi, terima kasih.",
+    "meta": {
+      "variants": [
+        "Jadi, terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-58",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 58",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Kami memutuskan untuk mencobanya, karena kami pikir, hei, ini tidak akan sulit.",
+    "meta": {
+      "variants": [
+        "Kami memutuskan untuk mencobanya, karena kami pikir, hei, ini tidak akan sulit."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-59",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 59",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Atau bahkan lebih buruk lagi, Anda tertawa pada hal yang salah -- ini bagian yang boleh ditertawakan, terima kasih.",
+    "meta": {
+      "variants": [
+        "Atau bahkan lebih buruk lagi, Anda tertawa pada hal yang salah -- ini bagian yang boleh ditertawakan, terima kasih."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  },
+  {
+    "id": "greeting-data-60",
+    "kategori": "greeting",
+    "wilayah": null,
+    "nama": "Greeting data 60",
+    "tags": [
+      "greeting",
+      "data",
+      "ted2020"
+    ],
+    "teks": "Saya janji -- maksud saya, masih ada-- tidak ada air di dalam gelas ini, Maaf.",
+    "meta": {
+      "variants": [
+        "Saya janji -- maksud saya, masih ada-- tidak ada air di dalam gelas ini, Maaf."
+      ],
+      "jenis": "data",
+      "source": "ted2020"
+    }
+  }
+]

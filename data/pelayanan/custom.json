@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cu-1",
+    "kategori": "pelayanan",
+    "teks": "Custom bisa. Sebut desain, ukuran, jumlah, dan deadline.",
+    "tags": [
+      "custom",
+      "request"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "custom",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "cu-2",
+    "kategori": "pelayanan",
+    "teks": "Sablon minimal order berlaku. Kirim dummy desainnya.",
+    "tags": [
+      "sablon"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "sablon",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "cu-3",
+    "kategori": "pelayanan",
+    "teks": "Harga custom beda dari ready stock. Kami hitung setelah spek lengkap.",
+    "tags": [
+      "custom"
+    ],
+    "gaya": "formal",
+    "meta": {
+      "jenis": "custom",
+      "gaya": "formal"
+    }
+  }
+]

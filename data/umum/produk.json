@@ -1,0 +1,30 @@
+[
+  {
+    "id": "pr-toko",
+    "kategori": "produk",
+    "teks": "{{item}} harganya {{harga_item}}. Stok: {{stok_item}}.",
+    "tags": [
+      "produk",
+      "item"
+    ],
+    "gaya": "toko",
+    "meta": {
+      "jenis": "produk",
+      "gaya": "toko"
+    }
+  },
+  {
+    "id": "pr-santai",
+    "kategori": "produk",
+    "teks": "{{item}} itu {{harga_item}}, stoknya {{stok_item}}.",
+    "tags": [
+      "produk",
+      "item"
+    ],
+    "gaya": "santai",
+    "meta": {
+      "jenis": "produk",
+      "gaya": "santai"
+    }
+  }
+]
