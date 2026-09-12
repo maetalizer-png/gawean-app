@@ -31,9 +31,9 @@ function classify(text) {
   const t = String(text || "").trim().toLowerCase();
   if (!t) return "kosong";
   if (/siapa\s+(kamu|anda|nama)|nama\s+kamu/.test(t)) return "identitas";
-  if (/bisa\s+apa|fitur|bantuan|help|menu/.test(t)) return "bantuan";
+  if (/bisa\s+(bantu\s+)?apa|fitur|bantuan|help/.test(t)) return "bantuan";
   if (/(mau|boleh|izin)\s*(nanya|tanya)|tanya\s*(dong|ya|sebentar)|ada\s+yang\s+mau\s+ditanya/.test(t)) return "tanya";
-  if (/jam\s+buka|buka\s+jam|hari\s+apa\s+buka|libur/.test(t)) return "jam";
+  if (/jam\s+buka|buka\s+jam|hari\s+apa\s+buka|libur|sudah\s+tutup|masih\s+buka|tutup\s+jam/.test(t)) return "jam";
   if (/jam\s+berapa|tanggal\s+berapa/.test(t)) return "waktu_now";
   if (/harga|tarif|diskon|promo/.test(t)) return store.matchProduk(t) ? "produk" : "harga";
   if (/stok|masih\s+ada|ready/.test(t)) return store.matchProduk(t) ? "produk" : "stok";
@@ -45,7 +45,7 @@ function classify(text) {
   if (/grosir|partai|reseller/.test(t)) return "grosir";
   if (/booking|reservasi|janji\s+datang/.test(t)) return "booking";
   if (/garansi|after\s*sales|servis/.test(t)) return "garansi";
-  if (/katalog|rekomendasi|punya\s+apa|daftar\s+produk/.test(t)) return "katalog";
+  if (/katalog|rekomendasi|punya\s+apa|daftar\s+produk|menu/.test(t)) return "katalog";
   if (store.matchProduk(t)) return "produk";
   if (/custom|request|sablon/.test(t)) return "custom";
   if (/status\s+pesan|sudah\s+transfer|menunggu\s+resi/.test(t)) return "followup";
@@ -63,10 +63,10 @@ function classify(text) {
 
 const INTENT_TAGS = {
   identitas: ["identitas", "nama"],
-  bantuan: ["bantuan", "fitur", "menu"],
+  bantuan: ["bantuan", "fitur"],
   tanya: ["tanya", "izin"],
   setuju: ["setuju", "ok"],
-  jam: ["jam", "buka", "libur"],
+  jam: ["jam", "libur"],
   waktu_now: ["waktu_now", "jam_sekarang"],
   harga: ["harga", "diskon", "promo"],
   stok: ["stok", "ready"],

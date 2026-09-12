@@ -53,6 +53,8 @@ Kedua cara ini saling kompatibel — `js/business.js` adalah lapisan konfigurasi
 
 `theme.primary`/`theme.accent` diterapkan langsung ke variabel CSS (`--accent`, `--accent-2`) saat aplikasi dibuka — ganti warna tanpa sentuh CSS.
 
+**Satu langkah manual yang tidak ikut otomatis:** `manifest.webmanifest` (`name`/`short_name`) dan ikon (`assets/icon.svg`, `assets/icon-192.png`, `assets/icon-512.png`, `assets/apple-touch-icon.png`) adalah berkas statis yang dibaca langsung oleh browser sebelum JavaScript jalan, jadi tidak ikut ke-template lewat Cara 1/2 di atas. Sebelum deploy ke klien, edit `manifest.webmanifest` dan ganti keempat berkas ikon itu — kalau tidak, tampilan saat dipasang ke layar utama HP (nama & ikon) masih menampilkan "Gawean", bukan identitas bisnis klien.
+
 ## Isi folder
 
 | Path | Fungsi |

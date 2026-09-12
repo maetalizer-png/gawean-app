@@ -86,6 +86,7 @@
     "kategori": "pelayanan",
     "teks": "Hari ini toko buka. Bisa datang langsung atau pesan di sini.",
     "tags": [
+      "jam",
       "buka"
     ],
     "meta": {
