@@ -3,6 +3,6 @@
   {"id":"greeting-ucapan-wisuda-002","kategori":"greeting","tags":["ucapan"],"teks":"Selamat atas capaiannya. Perjuanganmu berarti.","meta":{"jenis":"ucapan"}},
   {"id":"greeting-ucapan-kerja-baru-003","kategori":"greeting","tags":["ucapan"],"teks":"Selamat pekerjaan baru. Semoga lingkungannya mendukung.","meta":{"jenis":"ucapan"}},
   {"id":"greeting-ucapan-lebaran-005","kategori":"greeting","tags":["ucapan"],"teks":"Selamat hari raya. Mohon maaf lahir dan batin.","meta":{"jenis":"ucapan"}},
-  {"id":"greeting-ucapan-natal-006","kategori":"greeting","tags":["ucapan"],"teks":"Selamat hari Natal. Semoga damai menyertai.","meta":{"jenis":"ucapan"}},
-  {"id":"greeting-ucapan-tahun-baru-007","kategori":"greeting","tags":["ucapan"],"teks":"Selamat tahun baru. Semoga lebih baik dari sebelumnya.","meta":{"jenis":"ucapan"}}
+  {"id":"greeting-ucapan-natal-006","kategori":"greeting","tags":["ucapan","natal"],"teks":"Selamat hari Natal. Semoga damai menyertai.","meta":{"jenis":"ucapan"}},
+  {"id":"greeting-ucapan-tahun-baru-007","kategori":"greeting","tags":["ucapan","tahun_baru"],"teks":"Selamat tahun baru. Semoga lebih baik dari sebelumnya.","meta":{"jenis":"ucapan"}}
 ]

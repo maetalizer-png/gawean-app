@@ -46,8 +46,8 @@ function classify(text) {
   if (/booking|reservasi|janji\s+datang/.test(t)) return "booking";
   if (/garansi|after\s*sales|servis/.test(t)) return "garansi";
   if (/katalog|rekomendasi|punya\s+apa|daftar\s+produk|menu/.test(t)) return "katalog";
-  if (store.matchProduk(t)) return "produk";
   if (/custom|request|sablon/.test(t)) return "custom";
+  if (store.matchProduk(t)) return "produk";
   if (/status\s+pesan|sudah\s+transfer|menunggu\s+resi/.test(t)) return "followup";
   if (/selamat\s+ulang\s+tahun/.test(t)) return "ulang_tahun";
   if (/selamat\s+(lebaran|hari\s+raya)/.test(t)) return "lebaran";
@@ -84,7 +84,7 @@ const INTENT_TAGS = {
   followup: ["followup", "status", "bukti", "menunggu"],
   ulang_tahun: ["ulang_tahun"],
   lebaran: ["lebaran"],
-  ucapan: ["ucapan", "natal", "tahun_baru"],
+  ucapan: ["natal", "tahun_baru"],
   waktu: ["greeting", "waktu"],
   hai: ["hai", "halo"],
   kabar: ["kabar"],

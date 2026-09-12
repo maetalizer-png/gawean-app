@@ -63,6 +63,16 @@ const CASES = [
     input: "harga kopi tubruk berapa?",
     ok: (a) => /kopi tubruk|28\.000/i.test(a),
   },
+  {
+    name: 'permintaan custom/sablon tidak dibajak jadi jawaban produk walau menyebut nama produk',
+    input: "bisa custom warna kaos?",
+    ok: (a) => !/^kaos polos cotton/i.test(a),
+  },
+  {
+    name: '"selamat natal" tidak pernah dijawab ucapan ulang tahun/promosi/pernikahan acak',
+    input: "selamat natal dan tahun baru",
+    ok: (a) => /natal|tahun baru/i.test(a),
+  },
 ];
 
 async function main() {
