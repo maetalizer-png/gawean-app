@@ -55,8 +55,6 @@
     "data/umum/terima-kasih.json",
     "data/umum/tutup.json",
     "data/umum/ucapan.json",
-    "data/umum/waktu-now.json",
-    "data/gaya/katalog.json",
-    "data/katalog/produk.json"
+    "data/umum/waktu-now.json"
   ]
 }

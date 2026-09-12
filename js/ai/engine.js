@@ -5,6 +5,7 @@ const NOISE = /lembur|regang|diurai|agenda penting|sisakan jeda/;
 let corpus = [];
 let lastIntent = "";
 let lastGaya = "toko";
+let readyPromise = null;
 
 const pick = (list) => list[Math.floor(Math.random() * list.length)];
 
@@ -34,9 +35,9 @@ function classify(text) {
   if (/(mau|boleh|izin)\s*(nanya|tanya)|tanya\s*(dong|ya|sebentar)|ada\s+yang\s+mau\s+ditanya/.test(t)) return "tanya";
   if (/jam\s+buka|buka\s+jam|hari\s+apa\s+buka|libur/.test(t)) return "jam";
   if (/jam\s+berapa|tanggal\s+berapa/.test(t)) return "waktu_now";
-  if (/harga|tarif|diskon|promo/.test(t)) return "harga";
-  if (/stok|masih\s+ada|ready/.test(t)) return "stok";
-  if (/pesan|order|beli|checkout/.test(t)) return "pesan";
+  if (/harga|tarif|diskon|promo/.test(t)) return store.matchProduk(t) ? "produk" : "harga";
+  if (/stok|masih\s+ada|ready/.test(t)) return store.matchProduk(t) ? "produk" : "stok";
+  if (/pesan|order|beli|checkout/.test(t)) return store.matchProduk(t) ? "produk" : "pesan";
   if (/kirim|ongkir|resi|ekspedisi/.test(t)) return "kirim";
   if (/alamat|lokasi|maps|dimana\s+toko|di mana toko/.test(t)) return "alamat";
   if (/komplain|kecewa|rusak|salah\s+kirim|refund/.test(t)) return "komplain";
@@ -85,7 +86,7 @@ const INTENT_TAGS = {
   lebaran: ["lebaran"],
   ucapan: ["ucapan", "natal", "tahun_baru"],
   waktu: ["greeting", "waktu"],
-  hai: ["hai", "halo", "buka"],
+  hai: ["hai", "halo"],
   kabar: ["kabar"],
   terima_kasih: ["terima_kasih", "makasih"],
   tutup: ["tutup", "penutup"],
@@ -139,19 +140,28 @@ function pickRow(intent, raw) {
 
 export const engine = {
   async init() {
-    let list = [];
-    try {
-      const man = await fetch("data/manifest.json").then((r) => r.json());
-      list = man.files || [];
-    } catch {}
-    const packs = await Promise.all(list.map((f) => fetch(f).then((r) => (r.ok ? r.json() : []))));
-    corpus = packs
-      .flatMap((pack) => (Array.isArray(pack) ? pack : pack.items || pack.data || []))
-      .filter((x) => x && x.teks);
-    lastIntent = "";
-    lastGaya = "toko";
-    await store.init();
-    return corpus.length;
+    readyPromise = (async () => {
+      let list = [];
+      try {
+        const man = await fetch("data/manifest.json").then((r) => r.json());
+        list = man.files || [];
+      } catch {}
+      const packs = await Promise.all(list.map((f) => fetch(f).then((r) => (r.ok ? r.json() : []))));
+      corpus = packs
+        .flatMap((pack) => (Array.isArray(pack) ? pack : pack.items || pack.data || []))
+        .filter((x) => x && x.teks);
+      lastIntent = "";
+      lastGaya = "toko";
+      await store.init();
+      return corpus.length;
+    })();
+    return readyPromise;
+  },
+  // Corpus dimuat lewat 58+ fetch paralel -- UI bisa saja sudah interaktif
+  // (class "ready" di <html>) sebelum semuanya selesai. chat.send() menunggu
+  // ini dulu supaya pesan pertama tidak pernah kena corpus kosong.
+  whenReady() {
+    return readyPromise || Promise.resolve();
   },
   respond(text) {
     const intent = classify(text);

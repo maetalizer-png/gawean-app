@@ -1,6 +1,28 @@
-Gawean Chat Kit
+Gawean Chat Kit — Lisensi Template Komersial
 
-Hak pakai untuk satu proyek toko/jasa.
-Tidak untuk dijual ulang sebagai template identik.
-Login hanya tersimpan di perangkat.
-Data percakapan milik pemasang.
+Kit ini dijual sebagai template chat toko yang memang dirancang untuk
+dikustomisasi ulang (identitas bisnis, warna, katalog, isi balasan) dan
+dipasang oleh banyak pembeli berbeda.
+
+Setiap pembelian mencakup satu lisensi untuk satu bisnis/proyek.
+
+Yang boleh dilakukan pembeli:
+- Memasang dan menjalankan kit ini untuk satu bisnis atau proyek miliknya
+  (toko, jasa, atau merek sendiri), termasuk untuk tujuan komersial.
+- Mengubah bebas apa pun di dalamnya: nama, logo, warna, katalog produk,
+  dan seluruh isi corpus balasan.
+- Men-deploy ke domain atau subdomain milik pembeli.
+
+Yang tidak boleh dilakukan pembeli:
+- Menjual ulang, membagikan, atau mendistribusikan kode sumber kit ini
+  (baik asli maupun hasil modifikasi) sebagai template/produk baru ke
+  pihak lain.
+- Menggunakan satu lisensi untuk lebih dari satu bisnis/proyek tanpa
+  lisensi tambahan.
+
+Login akun tersimpan hanya di perangkat pemasang (localStorage), tidak
+dikirim ke server mana pun. Data percakapan dan konfigurasi bisnis
+sepenuhnya milik pemasang.
+
+Kit ini disediakan apa adanya ("as is"), tanpa jaminan tersurat maupun
+tersirat atas kesesuaian untuk tujuan tertentu.

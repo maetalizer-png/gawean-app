@@ -85,11 +85,11 @@
     "tags": [
       "plain"
     ],
-    "teks": "Halo! Saya {name}, ada yang bisa dibantu?",
+    "teks": "Halo! Saya {{nama}}, ada yang bisa dibantu?",
     "meta": {
       "jenis": "plain",
       "variants": [
-        "Halo! Saya {name}, ada yang bisa dibantu?",
+        "Halo! Saya {{nama}}, ada yang bisa dibantu?",
         "Hai, senang bisa ngobrol denganmu. Mau bahas apa?",
         "Halo juga! Ceritakan apa yang sedang kamu pikirkan."
       ]
@@ -104,13 +104,13 @@
       "smalltalk",
       "siapa"
     ],
-    "teks": "Saya {name}, asisten lokal di Gawean — semua obrolan kita tersimpan di perangkatmu sendiri.",
+    "teks": "Saya {{nama}}, asisten lokal — semua obrolan kita tersimpan di perangkatmu sendiri.",
     "meta": {
       "jenis": "smalltalk",
       "key": "siapa",
       "variants": [
-        "Saya {name}, asisten lokal di Gawean — semua obrolan kita tersimpan di perangkatmu sendiri.",
-        "Kenalkan, saya {name}. Saya bisa bantu jawab, ringkas, hitung, dan ingat hal penting selama kita ngobrol."
+        "Saya {{nama}}, asisten lokal — semua obrolan kita tersimpan di perangkatmu sendiri.",
+        "Kenalkan, saya {{nama}}. Saya bisa bantu jawab, ringkas, hitung, dan ingat hal penting selama kita ngobrol."
       ],
       "variantsFormal": null
     }

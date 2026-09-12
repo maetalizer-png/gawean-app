@@ -129,6 +129,7 @@ export const chat = {
     paintList();
     const wait = chat.add("ai", "sedang mengetik…");
     wait.classList.add("typing");
+    await engine.whenReady();
     const answer = engine.respond(text);
     await new Promise((r) => setTimeout(r, 450 + Math.min(answer.length * 8, 900)));
     wait.classList.remove("typing");
