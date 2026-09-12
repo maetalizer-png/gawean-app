@@ -83,7 +83,8 @@
     "wilayah": null,
     "nama": "Sapaan umum",
     "tags": [
-      "plain"
+      "plain",
+      "hai"
     ],
     "teks": "Halo! Saya {{nama}}, ada yang bisa dibantu?",
     "meta": {
@@ -102,7 +103,8 @@
     "nama": "Smalltalk: siapa",
     "tags": [
       "smalltalk",
-      "siapa"
+      "siapa",
+      "identitas"
     ],
     "teks": "Saya {{nama}}, asisten lokal — semua obrolan kita tersimpan di perangkatmu sendiri.",
     "meta": {
