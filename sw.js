@@ -1,19 +1,43 @@
 // Service worker Gawean -- cache-first untuk shell app & korpus jawaban,
 // network-first untuk navigasi supaya pembeli selalu melihat versi terbaru
 // saat online, tapi tetap bisa membuka chat saat offline.
-const CACHE = "gawean-v1";
+const CACHE = "gawean-v2";
 const SHELL = [
   "./",
   "index.html",
   "manifest.webmanifest",
   "css/main.css",
+  "css/tokens.css",
+  "css/base.css",
+  "css/shell.css",
+  "css/chat.css",
+  "css/panels.css",
+  "css/desktop.css",
   "js/boot.js",
   "js/main.js",
 ];
+// Korpus jawaban ikut di-cache saat install agar chat tetap berfungsi offline.
+// Daftar file bersumber dari data/manifest.json (path sudah lengkap "data/...").
+const CORPUS = Object.freeze(
+  Promise.resolve().then(async () => {
+    try {
+      const idx = await fetch("data/manifest.json").then((r) => r.json());
+      return Array.isArray(idx?.files) ? idx.files : [];
+    } catch {
+      return [];
+    }
+  })
+);
 
 self.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())
+    caches
+      .open(CACHE)
+      .then((c) => c.addAll(SHELL))
+      .then(() => CORPUS)
+      .then((files) => (files.length ? caches.open(CACHE).then((c) => c.addAll(files)) : null))
+      .catch(() => null) // jangan gagalkan install bila sebagian korpus gagal
+      .then(() => self.skipWaiting())
   );
 });
 

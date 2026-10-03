@@ -41,7 +41,10 @@ Ditulis ulang: cara jalan, dua cara ganti identitas bisnis, skema konfigurasi le
 Tombol "Lanjut via WhatsApp" kini muncul otomatis di dalam percakapan ketika pesan pengguna terdeteksi mengandung intent transaksi (order/pesan/beli/checkout/bayar/transfer/dp/cod/resi/ongkir/kirim). Link memakai `store.waLink()` dengan teks chat terisi nama toko + potongan jawaban AI sebagai konteks. Tetap diam (tanpa error) jika nomor WA belum diisi.
 
 **Fase 8 — PWA / Service Worker**
-`sw.js` baru: shell app di-cache saat install (cache-first), aset statis & JSON korpus di-cache saat miss, navigasi memakai network-first dengan fallback ke index.html tersimpan supaya aplikasi tetap terbuka offline. Registrasi hanya terjadi saat disajikan via http/https (diam di bawah `file://`). Naik versi cache cukup ganti konstanta `CACHE`.
+`sw.js` baru: shell app di-cache saat install (cache-first), aset statis & JSON korpus di-cache saat miss, navigasi memakai network-first dengan fallback ke index.html tersimpan supaya aplikasi tetap terbuka offline. Registrasi hanya terjadi saat disajikan via http/https (diam di bawah `file://`). Naik versi cache cukup ganti konstanta `CACHE`. **Diperkuat:** seluruh CSS per-file ikut di-precache; kelima puluh enam file korpus (`data/manifest.json`) kini di-prefetch saat install sehingga chat AI tetap menjawab penuh saat offline total (cache v2).
+
+**Fase 13 — Tampilan desktop (layout dua kolom)**
+Layout lama hanya satu kolom mobile yang melebar penuh di monitor besar (bubble chat "lonjong ke samping"). Sekarang: `css/desktop.css` baru — pada layar ≥960px sidebar riwayat menjadi rail permanen di kiri, shell chat berpusat selebar maksimum 860px ala WhatsApp Web dengan latar luar berkontras (light/dark), panjang baris bubble dibatasi ±760px, composer dan sheet lampiran menjadi kartu mengambang, dan hamburger disembunyikan (diproteksi juga di JS agar `.open` tidak menimpa posisi rail). Di bawah 960px perilaku mobile persis seperti sebelumnya.
 
 **Fase 9 — Accessibility (parsial)**
 Area `#messages` kini memakai `aria-live="polite"` + `aria-label` sehingga balasan AI diumumkan ke pembaca layar; tombol WA adalah elemen `<a>` asli (fokus-able keyboard). Catatan: audit kontras warna untuk kombinasi tema custom masih terbuka (lihat Sebagian).

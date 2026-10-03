@@ -104,6 +104,9 @@ export const shell = {
     if (bar) bar.style.width = Math.min(100, Math.max(used ? 4 : 0, Math.round((used / cap) * 100))) + "%";
   },
   openSidebar() {
+    // Di desktop (>=960px) sidebar sudah permanen via CSS; class .open hanya
+    // untuk overlay di layar kecil.
+    if (window.innerWidth >= 960) return;
     $("sidebar").classList.add("open");
     $("backdrop").classList.add("show");
   },
