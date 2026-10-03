@@ -44,6 +44,12 @@ async function start() {
   } catch {
     toast("Jalankan lewat http server");
   }
+
+  // PWA offline: daftarkan service worker (hanya saat disajikan via http/https;
+  // di bawah file:// registrasi akan gagal dan kami diamkan).
+  if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  }
 }
 
 start();

@@ -32,24 +32,31 @@ Ditulis ulang: cara jalan, dua cara ganti identitas bisnis, skema konfigurasi le
 - Cross-check penuh: semua `$()` mengacu ID yang benar-benar ada di HTML, semua `import`/`export` antar-modul cocok
 - Auth, dark/light mode, attachment, localStorage, PWA manifest — tidak diubah sama sekali (tidak ada risiko regresi karena tidak disentuh)
 
-## Sebagian
+## Selesai, teruji (sesi upgrade berikutnya)
 
-**Fase 6 — WhatsApp integration**
-`waLink()` sekarang punya tombol UI (sebelumnya tidak ada sama sekali). Yang belum: deep-link otomatis dari konteks percakapan tertentu (mis. tombol WA muncul otomatis saat AI mendeteksi niat "mau pesan" di tengah chat) — saat ini kontak WA/Gmail statis di halaman Pengaturan saja.
+**Fase 5 — Chat UX lanjutan (typing indicator)**
+`chat.showTypingIndicator` dari skema config kini benar-benar dibaca oleh `chat.js`: bubble "sedang mengetik" dibangun sebagai tiga titik beranimasi CSS (`@keyframes typing-blink`, dengan fallback `prefers-reduced-motion`) plus label `.sr-only` untuk pembaca layar. Kalau flag dimatikan di konfigurasi bisnis, tahap typing dilewati sepenuhnya.
+
+**Fase 6 — WhatsApp deep-link kontekstual**
+Tombol "Lanjut via WhatsApp" kini muncul otomatis di dalam percakapan ketika pesan pengguna terdeteksi mengandung intent transaksi (order/pesan/beli/checkout/bayar/transfer/dp/cod/resi/ongkir/kirim). Link memakai `store.waLink()` dengan teks chat terisi nama toko + potongan jawaban AI sebagai konteks. Tetap diam (tanpa error) jika nomor WA belum diisi.
 
 **Fase 8 — PWA / Service Worker**
-Manifest sudah ada dari sebelumnya dan berfungsi. Belum diaudit ulang untuk cache versioning atau strategi offline yang lebih matang (lihat catatan proyek Pitutur di percakapan lain untuk pola cache-first vs network-first yang relevan kalau mau diterapkan di sini juga).
+`sw.js` baru: shell app di-cache saat install (cache-first), aset statis & JSON korpus di-cache saat miss, navigasi memakai network-first dengan fallback ke index.html tersimpan supaya aplikasi tetap terbuka offline. Registrasi hanya terjadi saat disajikan via http/https (diam di bawah `file://`). Naik versi cache cukup ganti konstanta `CACHE`.
+
+**Fase 9 — Accessibility (parsial)**
+Area `#messages` kini memakai `aria-live="polite"` + `aria-label` sehingga balasan AI diumumkan ke pembaca layar; tombol WA adalah elemen `<a>` asli (fokus-able keyboard). Catatan: audit kontras warna untuk kombinasi tema custom masih terbuka (lihat Sebagian).
+
+## Sebagian
+
+**Fase 9 — Accessibility / Security audit (sisa)**
+Sudah: `aria-live` di area chat, typing indicator dengan label sr-only, animasi menghormati `prefers-reduced-motion`, tombol WA sebagai link semantik. Belum: validasi otomatis kontras `theme.primary` × `--accent-ink` per kombinasi warna custom, dan uji navigasi keyboard penuh.
 
 ## Belum dikerjakan (jujur, bukan lupa)
 
 **Fase 4 — Catalog manager (UI visual)**
 `store.saveKatalog()` sudah ada sebagai fungsi, dan sekarang bisa diisi lewat impor JSON — tapi belum ada FORM VISUAL untuk tambah/edit produk satu-per-satu dari dalam aplikasi (tambah nama, harga, foto, stok lewat UI, bukan edit JSON mentah). Ini pekerjaan UI yang cukup besar (perlu halaman/sheet baru, validasi form, preview) — pantas jadi sesi kerja tersendiri, bukan ditempel terburu-buru.
 
-**Fase 5 — Chat UX lanjutan**
-`chat.welcomeMessage` sudah tersambung (pesan pembuka otomatis saat chat baru). Indikator "sedang mengetik" (`chat.showTypingIndicator`) ada di skema config tapi belum ada implementasi animasinya di `chat.js`.
-
-**Fase 9 — Accessibility / Security audit**
-Belum dilakukan audit terpisah (kontras warna per kombinasi tema custom, navigasi keyboard penuh, `aria-live` di area chat, dsb). Karena `theme.primary`/`theme.accent` sekarang bisa diganti bebas oleh pembeli template, ada risiko kombinasi warna buruk yang tidak divalidasi otomatis — kalau template dijual luas, ini layak jadi prioritas berikutnya.
+(Fase 5 typing indicator dan sebagian Fase 9 accessibility sudah selesai — lihat bagian "Selesai, teruji (sesi upgrade berikutnya)" di atas.)
 
 **Fase 10-11 — Dokumentasi terpisah & Testing formal**
 README sudah diperbarui, tapi belum ada dokumentasi terpisah gaya "panduan pembeli" (screenshot, video, langkah setup untuk orang non-teknis). Testing yang dilakukan hari ini murni fungsional (Node.js, simulasi) untuk modul baru — belum ada testing lintas-browser sungguhan (Safari iOS, Firefox) untuk fitur Web Share/kamera yang perilakunya memang bervariasi antar-browser.

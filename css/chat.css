@@ -5,7 +5,14 @@
 .msg { max-width: 80%; font-size: 15px; line-height: 1.5; white-space: pre-wrap; }
 .msg.user { align-self: flex-end; background: var(--accent); color: var(--accent-ink); padding: 10px 13px; border-radius: 16px 16px 4px 16px; }
 .msg.ai { align-self: flex-start; padding: 6px 2px; }
-.msg.typing { color: var(--muted); }
+.msg.typing { color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.typing-dots { display: inline-flex; gap: 4px; align-items: center; }
+.typing-dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: typing-blink 1s infinite ease-in-out; }
+@keyframes typing-blink { 0%, 60%, 100% { opacity: .25; transform: translateY(0); } 30% { opacity: 1; transform: translateY(-3px); } }
+@media (prefers-reduced-motion: reduce) { .typing-dots i { animation: none; opacity: .7; } }
+.action-row { padding: 2px 0; }
+.wa-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--accent-ink); background: var(--accent); border-radius: 999px; padding: 8px 14px; text-decoration: none; box-shadow: var(--shadow); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .msg.hit { outline: 2px solid var(--accent); border-radius: 10px; }
 .msg.user.media { padding: 2px; background: var(--accent); }
 .msg-media { line-height: 0; }

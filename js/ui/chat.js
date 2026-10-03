@@ -4,6 +4,20 @@ import { threads } from "../threads.js";
 import { business } from "../business.js";
 import { store } from "../store.js";
 
+// Bubble "sedang mengetik…" dibangun dari titik-titik beranimasi supaya
+// indicator-nya hidup (bukan teks statis). Dipakai oleh typingNode().
+function dots() {
+  const wrap = document.createElement("span");
+  wrap.className = "typing-dots";
+  wrap.setAttribute("aria-hidden", "true");
+  for (let i = 0; i < 3; i++) {
+    const d = document.createElement("i");
+    d.style.animationDelay = (i * 0.18) + "s";
+    wrap.appendChild(d);
+  }
+  return wrap;
+}
+
 function resizeInput() {
   const input = $("chat-input");
   input.style.height = "auto";
@@ -66,6 +80,25 @@ function mediaBubble(src) {
   return wrap;
 }
 
+// Deteksi intent "pesan/order" yang butuh aksi manusia (pembayaran, alamat,
+// konfirmasi) -> tawarkan tombol lanjut ke WhatsApp dengan chat terisi konteks.
+const NEEDS_HUMAN = /(^|\s)(order|pesan|beli|checkout|bayar|transfer|dp\b|cod|resi|ongkir|kirim)\b/;
+
+function waBubble(text) {
+  const link = store.waLink("Halo " + ((store.toko() && store.toko().nama) || "") + ", lanjut dari chat: " + String(text).slice(0, 200));
+  if (!link) return null;
+  const wrap = document.createElement("div");
+  wrap.className = "msg ai action-row";
+  const btn = document.createElement("a");
+  btn.className = "wa-btn";
+  btn.href = link;
+  btn.target = "_blank";
+  btn.rel = "noopener";
+  btn.textContent = "Lanjut via WhatsApp";
+  wrap.appendChild(btn);
+  return wrap;
+}
+
 export const chat = {
   openThread(id) {
     threads.open(id);
@@ -98,6 +131,21 @@ export const chat = {
     $("messages").appendChild(node);
     $("messages").scrollTop = $("messages").scrollHeight;
   },
+  // Bubble "sedang mengetik…" dengan titik beranimasi. Menghormati flag
+  // chat.showTypingIndicator dari konfigurasi bisnis; jika dimatikan,
+  // mengembalikan null dan pemanggil cukup melewatkan tahap typing.
+  typingNode() {
+    if (!business.current().chat.showTypingIndicator) return null;
+    const el = document.createElement("div");
+    el.className = "msg ai typing";
+    el.appendChild(dots());
+    const label = document.createElement("span");
+    label.className = "sr-only";
+    label.textContent = "sedang mengetik";
+    el.appendChild(label);
+    chat.addNode(el);
+    return el;
+  },
   rememberImage(src) {
     threads.append({ role: "user", text: "", image: src });
     paintList();
@@ -127,19 +175,24 @@ export const chat = {
     threads.append({ role: "user", text });
     chat.add("user", text);
     paintList();
-    const wait = chat.add("ai", "sedang mengetik…");
-    wait.classList.add("typing");
+    const wait = chat.typingNode();
     await engine.whenReady();
     const answer = engine.respond(text);
-    await new Promise((r) => setTimeout(r, 450 + Math.min(answer.length * 8, 900)));
-    wait.classList.remove("typing");
-    wait.textContent = "";
+    if (wait) {
+      await new Promise((r) => setTimeout(r, 450 + Math.min(answer.length * 8, 900)));
+      wait.remove();
+    }
+    const el = chat.add("ai", "");
     for (let i = 0; i < answer.length; i++) {
-      wait.textContent += answer[i];
+      el.textContent += answer[i];
       $("messages").scrollTop = $("messages").scrollHeight;
       await new Promise((r) => setTimeout(r, answer[i] === " " ? 12 : 18));
     }
     threads.append({ role: "ai", text: answer });
+    if (NEEDS_HUMAN.test(text.toLowerCase())) {
+      const wa = waBubble(answer || text);
+      if (wa) chat.addNode(wa);
+    }
   },
   bind() {
     $("btn-send").onclick = () => chat.send();
